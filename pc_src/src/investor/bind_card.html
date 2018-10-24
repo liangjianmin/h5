@@ -1,0 +1,52 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 绑定银行卡 -->
+<div class="invest__center bind-card">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "setting"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit tit-theme">绑定银行卡</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content-wrapper">
+                <div class="layui-form bind-bank-form">
+                    <dl class="input-block clearfix">
+                        <dt class="input-tit">姓名：</dt>
+                        <dd class="input-cont">贾龙龙</dd>
+                    </dl>
+                    <dl class="input-block clearfix">
+                        <dt class="input-tit">身份证号：</dt>
+                        <dd class="input-cont">4102*********1112</dd>
+                    </dl>
+                    <dl class="input-block clearfix">
+                        <dt class="input-tit">开户银行：</dt>
+                        <dd class="input-cont">
+                            <select class="input" name="bank_name" lay-verify="required"  id="selectBank" lay-filter="bankSelect">
+                                <option value="请选择开户银行">请选择开户银行</option>
+                            </select>
+                        </dd>
+                        <dd class="bank-limit">
+                            <button class="bank-limit-btn" id="checkBankLimit">查看充值限额</button>
+                        </dd>
+                    </dl>
+                    <div class="tip-info error-tip dn" id="formTip">请选择开户银行</div>
+                    <div class="open-bank-btn-wrapper">
+                        <input class="open-bank-btn disabled" id="openBankBtn" type="submit" value="提交" disabled lay-submit lay-filter="openBnak" />
+                    </div>
+                    <dl class="explain">
+                    	<dt class="explain-text">温馨提示</dt>
+                    	<dd class="explain-text">1、只能绑定您本人开户的银行卡，不支持信用卡；</dd>
+                    	<dd class="explain-text">2、为保障资金安全，只能绑定一张银行卡；</dd>
+                    	<dd class="explain-text">3、如果想更换银行卡，请在解绑旧卡之后再绑定新卡；</dd>
+                    	<dd class="explain-text">4、绑定银行需验证银行预留手机号，详情请咨询开户银行.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

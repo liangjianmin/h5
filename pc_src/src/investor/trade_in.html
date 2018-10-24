@@ -1,0 +1,138 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 充值 -->
+<div class="invest__center trade-in">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "trade_in"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">充值</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <dl class="tradein-row clearfix">
+                    <dt class="tradein-tit">可用余额：</dt>
+                    <dd class="tradein-cont trade-money"><strong class="tradein-money" id="userAbailableAmont">--</strong>元</dd>
+                </dl>
+                <dl class="tradein-row clearfix">
+                    <dt class="tradein-tit">充值方式：</dt>
+                    <dd class="tradein-cont">
+                        <div class="layui-tab trade-tab" lay-filter="tradeInTab">
+                            <ul class="layui-tab-title">
+                                <li class="trade-quick layui-this" lay-id="quick">快捷支付</li>
+                                <li class="trade-web" lay-id="web">网银支付</li>
+                                <li class="trade-bank" lay-id="bank">银行转账<i class="icon"></i></li>
+                            </ul>
+                            <div class="layui-tab-content">
+                                <div class="layui-tab-item layui-show">
+                                    <div class="layui-form">
+                                        <dl class="tradein-row clearfix">
+                                            <dt class="tradein-tit">银行卡号：</dt>
+                                            <dd class="tradein-cont clearfix">
+                                                <div class="bank-info fl clearfix">
+                                                    <i class="bank-icon" id="bankImg"></i>
+                                                    <span class="bank-name" id="bankName">--</span>
+                                                    <span class="bank-card-no" id="bankNo">--</span>
+                                                </div>
+                                                <div class="bank-desc fl" id="bankCardInfo">(充值限额：单笔限额<span class="money" id="bankOneLimit">--</span>、单日限额<span class="money" id="bankDateLimit">--</span>、单月限额<span class="money" id="bankMonthLimit">--</span>)</div>
+                                            </dd>
+                                        </dl>
+                                        <dl class="tradein-row clearfix">
+                                            <dt class="tradein-tit">充值金额：</dt>
+                                            <dd class="tradein-cont">
+                                                <div class="trade-cont">
+                                                    <input class="trade-input" id="tradeInQuickMoney" type="text" name="trade_in_money" placeholder="最低100元" lay-verify="required|number" lay-verType="tips" />
+                                                    <span class="company">元</span>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <div class="tradein-btn-wrapper">
+                                            <input class="tradein-btn is-disabled" id="tradeInQuickBtn" type="submit" value="下一步" disabled lay-submit lay-filter="tradeInQuick" />
+                                        </div>
+                                    </div>
+                                    <div class="trade-infomation">
+                                        <dl class="trade-explain">
+                                            <dt class="explain-tit">充值说明：</dt>
+                                            <dd class="explain-text">1、单笔充值金额不能低于100元，最高不可超过银行限额 <button class="btn-information" id="bankLimitBtn">查看银行限额</button>；</dd>
+                                            <dd class="explain-text">2、充值操作需在银行页面进行，请在跳转后的页面完成；</dd>
+                                            <dd class="explain-text">3、用户充值免费且充值次数不限，充值手续费已由多啦承担；</dd>
+                                            <dd class="explain-text">4、单笔/单日/单月限额为0表示渠道正在维护不支持充值，可选择网银支付或银行转账。</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <div class="layui-form">
+                                        <dl class="tradein-row trade-bank clearfix">
+                                            <dt class="tradein-tit">请选择银行：</dt>
+                                            <dd class="tradein-cont">
+                                                <ul class="bank-lists clearfix" id="WEB_lists"></ul>
+                                                <a href="javascript:;" class="btn-bank-more" id="openBankList">展开<i class="icon"></i></a>
+                                            </dd>
+                                        </dl>
+                                        <dl class="tradein-row clearfix">
+                                            <dt class="tradein-tit">充值金额：</dt>
+                                            <dd class="tradein-cont">
+                                                <div class="trade-cont">
+                                                    <input class="trade-input" id="tradeInWebMoney" type="text" name="trade_in_web_money" placeholder="最低100元" lay-verify="required|number" lay-verType="tips" />
+                                                    <span class="company">元</span>
+                                                </div>
+                                            </dd>
+                                        </dl>
+                                        <div class="tradein-btn-wrapper">
+                                            <input class="tradein-btn is-disabled" id="tradeInWebBtn" type="submit" value="下一步" disabled lay-submit lay-filter="tradeInWeb" />
+                                        </div>
+                                    </div>
+                                    <div class="trade-infomation">
+                                        <dl class="trade-explain">
+                                            <dt class="explain-tit">充值说明：</dt>
+                                            <dd class="explain-text">1、充值前请确认银行卡已开通网上银行；</dd>
+                                            <dd class="explain-text">2、单笔充值金额不能低于100元，最高不可超过银行限额，支付限额与支付产品种类及个人限额有关，具体可咨询开户银行；</dd>
+                                            <dd class="explain-text">3、用户充值免费且充值次数不限，充值手续费已由多啦承担；</dd>
+                                            <dd class="explain-text">4、推荐使用IE浏览器进行充值。</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="layui-tab-item">
+                                    <dl class="bank-transfer-desc">
+                                        <dt class="bank-transfer-tit">根据监管政策(<button class="btn-information" id="bankTransferInfoBtn">查看详情</button>)，转账充值要求以下事项：</dt>
+                                        <dd class="bank-transfer-text bank-transfer-theme">1、仅支持存管账户绑定银行卡（<span id="bankTransferName">--</span>，<span id="bankTransferNo">--</span>）进行手机银行或网上银行转账；</dd>
+                                        <dd class="bank-transfer-text">2、转入账户必须为多啦聚财在上饶银行开立的存管专用账户（此户仅用于银行存管系统资金中转）。转账时填写的收款方信息如下：</dd>
+                                    </dl>
+                                    <ul class="sr-bank-lists">
+                                        <li class="list clearfix list01">
+                                            <span class="tit">收款方户名</span>
+                                            <input class="cont" id="gsname" value="深圳嘉银普惠科技有限公司" readonly>
+                                            <a class="copy-text" id="copyGSName" data-clipboard-target="#gsname">复制</a>
+                                        </li>
+                                        <li class="list clearfix list02">
+                                            <span class="tit">收款方开户行</span>
+                                            <input class="cont" id="yhname" value="上饶银行滨江支行" readonly>
+                                            <a class="copy-text" id="copyYHName" data-clipboard-target="#yhname">复制</a>
+                                        </li>
+                                        <li class="list clearfix list03">
+                                            <span class="tit">收款方账号</span>
+                                            <input class="cont" id="yhno" value="2078 0302 0000 0121 68" readonly>
+                                            <a class="copy-text" id="copyYHNo" data-clipboard-target="#yhno">复制</a>
+                                        </li>
+                                    </ul>
+                                    <div class="trade-infomation">
+                                        <dl class="trade-explain">
+                                            <dt class="explain-tit">充值说明：</dt>
+                                            <dd class="explain-text">1、单笔充值金额不能低于100元；</dd>
+                                            <dd class="explain-text">2、转账充值资金会在0~2小时内充值到您的存管账户，请耐心等待并及时关注到账短信。</dd>
+                                            <dd class="explain-text">3、为了避免转账充值出现异常，请勿在当天的22:00~24:00进行转账充值。此时间段为银行日结时间段。若有充值问题，请咨询客服400-9300-986处理。</dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

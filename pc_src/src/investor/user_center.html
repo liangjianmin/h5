@@ -1,0 +1,134 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 账户首页 -->
+<div class="invest__center user-center">
+    <div class="user-info-tips" id="userAccountInfo" style="display: none;">
+        <div class="dl__container">
+            <p class="tip-text"><i class="sr-tip-icon"></i>为了您的资金安全和交易合规，投资前需先开通上饶银行存管账户。<a href="javascript:;" id="quick_open_sr">立即开通</a></p>
+        </div>
+    </div>
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "user_center"})
+        <div class="center-content">
+            <h3 class="cont-tit">账户首页<i class="toggle-icon" id="toogleBtn"></i></h3>
+            <div class="content-wrapper">
+                <div class="user-money-info clearfix">
+                    <div class="money-info top-layout">
+                        <div class="money-layout">
+                            <p class="total-money"><strong class="js-money" id="totalAssetFormat">--</strong>&nbsp;&nbsp;元</p>
+                            <h5 class="money-tit">总资产<i class="tip-icon"><em class="tip-text tip-text-04">总资产=可用余额+待收本金+冻结金额；</em></i></h5>
+                        </div>
+                    </div>
+                    <div class="other-info top-layout">
+                        <div class="money-layout">
+                            <p class="other-item clearfix"><span class="fl">待收本金</span><span class="fr"><strong class="js-money" id="waitPrincipal">--</strong>元</span></p>
+                            <p class="other-item other-item-last clearfix"><span class="fl">冻结金额<i class="tip-icon other-icon"><em class="tip-text tip-text-04">冻结金额=投资冻结金额+提现冻结金额；</em></i></span><span class="fr"><strong class="js-money" id="blockTotalMoney">--</strong>元</span></p>
+                        </div>
+                    </div>
+                    <div class="user-btn-info top-layout">
+                        <div class="money-layout">
+                            <p class="user-money"><strong class="js-money" id="availableTotalMoney">--</strong>元</p>
+                            <p class="desc-text">可用余额</p>
+                            <div class="btn-wrapper">
+                                <a class="trade-btn trade-in-btn" href="@@webRoot/investor/trade_in.html" id="tradeInBtn">充值</a>
+                                <a class="trade-btn trade-out-btn" href="@@webRoot/investor/trade_out.html" id="tradeOutBtn">提现</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tool-wrppaer">
+                    <h4 class="block-tit">投标工具</h4>
+                    <ul class="invest-link clearfix">
+                        <li class="link-item link-item01">
+                            <a href="@@webRoot/investor/balance_return.html" class="link-url">
+                                <h4 class="tit-desc">余额自动复投</h4>
+                                <span class="text-desc">去设置</span>
+                            </a>
+                        </li>
+                        <li class="link-item link-item02">
+                            <a href="javascript:;" id="batchAutoHref" class="link-url">
+                                <h4 class="tit-desc">预约投标</h4>
+                                <span class="text-desc">去预约</span>
+                            </a>
+                        </li>
+                        <li class="link-item  link-item03 link-last">
+                            <a href="/standard/batch" class="link-url">
+                                <h4 class="tit-desc">一键投标</h4>
+                                <span class="text-desc">去投标</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clearfix">
+                    <div class="payback-wrapper fl">
+                        <h4 class="block-tit">回款概况</h4>
+                        <div class="info-cont payback-cont">
+                            <div class="select-wrapper clearfix">
+                                <div class="layui-form">
+                                    <select name="year" class="year-select" id="selectYear" lay-filter="selectYear">
+                                        <option value="">2018年 </option>
+                                    </select>
+                                    <select name="month" class="month-select" id="selectMonth" lay-filter="selectMonth">
+                                        <option value="">10月 </option>
+                                    </select>
+                                </div>
+                                <a class="check-payback" href="javascript:;" style="display: none;">查看详情>></a>
+                            </div>
+                            <ul class="payback-detail-lists clearfix">
+                                <li class="payback-detail payback-detail01 fl">
+                                    <span class="payback-tit">当月应回本息</span>
+                                    <span class="payback-text"><strong class="js-money" id="monthPayment">--</strong>元</span>
+                                </li>
+                                <li class="payback-detail payback-detail02 fl">
+                                    <span class="payback-tit">当月回款笔数</span>
+                                    <span class="payback-text"><strong class="js-money" id="monthPaymentNum">--</strong>笔</span>
+                                </li>
+                                <li class="payback-detail payback-detail03 fl">
+                                    <span class="payback-tit">当月已回本息</span>
+                                    <span class="payback-text"><strong class="js-money" id="monthEarnedPayment">--</strong>元</span>
+                                </li>
+                                <li class="payback-detail payback-detail04 fl">
+                                    <span class="payback-tit">当月提前回款</span>
+                                    <span class="payback-text"><strong class="js-money" id="monthForwardPayment">--</strong>元</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="wait-wrapper fr">
+                        <h4 class="block-tit">待收收益</h4>
+                        <div class="info-cont wait-cont">
+                            <div class="wait-total">
+                                <p class="wait-total-money"><strong class="js-money" id="pendingIncome">--</strong>元</p>
+                                <p class="desc-text">累计收益<i class="tip-icon other-icon"><em class="tip-text tip-text-04">累计收益=已收利息+已收返现+已收返佣</em></i></p>
+                            </div>
+                            <ul class="wait-lists">
+                                <li class="wait-item wait-frist">
+                                    <a href="javascript:;" class="wait-link no-icon clearfix">
+                                        <h5 class="tit fl">待收利息</h5>
+                                        <p class="cont fr"><strong  class="js-money" id="pendingTotalInterest">--</strong>元</p>
+                                    </a>
+                                </li>
+                                <li class="wait-item">
+                                    <a href="javascript:;" class="wait-link clearfix" id="waitInvestReward">
+                                        <h5 class="tit fl">待收返现<i class="tip-icon wait-icon"><em class="tip-text tip-text-2h">参与投资返现(待发放部分)，<br />可能会因为提前退出等原因取消发放</em></i></h5>
+                                        <p class="cont fr"><strong class="js-money" id="pendingInvestReward">--</strong>元</p>
+                                    </a>
+                                </li>
+                                <li class="wait-item wait-last">
+                                    <a href="javascript:;" class="wait-link clearfix" id="waitInviteReward">
+                                        <h5 class="tit fl">待收返佣<i class="tip-icon wait-icon"><em class="tip-text tip-text-2h">邀请好友投资返佣(待发放部分)，<br />可能会因为好友提前退出等原因取消发放。</em></i></h5>
+                                        <p class="cont fr"><strong class="js-money" id="pendingInviteReward">--</strong>元</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

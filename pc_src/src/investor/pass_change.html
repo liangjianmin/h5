@@ -1,0 +1,46 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 登录密码修改 -->
+<div class="invest__center change-pass">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "setting"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">登录密码</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <p class="change-tip"><i class="i">安全提示：</i>请妥善保管您的密码！多啦聚财工作人员不会以任何理由向您索取密码。</p>
+                <div class="layui-form change-form">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">当前密码：</label>
+                        <div class="layui-input-block">
+                          <input type="password" name="now_pass" required  lay-verify="required" placeholder="请输入当前密码" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">设置密码：</label>
+                        <div class="layui-input-block">
+                          <input type="password" name="new_pass" required  lay-verify="required" placeholder="请输入新密码" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">确认新密码：</label>
+                        <div class="layui-input-block">
+                          <input type="password" name="re_new_pass" required  lay-verify="required" placeholder="请重新输入新密码" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="changePassFrom">确认</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')
+

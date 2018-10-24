@@ -1,0 +1,77 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 优惠券 -->
+<div class="invest__center coupon">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "coupon"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit tit-theme">优惠券</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content-wrapper">
+                <div class="layui-tab layui-tab-brief coupon-tab" lay-filter="couponTab">
+                    <ul class="copon-tab-title layui-tab-title">
+                        <li class="copon-item layui-this">红包</li>
+                        <li class="copon-item">加息券</li>
+                        <li class="copon-item">体验金</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <div class="layui-tab coupon-second-tab" lay-filter="envelopesTab">
+                                <ul class="layui-tab-title coupon-second-title">
+                                    <li class="copon-second-item layui-this">可使用</li>
+                                    <li class="copon-second-item">已使用/已过期</li>
+                                </ul>
+                                <div class="layui-tab-content">
+                                    <div class="layui-tab-item layui-show">
+                                        <div class="empty empty-div">空空如也...</div>
+                                    </div>
+                                    <div class="layui-tab-item">
+                                        <div class="empty empty-div">空空如也...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-tab coupon-second-tab" lay-filter="increaseInterestTab">
+                                <ul class="layui-tab-title coupon-second-title">
+                                    <li class="copon-second-item layui-this">可使用</li>
+                                    <li class="copon-second-item">已使用/已过期</li>
+                                </ul>
+                                <div class="layui-tab-content">
+                                    <div class="layui-tab-item layui-show">
+                                        <div class="empty empty-div">空空如也...</div>
+                                    </div>
+                                    <div class="layui-tab-item">
+                                        <div class="empty empty-div">空空如也...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <div class="layui-tab coupon-second-tab" lay-filter="experienceTab">
+                                <ul class="layui-tab-title coupon-second-title">
+                                    <li class="copon-second-item layui-this">可使用</li>
+                                    <li class="copon-second-item">已使用/已过期</li>
+                                </ul>
+                                <div class="layui-tab-content">
+                                    <div class="layui-tab-item layui-show">
+                                        <div class="empty empty-div">空空如也...</div>
+                                    </div>
+                                    <div class="layui-tab-item">
+                                        <div class="empty empty-div">空空如也...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

@@ -1,0 +1,49 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 消息中心 -->
+<div class="user__center debtor-msg">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "msg"})
+        <div class="user__content">
+            <div class="cont-tit-wrapper">
+                <h3 class="cont-tit">消息中心</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="cont-wrapper">
+                <div class="layui-form">
+                    <div class="msg-operation">
+                        <button class="msg-btn" lay-submit lay-filter="checkReady">全部标记为已读</button>
+                    </div>
+                    <div class="layui-collapse msg-lists" id="userMsgList">
+                        <!--<div class="layui-colla-item is-ready">
+                            <h2 class="layui-colla-title clearfix">
+                                <span class="msg-tit">信用卡充值风险提示</span>
+                                <span class="msg-time fr">2018-08-14 18:46:14</span>
+                            </h2>
+                            <div class="layui-colla-content">亲爱的用户：您于2018-09-07已完成借款项目XXX第1/12期还款，还款本息1039.72元，本金1029.72元，利息10.00元。如有疑问请致电400-1799-098</div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title clearfix">
+                                <span class="msg-tit">信用卡充值风险提示</span>
+                                <span class="msg-time fr">2018-08-14 18:46:14</span>
+                            </h2>
+                            <div class="layui-colla-content">亲爱的用户：您于2018-09-07已完成借款项目XXX第1/12期还款，还款本息1039.72元，本金1029.72元，利息10.00元。如有疑问请致电400-1799-098</div>
+                        </div>
+                        <div class="layui-colla-item">
+                            <h2 class="layui-colla-title clearfix">
+                                <span class="msg-tit">信用卡充值风险提示</span>
+                                <span class="msg-time fr">2018-08-14 18:46:14</span>
+                            </h2>
+                            <div class="layui-colla-content">亲爱的用户：您于2018-09-07已完成借款项目XXX第1/12期还款，还款本息1039.72元，本金1029.72元，利息10.00元。如有疑问请致电400-1799-098</div>
+                        </div>-->
+                    </div>
+                    <div class="dl__page" id="noticePage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')
+

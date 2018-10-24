@@ -1,0 +1,76 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 资金明细 -->
+<div class="invest__center capital-details">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "capital"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit tit-theme">资金明细</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="pick-wrapper date-pick-wrapper">
+                    <span class="pick-tit">起止日期：</span>
+                    <div class="layui-inline">
+                        <input type="text" class="layui-input date-input" id="dateStart">
+                    </div>
+                    <span class="line"></span>
+                    <div class="layui-inline">
+                        <input type="text" class="layui-input date-input" id="dateEnd">
+                    </div>
+                    <button class="btn-search" id="timeSearchBtn">查询</button>
+                    <span class="pick-text js-invest-time" data-time="1">最近1个月</span>
+                    <span class="pick-text js-invest-time" data-time="3">最近3个月</span>
+                    <span class="pick-text js-invest-time" data-time="12">最近1年</span>
+                </div>
+                <div class="pick-wrapper type-pick-wrapper" id="debotrTypeLists">
+                    <span class="pick-tit">交易类型：</span>
+                    <span class="pick-text pick-first js-invest-type is-select" data-type="invest">出借</span>
+                    <span class="pick-text js-invest-type" data-type="back_money">回款</span>
+                    <span class="pick-text js-invest-type" data-type="recharge">充值</span>
+                    <span class="pick-text js-invest-type" data-type="withdraw">提现</span>
+                    <span class="pick-text js-invest-type" data-type="reward">奖励</span>
+                    <span class="pick-text js-invest-type" data-type="other">其他</span>
+                </div>
+                <div class="capital-table">
+                    <table class="layui-table invest-table" lay-skin="line">
+                        <thead>
+                            <tr>
+                                <th>时间</th>
+                                <th>收支类型</th>
+                                <th>交易类型</th>
+                                <th>收支</th>
+                                <th>账户余额</th>
+                                <th>交易说明</th>
+                            </tr>
+                        </thead>
+                        <tbody id="capitalTable">
+                            <!--<tr>
+                                <td>2018-08-20 13:38:45</td>
+                                <td>借款</td>
+                                <td>充值</td>
+                                <td>+1000.00</td>
+                                <td>3000.00元</td>
+                                <td>借款用途：消费</td>
+                            </tr>
+                            <tr>
+                                <td>2018-08-20 13:38:45</td>
+                                <td>借款</td>
+                                <td>充值</td>
+                                <td>+1000.00</td>
+                                <td>3000.00元</td>
+                                <td>借款用途：消费</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                    <div class="dl__page" id="capitalPage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

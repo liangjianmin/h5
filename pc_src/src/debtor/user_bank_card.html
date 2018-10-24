@@ -1,0 +1,82 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 银行卡管理 -->
+<div class="user__center bank-card">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "setting"})
+        <div class="user__content">
+            <div class="cont-tit-wrapper">
+                <h3 class="cont-tit">银行卡管理</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <!-- 已绑卡 -->
+                <div class="bind-card-wrapper dn" id="bindCard">
+                    <div class="user-card-info">
+                        <div class="card-name-info">
+                            <h4 class="card-name">招商银行</h4>
+                            <a class="sub-btn" href="@@webRoot/debtor/user_unbind_card_step.html">解绑</a>
+                        </div>
+                        <div class="card-cont">
+                            <div class="card-item">
+                                <span class="text">卡号：</span>
+                                <span class="cont js-card-no">--</span>
+                            </div>
+                            <div class="card-item">
+                                <span class="text">预留手机号：</span>
+                                <span class="cont js-card-tel">--</span>
+                            </div>
+                        </div>
+                    </div>
+                    <dl class="trade-explain">
+                    	<dt class="explain-tit">温馨提示：</dt>
+                    	<dd class="explain-text">1.为保障资金安全，只能绑定一张银行卡；</dd>
+                    	<dd class="explain-text">2.在需变更银行预留手机号后，可联系客服或自行前往银行；</dd>
+                    	<dd class="explain-text">3.如需更换银行卡，请在解绑旧卡之后再绑定新卡；</dd>
+                    	<dd class="explain-text">4.解绑银行卡需提供本人手持身份证与原银行卡照片，平台会在1-2个工作日内审核，审核期间不支持提现；</dd>
+                    	<dd class="explain-text">5.解绑申请未通过审核，提现银行卡则默认为原绑定银行卡。解绑申请通过，则请在绑定新银行卡后提现；</dd>
+                    	<dd class="explain-text">6.如有其它问题，请联系客服；</dd>
+                    </dl>
+                </div>
+                <!-- 解绑中 -->
+                <div class="unbinding-card-wrapper dn" id="unbindingCard">
+                    <div class="user-card-info">
+                        <div class="card-name-info">
+                            <h4 class="card-name">招商银行</h4>
+                            <a class="sub-btn" href="javascript:;" id="saveCard">保留该卡</a>
+                        </div>
+                        <div class="card-cont">
+                            <div class="card-item">
+                                <span class="text">卡号：</span>
+                                <span class="cont js-card-no"></span>
+                            </div>
+                            <div class="unbind-tips-text"><i class="icon"></i>解绑审核中</div>
+                        </div>
+                    </div>
+                    <dl class="trade-explain">
+                        <dt class="explain-tit">温馨提示：</dt>
+                        <dd class="explain-text">1.解绑申请提交后，平台会在1-2个工作日内审核，审核期间不支持提现；</dd>
+                        <dd class="explain-text">2.解绑申请未通过审核，提现银行卡则默认为原绑定银行卡。解绑申请通过，则请在绑定新银行卡后提现；</dd>
+                        <dd class="explain-text">3.如有其它问题，请联系客服；</dd>
+                    </dl>
+                </div>
+                <!-- 未绑卡 -->
+                <div class="unbind-card-wrapper dn" id="unbindCard">
+                    <div class="user-card-info">
+                        <p class="tips">充值投资前请先添加银行卡</p>
+                    </div>
+                    <dl class="trade-explain">
+                        <dt class="explain-tit">温馨提示：</dt>
+                        <dd class="explain-text">1.只能绑定您本人开户的银行卡，不支持信用卡；</dd>
+                        <dd class="explain-text">2.为保障资金安全，只能绑定一张银行卡；</dd>
+                        <dd class="explain-text">3.如果想更换银行卡，请在解绑旧卡之后再绑定新卡；</dd>
+                        <dd class="explain-text">4.绑定银行需验证银行预留手机号，详情请咨询开户银行；</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

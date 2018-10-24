@@ -1,0 +1,68 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 我要还款 -->
+<div class="user__center debotor-repayment">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "repayment"})
+        <div class="user__content">
+            <div class="cont-tit-wrapper">
+                <h3 class="cont-tit">我要还款</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="debtor-status clearfix">
+                    <dl class="fl clearfix" id="repaymentTypeLists">
+                        <dt class="status-tit status-text">状态：</dt>
+                        <dd class="status-text js-repayment-type is-select" data-type="3">还款中(<strong id="repayCount">--</strong>)</dd>
+                        <dd class="status-text js-repayment-type" data-type="7">已逾期(<strong id="overdueCount">--</strong>)</dd>
+                        <dd class="status-text js-repayment-type" data-type="5">已结清(<strong id="earlyCount">--</strong>)</dd>
+                    </dl>
+                </div>
+                <div class="record-tables">
+                    <table class="layui-table debtor-table" lay-skin="line">
+                        <thead>
+                            <tr>
+                                <th>借款订单号</th>
+                                <th>借款金额</th>
+                                <th>待还本息</th>
+                                <th>已还本息</th>
+                                <th>当期还款日</th>
+                                <th>当期应还</th>
+                                <th>状态</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="repaymentTable">
+                            <!--<tr>
+                                <td>3000元</td>
+                                <td>1024.34元</td>
+                                <td>1975.66元</td>
+                                <td>2018-09-10<br/>（6/12期）</td>
+                                <td>1234,00元</td>
+                                <td>还款中</td>
+                                <td>
+                                    <a class="btn-back" href="javascript:;">立即还款</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3000元</td>
+                                <td>1024.34元</td>
+                                <td>1975.66元</td>
+                                <td>2018-09-10<br/>（6/12期）</td>
+                                <td>1234,00元</td>
+                                <td>还款中</td>
+                                <td>
+                                    <a class="btn-back" href="javascript:;">立即还款</a>
+                                </td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                    <div class="dl__page" id="repaymentPage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

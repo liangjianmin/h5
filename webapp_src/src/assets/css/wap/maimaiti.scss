@@ -1,0 +1,218 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dola-maimaiti {
+  width: 100%;
+  margin-top: 44px;
+  .dola-maimaiti-head {
+    padding: 0 0.5rem;
+    .dola-maimaiti-topbar {
+      text-align: center;
+      padding: 1.293rem 0;
+      .ico-1 {
+        width: 1.707rem;
+        height: 1.707rem;
+        background: url("#{$imgUrl}maimaiti-1.png") no-repeat;
+        background-size: cover;
+        box-shadow: 6px 0 35px rgba(0,0,0,0.06);
+      }
+      .ico-2 {
+        margin: 0 0.88rem;
+        width: 0.8rem;
+        height: 0.64rem;
+        background: url("#{$imgUrl}maimaiti-3.png") no-repeat;
+        background-size: cover;
+      }
+      .ico-3 {
+        width: 1.707rem;
+        height: 1.707rem;
+        background: url("#{$imgUrl}maimaiti-2.png") no-repeat;
+        background-size: cover;
+        box-shadow: 6px 0 35px rgba(0,0,0,0.06);
+      }
+    }
+    .t1 {
+      font-size: 12px;
+      color: #757575;
+      line-height: 21px;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 1rem;
+    }
+    .t2{
+      font-size: 14px;
+      color: #333333;
+      text-align: center;
+    }
+  }
+  .dola-maimaiti-status {
+    margin-top: 0.93rem;
+    padding: 0 0.5rem;
+    .dola-maimaiti-input {
+      margin-bottom: 0.533rem;
+      .txt {
+        width: 100%;
+        height: 44px;
+        border-radius: 3px;
+        border: 1px solid #d2d2d2;
+        line-height: 44px;
+        text-align: center;
+        font-size: 14px;
+      }
+    }
+    .dola-maimaiti-btn {
+      width: 100%;
+      .btn {
+        width: 100%;
+        display: block;
+        height: 45px;
+        border-radius: 3px;
+        font-size: 17px;
+        color: #ffffff;
+        line-height: 45px;
+        text-align: center;
+        background-image: linear-gradient(to right, #ff9a44 0%, #fc6176 100%);
+        box-shadow: 0px 14px 50px 0px rgba(253, 123, 95, 0.5);
+        transition: all 0.2s ease;
+      }
+      .btn-no {
+        background-image: none;
+        background-color: #d8d8d8;
+        box-shadow: none;
+      }
+    }
+    .dola-maimaiti-status-code {
+      width: 100%;
+      height: 44px;
+      border-radius: 3px;
+      white-space: nowrap;
+      margin: 0.467rem 0;
+      .t1 {
+        width: 75%;
+        line-height: 44px;
+        text-indent: 1em;
+        border: 1px solid #d2d2d2;
+        border-right: none;
+        font-size: 14px;
+      }
+      .t1::-webkit-input-placeholder{
+        color: #d5d5d5;
+      }
+      .t2 {
+        width: 25%;
+        line-height: 44px;
+        text-align: center;
+        font-size: 14px;
+        color: #f2843a;
+        border: 1px solid #d2d2d2;
+        background: none;
+        outline: none;
+      }
+    }
+    .dola-maimaiti-status-agree {
+      white-space: nowrap;
+      margin-bottom: 0.72rem;
+      .ico {
+        width: 16px;
+        height: 16px;
+        background: url("#{$imgUrl}maimaiti-5.png") no-repeat;
+        background-size: contain;
+        margin-right: 0.253rem;
+        vertical-align: top;
+      }
+      .ico-curr {
+        background: url("#{$imgUrl}maimaiti-6.png") no-repeat;
+        background-size: contain;
+      }
+      .t1 {
+        width: 8.173rem;
+        font-size: 12px;
+        white-space: normal;
+        vertical-align: top;
+        color: #999999;
+        a {
+          color: #9999ff;
+        }
+      }
+    }
+    .dola-maimaiti-status-a {
+      .dola-maimaiti-status-txt {
+        .l {
+          font-size: 14px;
+          color: #000000;
+        }
+        .r {
+          font-size: 12px;
+          color: #9999ff;
+        }
+      }
+    }
+    .txt{
+      margin-top: 0.867rem;
+     .t1{
+       font-size: 12px;
+       color: #757575;
+       line-height: 21px;
+       margin-bottom: 0.653rem;
+     }
+      .t2{
+        font-size: 14px;
+        color: #666666;
+        line-height: 21px;
+        a{
+          color: #000000;
+        }
+      }
+    }
+  }
+}
+
+.dola-maimaiti-success {
+  width: 100%;
+  margin-top: 44px;
+  overflow: hidden;
+  .tip {
+    padding: 0.76rem 0;
+    i {
+      width: 1.347rem;
+      height: 1.333rem;
+      background: url("#{$imgUrl}maimaiti-4.png") no-repeat;
+      background-size: contain;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .text {
+    margin-bottom: 1.053rem;
+    text-align: center;
+    .t1 {
+      font-size: 21px;
+      color: #333333;
+      line-height: 24px;
+      margin-bottom: 0.2rem;
+    }
+    .t2 {
+      width: 6.747rem;
+      font-size: 12px;
+      color: #333333;
+      line-height: 18px;
+      margin: 0 auto;
+    }
+  }
+  .btnwrap{
+    padding: 0 0.427rem;
+    .btn{
+      height: 45px;
+      line-height: 45px;
+      text-align: center;
+      background-color: #d8d8d8;
+      border-radius: 3px;
+      display: block;
+      margin: 0 auto;
+      font-size: 17px;
+      color: #ffffff;
+    }
+  }
+}

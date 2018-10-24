@@ -1,0 +1,255 @@
+.dola-about-insurance {
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  background-color: #f2ebdf;
+  .banner-wrapper {
+    .banner {
+      height: 6.08rem;
+      background: url("#{$imgUrl}insurance/za_banner.jpg") top center no-repeat;
+      background-size: 100% 6.08rem;
+    }
+  }
+  .description {
+    margin: -1.253rem 0.426rem 0.826rem;
+    box-shadow: 0px 0px 10px 0px rgba(8, 4, 3, 0.14);
+    border-radius: 4px;
+    background-color: #fafafa;
+    .text {
+      padding: 0.293rem 0.64rem 0.32rem 0.506rem;
+      line-height: 20px;
+      font-size: 13px;
+      color: #333;
+    }
+  }
+  .content-wrapper {
+    .title-wrapper {
+      text-align: center;
+      .cont-title {
+        display: inline-block;
+        padding: 0 0.266rem;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: #604d2e;
+      }
+      .icon {
+        display: inline-block;
+        width: 0.506rem;
+        height: 0.346rem;
+        background: url("#{$imgUrl}insurance/za_t_icon.png") center no-repeat;
+        background-size: 0.506rem 0.346rem;
+        &.icon02 {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    &.content-wrapper01 {
+      padding-bottom: 0.826rem;
+      padding-top: 0.8rem;
+      background-color: #f8f8f7;
+      .za-js {
+        position: relative;
+        margin: 1.946rem 0.426rem 0;
+        background-color: #fafafa;
+        box-shadow: 0px 0px 21px 0px rgba(8, 4, 3, 0.14);
+        border-radius: 4px;
+        .za-logo {
+          position: absolute;
+          left: 50%;
+          top: -1.453rem;
+          width: 2.986rem;
+          transform: translateX(-50%);
+          height: 2.906rem;
+          background: url("#{$imgUrl}insurance/za_logo.png") center no-repeat;
+          background-size: 2.986rem 2.906rem;
+        }
+        .text {
+          padding: 1.733rem 0.266rem 0.48rem 0.4rem;
+          line-height: 20px;
+          font-size: 13px;
+          color: #333;
+        }
+      }
+      .js-lists {
+        margin: 0.613rem 0.426rem 0;
+        .list {
+          display: -webkit-flex;
+          display: flex;
+          align-items: center;
+          align-content: center;
+          height: 2.186rem;
+          padding-right: 0.373rem;
+          box-sizing: border-box;
+          margin-bottom: 0.533rem;
+          box-shadow: 0px 0px 21px 0px rgba(8, 4, 3, 0.14);
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+          border-top-left-radius: 2.186rem;
+          border-bottom-left-radius: 2.186rem;
+
+          .icon {
+            display: block;
+            -webkit-flex: 0 0 2.186rem;
+            flex: 0 0 2.186rem;
+            width: 2.186rem;
+            height: 2.186rem;
+            box-shadow: 0 0 10px 0 rgba(199, 171, 121, 0.38);
+            border-radius: 50%;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .text {
+            -webkit-flex: 1;
+            flex: 1;
+            padding-left: 0.186rem;
+            line-height: 22px;
+            font-size: 13px;
+            color: #333;
+          }
+          &.list1 {
+            .icon {
+              background-image: url("#{$imgUrl}insurance/za_icon01.png");
+              background-size: 1.6rem 1.6rem;
+            }
+          }
+          &.list2 {
+            .icon {
+              background-image: url("#{$imgUrl}insurance/za_icon02.png");
+              background-size: 1.6rem 1.6rem;
+            }
+          }
+          &.list3 {
+            margin-bottom: 0;
+            .icon {
+              background-image: url("#{$imgUrl}insurance/za_icon03.png");
+              background-size: 1.6rem 1.6rem;
+            }
+          }
+        }
+      }
+    }
+    &.content-wrapper02 {
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      background-color: #fff;
+      .title-wrapper {
+        margin-bottom: 0.666rem;
+      }
+      .zy-wrapper {
+        .list {
+          margin: 0 0.426rem 0.373rem;
+          height: 4.266rem;
+          background-color: #ffffff;
+          box-shadow: 0px 2px 9px 0px rgba(68, 68, 68, 0.13);
+          border-radius: 4px;
+          .title {
+            line-height: 1.413rem;
+            height: 1.413rem;
+            font-size: 20px;
+            font-weight: bold;
+            color: #927239;
+            padding-left: 2.346rem;
+            box-sizing: border-box;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+          .text {
+            padding: 0.56rem 0.506rem 0.666rem 0.32rem;
+            line-height: 20px;
+            font-size: 13px;
+            color: #333;
+
+          }
+          &.list1 {
+            .title {
+              background-image: url("#{$imgUrl}insurance/za_t01.png");
+              background-size: 100% 1.413rem;
+            }
+          }
+          &.list2 {
+            .title {
+              background-image: url("#{$imgUrl}insurance/za_t02.png");
+              background-size: 100% 1.413rem;
+            }
+          }
+          &.list3 {
+            margin-bottom: 0;
+            .title {
+              background-image: url("#{$imgUrl}insurance/za_t03.png");
+              background-size: 100% 1.413rem;
+            }
+          }
+        }
+      }
+    }
+    &.content-wrapper03 {
+      position: relative;
+      padding-top: 0.8rem;
+      background-color: #f8f8f7;
+      .swiper-wrappers {
+        margin-top: 0.666rem;
+        padding-bottom: 1.146rem;
+        .swiper-container {
+          padding: 0.133rem;
+        }
+        .swiper-slide {
+          padding-top: 0.266rem;
+          width: 5.733rem !important;
+          height: 3.973rem;
+          box-sizing: border-box;
+          background-color: #ffffff;
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+          border-radius: 4px;
+          img {
+            display: block;
+            width: 4.773rem;
+            margin: 0 auto;
+          }
+
+        }
+      }
+      .swiper-pagination {
+        bottom: -0.56rem;
+        left: 50%;
+        transform: translateX(-50%);
+        .swiper-pagination-bullet {
+
+          width: 0.133rem;
+          height: 0.133rem;
+          margin-right: 0.266rem;
+          background: #a2d9fd;
+          &.swiper-pagination-bullet-active {
+            background: #25a9ff;
+          }
+        }
+      }
+      .swiper-button-prev {
+        left: 0.453rem;
+        width: 14px;
+        height: 28px;
+        margin-top: -14px;
+        background-image: url("#{$imgUrl}signature/prev.png");
+        background-size: 14px 28px;
+      }
+      .swiper-button-next {
+        right: 0.453rem;
+        width: 14px;
+        height: 28px;
+        margin-top: -14px;
+        background-image: url("#{$imgUrl}signature/next.png");
+        background-size: 14px 28px;
+      }
+    }
+  }
+}

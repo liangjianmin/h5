@@ -1,0 +1,29 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 充值成功 -->
+
+<div class="result__wrapper result-tradein-success">
+    <div class="dl__container result-content">
+        <div class="result-cont" id="resultTradeInSuccess" style="display: none;">
+            <div class="result-icon result-success-icon"></div>
+            <p class="result-text">恭喜您，充值成功！</p>
+            <p class="result-desc">赶快去投资吧，让财富稳健增长</p>
+            <div>
+                <a href="/standard" class="result-btn">立即投资</a>
+                <a href="@@webRoot/debtor/user_trade_in.html" class="result-btn result-btn-default">继续充值</a>
+            </div>
+        </div>
+        <div class="result-cont" id="resultTradeInError" style="display: none;">
+            <div class="result-icon result-error-icon"></div>
+            <p class="result-text">等待充值结果返回！</p>
+            <p class="result-desc">请在5分钟后查看账户余额。若银行卡扣款成功，账户余额未增加，请及时联系客服处理。</p>
+            <div>
+                <a href="@@webRoot/debtor/user_trade_in.html" class="result-btn">重新充值</a>
+                <a href="@@webRoot/debtor/user_info.html" class="result-btn result-btn-default">查看账户</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

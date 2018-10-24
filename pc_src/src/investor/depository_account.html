@@ -1,0 +1,69 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 存管账户 -->
+<div class="invest__center depository-account">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "setting"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">银行存管账号</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content clearfix">
+                <div class="srbank-info-left fl">
+                    <div class="sr-logos clearfix">
+                        <span class="fl name">电子交易账号</span>
+                        <!--<span class="fr text">电子交易账号</span>-->
+                    </div>
+                    <div class="srbank-cont">
+                        <p class="sr-card" id="bankCardNo">--</p>
+                    </div>
+                </div>
+                <div class="srbank-info-right">
+                    <ul class="srbank-user-info-lists" id="no_organization" style="display: none;">
+                        <li class="list list01 clearfix">
+                            <span class="name fl">开户名：</span>
+                            <span class="cont fr js-bank-name">--</span>
+                        </li>
+                        <li class="list list02 clearfix">
+                            <span class="name fl">身份证号：</span>
+                            <span class="cont fr js-bank-id">--</span>
+                        </li>
+                        <li class="list list03 clearfix">
+                            <span class="name fl">手机号码：</span>
+                            <a class="change-srtel fr" id="change_mobile_btn" href="@@webRoot/investor/bank_tel_change.html">修改</a>
+                            <span class="cont fr js-bank-tel" id="sr_card_tel">--</span>
+                        </li>
+                        <li class="list list04 clearfix">
+                            <span class="name fl fl">开户行：</span>
+                            <span class="cont fr">上饶银行</span>
+                        </li>
+                    </ul>
+
+                    <ul class="srbank-user-info-lists" id="organization" style="display: none;">
+                        <li class="list list01 clearfix">
+                            <span class="name fl">企业名称：</span>
+                            <span class="cont fr js-bank-name">--</span>
+                        </li>
+                        <li class="list list02 clearfix">
+                            <span class="name fl">营业执照编号：</span>
+                            <span class="cont fr" id="bank_custom_no">--</span>
+                        </li>
+                        <li class="list list03 clearfix">
+                            <span class="name fl">手机号码：</span>
+                            <a class="change-srtel fr" id="change_organization_mobile_btn" href="javscript:;">修改</a>
+                            <span class="cont fr js-bank-tel">--</span>
+                        </li>
+                        <li class="list list04 clearfix">
+                            <span class="name fl">开户行：</span>
+                            <span class="cont fr">上饶银行</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

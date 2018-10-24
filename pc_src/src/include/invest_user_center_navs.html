@@ -1,0 +1,60 @@
+<div class="center-navs">
+    <div class="user-info">
+        <div class="avatar-wrapper">
+            <img class="user-avatar" id="userAvatar" src="/" alt="" />
+        </div>
+        <div class="user-name" id="userNameInfo">--</div>
+        <ul class="user-links clearfix">
+            <li class="link-item link-item02 link-item02-s" id="userBankInfo"></li>
+            <li class="link-item link-item01" id="userTelInfo"></li>
+            <li class="link-item link-item03" id="userCardInfo"></li>
+        </ul>
+    </div>
+    <ul class="layui-nav layui-nav-tree user-navs" lay-filter="user_navs">
+        <li @@if (context.active==='user_center' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/user_center.html">账户首页</a>
+        </li>
+        <li @@if (context.active==='capital' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/capital_details.html">资金明细</a>
+        </li>
+        <li @@if (context.active==='loan' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/loan_record.html">出借记录</a>
+        </li>
+        <li @@if (context.active==='trade_in' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/trade_in.html">充值</a>
+        </li>
+        <li @@if (context.active==='trade_out' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/trade_out.html">提现</a>
+        </li>
+    </ul>
+    <ul class="layui-nav layui-nav-tree user-navs" lay-filter="user_navs">
+        <li @@if (context.active==='balance' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/balance_return.html">余额自动复投<i class="icon balance-icon">推荐</i></a>
+        </li>
+        <li @@if (context.active==='reservation' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/reservation.html">预约投标</a>
+        </li>
+        <li @@if (context.active==='batch' ) { class="layui-nav-item layui-this" }>
+            <a href="/standard/batch">一键投标</a>
+        </li>
+        <li @@if (context.active==='transfer' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/transfer.html">债权转让</a>
+        </li>
+    </ul>
+    <ul class="layui-nav layui-nav-tree user-navs" lay-filter="user_navs">
+        <li @@if (context.active==='coupon' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/coupon.html">优惠券</a>
+        </li>
+        <li @@if (context.active==='invite' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/invite_friend.html">邀请好友</a>
+        </li>
+    </ul>
+    <ul class="layui-nav layui-nav-tree user-navs" lay-filter="user_navs">
+        <li @@if (context.active==='setting' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/setting.html">账户设置</a>
+        </li>
+        <li @@if (context.active==='msg' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/investor/msg.html">消息中心<i class="icon msg-icon" style="display: none;" id="msgIcon"></i></a>
+        </li>
+    </ul>
+</div>

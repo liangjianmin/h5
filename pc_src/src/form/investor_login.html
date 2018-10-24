@@ -1,0 +1,32 @@
+
+<!-- 网站头部 -->
+@@include("../include/header.html")
+<!-- 投资人登录 -->
+<div class="dl__login login--invest">
+    <div class="dl__container clearfix">
+        <div class="login-form-wrapper">
+            <div class="dl__form form-invest-login layui-form">
+                <div class="tit-row clearfix">
+                    <h3 class="form-tit fl">登录</h3>
+                    <a class="btn-user fr" href="@@webRoot/form/debtor_login.html">切换为借款人登录</a>
+                </div>
+                <div class="input-row">
+                    <input class="form-input" name="user_tel" type="text" placeholder="请输入手机号码" autocomplete="off" lay-verify="required|phone|number" lay-verType="tips" />
+                </div>
+                <div class="input-row">
+                    <input class="form-input" name="user_pass" type="password" placeholder="请输入密码" autocomplete="off" lay-verify="required" lay-verType="tips" />
+                </div>
+                <div class="input-row">
+                    <input class="form-submit" type="submit" value="立即登录" lay-submit lay-filter="registerLogin" />
+                </div>
+                <div class="form-subinfo clearfix">
+                    <a class="link-text link-getpass fl" href="@@webRoot/form/forget_pass.html?user_type=invest">找回密码</a>
+                    <a class="link-text link-register fr" href="@@webRoot/form/investor_register.html">快速注册</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include("../include/footer.html")

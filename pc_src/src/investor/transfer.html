@@ -1,0 +1,177 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 债权转让 -->
+<div class="invest__center transfer">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "transfer"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">债权转让</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content-wrapper">
+                <div class="layui-tab layui-tab-brief invest-tab" lay-filter="transferTab">
+                    <ul class="layui-tab-title">
+                        <li class="item01 layui-this" lay-id="QUEUE">转让中</li>
+                        <li class="item02" lay-id="NO">可转让</li>
+                        <li class="item03" lay-id="FINISH">转让完成</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <table class="layui-table invest-table" lay-skin="line">
+                                <thead>
+                                    <tr>
+                                        <th>出借记录</th>
+                                        <th>出借期限</th>
+                                        <th>出借本金</th>
+                                        <th>往期年化收益率</th>
+                                        <th>往期参考收益</th>
+                                        <th>已回本息</th>
+                                        <th>转让本金</th>
+                                        <th>转让时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="doingTable">
+                                    <!--<tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                    </tr>-->
+                                </tbody>
+                            </table>
+                            <div class="dl__page" id="doingPage"></div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <table class="layui-table invest-table" lay-skin="line">
+                                <thead>
+                                    <tr>
+                                        <th>出借记录</th>
+                                        <th>出借期限</th>
+                                        <th>出借本金</th>
+                                        <th>往期年化收益率</th>
+                                        <th>往期参考收益</th>
+                                        <th>已回本息</th>
+                                        <th>待回本息</th>
+                                        <th>到期时间</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="todoTable">
+                                    <!--<tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                        <td>借款用途：消费</td>
+                                        <td>借款用途：消费</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                        <td>借款用途：消费</td>
+                                        <td>借款用途：消费</td>
+                                    </tr>-->
+                                </tbody>
+                            </table>
+                            <div class="dl__page" id="todoPage"></div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <table class="layui-table invest-table" lay-skin="line">
+                                <thead>
+                                    <tr>
+                                        <th>出借记录</th>
+                                        <th>出借期限</th>
+                                        <th>出借本金</th>
+                                        <th>往期年化收益率</th>
+                                        <th>已回本息</th>
+                                        <th>转让本金</th>
+                                        <th>转让时间</th>
+                                        <th>转让完成时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="doneTable">
+                                    <!--<tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                        <td>借款用途：消费</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                        <td>借款用途：消费</td>
+                                    </tr>-->
+                                </tbody>
+                            </table>
+                            <div class="dl__page" id="donePage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" id="isBalanceStatus" value="0" />
+
+<div class="transfer-standard-layer" id="transfer_standard_layer" style="display: none;">
+    <form class="transfer-standard-form">
+        <dl class="clr">
+            <dt>转让金额</dt>
+            <dd class="transfer-money" id="transfer_money_layer">300元</dd>
+        </dl>
+        <p class="tip">转让成功后预计收取您<span id="manage_fee_layer"></span>元转让管理费</p>
+        <dl>
+            <dt>转让原因</dt>
+            <dd class="select">
+                <select name="" value="1" id="select_reason">
+                    <option value="1">急用资金</option>
+                    <option value="2">信用卡还款</option>
+                    <option value="3">其他原因</option>
+                </select>
+            </dd>
+        </dl>
+        <!--<dl>
+            <dt>转让价格</dt>
+            <dd><input type="text" id="money_interval_layer" placeholder="请输入270-300之间的金额"></dd>
+        </dl>
+        <p class="tip" style="color: #ccc;">按剩余本金设置的折扣价，需单笔全额转让</p>-->
+        <!--<dl>
+            <dt>安全密码</dt>
+            <dd><input type="password" id="pass" placeholder="请输入安全密码"></dd>
+            <dd><a href="javascript:;" class="forgot-pass">忘记密码？</a></dd>
+        </dl>-->
+        <dl>
+            <dt>身份证号末四位</dt>
+            <dd><input type="text" id="user_id_no" placeholder="请输入身份证号末四位"></dd>
+        </dl>
+        <!--<hr/>-->
+        <p class="xy"><i class="checkbox checked" id="user_checked" data-checked="1"></i>同意<a href="javascript:;" id="need_read1">《投资与咨询服务协议》</a></p>
+        <div class="balance-status" id="isOpenBalance" style="line-height: 22px;font-size: 14px;color: #666;display: none;">您当前【余额自动复投】为开启状态，开启状态下平台会按您设置的条件将账户余额自动投资。<a style="color: #f60;" href="@@webRoot/investor/balance_return.html">点击进入关闭>></a></div>
+        <div class="button-box">
+            <a id="sure_btn" class="sure-btn btn" href="javascript:;">确认转让</a>
+            <a id="cancel_btn" class="cancel-btn btn" href="javascript:;">取消</a>
+        </div>
+    </form>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

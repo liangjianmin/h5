@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dl-plan-detail {
+  background: #f4f1ef;
+  dl {
+    dt {
+      height: 60px;
+      overflow: hidden;
+      background-color: #ff6700;
+      line-height: 60px;
+      margin-bottom: 10px;
+      padding: 0 15px;
+      .l {
+        color: #fff;
+        font-size: 15px;
+      }
+      .r {
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+    dd {
+      border-top: #e5e5e5 solid 1px;
+      background-color: #fff;
+      height: 50px;
+      line-height: 50px;
+      overflow: hidden;
+      padding: 0 15px;
+      &.mark {
+        margin-top: 10px;
+      }
+      .l {
+        font-size: 14px;
+        color: #141414;
+      }
+      .r {
+        color: #666;
+        font-size: 12px;
+      }
+      .ico {
+        background: url("#{$imgUrl}arrow-ri.png") no-repeat center;
+        background-size: 14px;
+        width: 14px;
+        height: 50px;
+        display: block;
+      }
+    }
+  }
+}

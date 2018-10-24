@@ -1,0 +1,111 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dola-autovote {
+  padding: 0.88rem 0.427rem 0 0.427rem;
+  .dola-autovote-content{
+    margin-bottom: 1.267rem;
+    .t1{
+      font-size: 19px;
+      color: #333333;
+      text-align: center;
+    }
+    .ico-1{
+      width: 160px;
+      height: 12px;
+      display: block;
+      background: url("#{$imgUrl}person/vote-1.png") no-repeat center;
+      background-size: contain;
+      margin: 0.33rem auto 0.547rem;
+    }
+    .ico-2{
+      width: 197px;
+      height: 12px;
+      display: block;
+      background: url("#{$imgUrl}person/vote-5.png") no-repeat center;
+      background-size: contain;
+      margin: 0.33rem auto 0.547rem;
+    }
+    .t2{
+      font-size: 13px;
+      color: #666666;
+      text-align: left;
+      padding:0 0.5rem;
+    }
+    .txt{
+      .b{
+        width: 48%;
+        height: 4.187rem;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 32px 0px rgba(14, 14, 18, 0.06);
+        border-radius: 3px;
+        display: table;
+        text-align: center;
+        .wrap{
+          display: table-cell;
+          vertical-align: middle;
+          .ico-1{
+            width: 26px;
+            height: 32px;
+            background: url("#{$imgUrl}person/vote-3.png") no-repeat center;
+            background-size: contain;
+            display: block;
+            margin: 0 auto 0.76rem;
+          }
+          .ico-2{
+            width: 47px;
+            height: 26px;
+            background: url("#{$imgUrl}person/vote-2.png") no-repeat center;
+            background-size: contain;
+            display: block;
+            margin: 0 auto 0.76rem;
+          }
+          .txt-t1{
+            font-size: 14px;
+            color: #333333;
+            margin-bottom: 0.123rem;
+          }
+          .txt-t2{
+            font-size: 12px;
+            color: #666666;
+          }
+        }
+      }
+    }
+    .txts{
+      padding:0 0.5rem;
+      li{
+        white-space: nowrap;
+        .ico{
+          width: 10%;
+          vertical-align: top;
+          .ico-3{
+            width: 17px;
+            height: 19px;
+            background: url("#{$imgUrl}person/vote-4.png") no-repeat center;
+            background-size: contain;
+            display: block;
+          }
+        }
+        .t{
+          width: 90%;
+          vertical-align: top;
+          white-space: normal;
+          .txts-t1{
+            font-size: 13px;
+            color: #666666;
+            line-height: 21px;
+          }
+          .txts-t2{
+            font-size: 13px;
+            color: #666666;
+          }
+        }
+        margin-bottom: 0.9rem;
+      }
+    }
+  }
+}

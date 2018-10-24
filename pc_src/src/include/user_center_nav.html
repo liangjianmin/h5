@@ -1,0 +1,42 @@
+<div class="user__nav">
+    <!--<div class="user-avatars">
+        <div class="user-avatar clearfix">
+            <div class="avatar fl"></div>
+            <div class="user-info fl">
+                <span class="user-name">贾龙龙</span><br />
+                <span class="user-tel">159****4845</span>
+            </div>
+        </div>
+    </div>
+    <ul class="user-links clearfix">
+        <li class="user-item">
+            <a class="user-icon icon-tel icon-select" href="javascript:;"></a>
+        </li>
+        <li class="user-item">
+            <a class="user-icon icon-card icon-select" href="javascript:;"></a>
+        </li>
+        <li class="user-item">
+            <a class="user-icon icon-email icon-select" href="javascript:;"></a>
+        </li>
+    </ul>-->
+    <ul class="layui-nav layui-nav-tree user-navs" lay-filter="user_navs">
+        <li @@if (context.active==='info' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/debtor/user_info.html">我的账户</a>
+        </li>
+        <li @@if (context.active==='record' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/debtor/user_record.html">借款记录</a>
+        </li>
+        <li @@if (context.active==='repayment' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/debtor/user_repayment.html">我要还款</a>
+        </li>
+        <li @@if (context.active==='detail' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/debtor/user_capital_details.html">资金明细</a>
+        </li>
+        <li @@if (context.active==='setting' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/debtor/user_setting.html">账户设置</a>
+        </li>
+        <li @@if (context.active==='msg' ) { class="layui-nav-item layui-this" }>
+            <a href="@@webRoot/debtor/user_msg.html">消息中心</a>
+        </li>
+    </ul>
+</div>

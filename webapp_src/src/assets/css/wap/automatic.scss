@@ -1,0 +1,380 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dola-automatic {
+  .dola-title {
+    background-color: #fea721;
+    .tip {
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: 44px;
+      padding-right: 0.293rem;
+      i {
+        width: 12px;
+        height: 12px;
+        background: url("#{$imgUrl}guize.png") center center no-repeat;
+        background-size: contain;
+        margin-right: 0.1rem;
+      }
+      em {
+        font-size: 12px;
+        color: #fffdfd;
+      }
+    }
+  }
+  .dola-automatic-wrap {
+    padding: 44px 0 1rem 0;
+    .dola-automatic-show {
+      background-color: #fea721;
+      padding: 0.893rem 0 0.773rem 0;
+      @include dispFlex();
+      align-items: center;
+      li {
+        @include boxFlex();
+        .t1 {
+          font-size: 11px;
+          color: #ffffff;
+          margin-bottom: 0.347rem;
+        }
+        .t2 {
+          span {
+            font-size: 30px;
+            color: #ffffff;
+          }
+          em {
+            font-size: 14px;
+            color: #ffffff;
+          }
+        }
+        .t3 {
+          span {
+            font-size: 18px;
+            color: #fffdfd;
+          }
+          em {
+            font-size: 14px;
+            color: #fffdfd;
+          }
+        }
+        &.a {
+          padding-left: 0.653rem;
+          border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        &.b {
+          padding-left: 1rem;
+        }
+      }
+    }
+    .dola-automatic-drag {
+      padding: 0.387rem 0.56rem 0.333rem 0.56rem;
+      .text {
+        color: #444444;
+        font-size: 14px;
+      }
+      .dola-automatic-drag-wrap {
+        padding-top: 1rem;
+      }
+    }
+    .dola-automatic-list {
+      border-bottom: 0.267rem solid #f5f5f5;
+      border-top: 0.267rem solid #f5f5f5;
+      dd {
+        height: 42px;
+        line-height: 42px;
+        padding: 0 0.56rem;
+        border-bottom: 1px solid #f0f0f0;
+        a{
+          display: block;
+        }
+        .l {
+          .t1 {
+            font-size: 12px;
+            color: #757575;
+            em{
+              color: rgb(242, 132, 58);
+            }
+          }
+          span {
+            font-size: 12px;
+            color: #ff6700;
+          }
+        }
+        .r {
+          .t1 {
+            font-size: 12px;
+            color: #141414;
+          }
+          .t2{
+            font-size: 12px;
+            color: #757575;
+          }
+          .ico {
+            width: 7.5px;
+            height: 13px;
+            background: url("#{$imgUrl}right.png") no-repeat center;
+            background-size: contain;
+            margin-left: 0.3rem;
+          }
+          .selected {
+            margin-top: 5px;
+            li {
+              float: left;
+              position: relative;
+              height: 31px;
+              line-height: 31px;
+              text-align: center;
+              padding: 0 14px;
+              border: solid 1px #d2d2d2;
+              margin-right: 0.253rem;
+              transition: all 0.2s ease;
+              span {
+                font-size: 12px;
+                color: #757575;
+              }
+              i {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                width: 12px;
+                height: 12px;
+                background: url("#{$imgUrl}sels.png") no-repeat center;
+                background-size: contain;
+                display: none;
+              }
+              &.curr {
+                border: solid 1px #ff6700;
+                span {
+                  color: #ff6700;
+                }
+                i {
+                  display: block;
+                }
+              }
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    .detail-input-wrapper {
+      margin-top: 10px;
+      .inveset-form {
+        padding: 20px 0 10px 0;
+        background: #fff;
+        .list:last-child {
+          border-bottom: 1px solid rgba(240, 240, 240, 1);
+        }
+        .input {
+          margin: 0 0.533rem 10px;
+          height: 44px;
+          line-height: 44px;
+          border: 1px solid #d2d2d2;
+          border-radius: 3px;
+          .desc {
+            display: inline-block;
+            padding: 0 .613rem 0 .533rem;
+            line-height: .96rem;
+            border-right: 1px solid rgba(36, 36, 36, .2);
+            font-size: 16px;
+            color: #444;
+          }
+          .inveset-money {
+            display: inline-block;
+            font-size: 14px;
+            text-align: center;
+            width: 59%;
+          }
+          .all-inveset {
+            display: inline-block;
+            font-size: 12px;
+            color: #f2843a;
+          }
+        }
+        .text {
+          padding: 0.467rem 0.533rem;
+          border-bottom: 1px solid #f0f0f0;
+          .t1 {
+            font-size: 14px;
+            color: #757575;
+          }
+          .t2 {
+            font-size: 14px;
+            color: #666666;
+          }
+        }
+        .join-btn {
+          display: block;
+          text-align: center;
+          width: 90%;
+          height: 1.2rem;
+          line-height: 1.2rem;
+          margin: 0.626rem auto 0;
+          font-size: 17px;
+          color: #fff;
+          background-color: #ff6600;
+          box-shadow: 0rem 0.2rem 0.7rem 0rem rgba(253, 123, 95, 0.5);
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+}
+
+.dola-match-status {
+  .dola-title {
+    position: static;
+  }
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  .icn-1 {
+    width: 74px;
+    height: 74px;
+    background: url("#{$imgUrl}loading.gif") center center no-repeat;
+    background-size: contain;
+    display: block;
+    margin: 0.44rem auto 0.77rem;
+  }
+  .text {
+    text-align: center;
+    margin-bottom: 0.867rem;
+    .t1 {
+      font-size: 19px;
+      color: #333333;
+      margin-bottom: 0.347rem;
+    }
+    .t2 {
+      font-size: 13px;
+      color: #666666;
+      em {
+        color: #000000;
+      }
+    }
+  }
+  .status {
+    .btn {
+      width: 5.84rem;
+      height: 44px;
+      background-color: #ff6700;
+      box-shadow: 0px 0px 18px 0px rgba(51, 51, 51, 0.1);
+      border-radius: 3px;
+      font-size: 16px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 44px;
+      display: block;
+      margin: 0 auto 0.4rem;
+    }
+    .btn-wait {
+      width: 5.84rem;
+      height: 44px;
+      background-color: #ffffff;
+      box-shadow: 0px 0px 18px 0px rgba(51, 51, 51, 0.1);
+      border-radius: 3px;
+      font-size: 14px;
+      color: #757575;
+      text-align: center;
+      line-height: 44px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+
+.dola-automatic-list {
+  .dola-title-tab {
+    li.curr:after {
+      display: none;
+    }
+  }
+  .list {
+    height: 100%;
+    padding-top: 44px;
+    table {
+      width: 100%;
+      text-align: center;
+      thead {
+        tr {
+          border-bottom: 1px solid #e5e5e5;
+          height: 40px;
+          line-height: 40px;
+          th {
+            font-size: 12px;
+            color: #999;
+            font-weight: normal;
+          }
+        }
+      }
+      tbody {
+        tr {
+          height: 40px;
+          line-height: 40px;
+          border-bottom: 1px solid #e5e5e5;
+          td {
+            font-size: 12px;
+            color: #343434;
+            letter-spacing: 0px;
+          }
+        }
+      }
+    }
+  }
+  .no-data-box {
+    width: 100%;
+    text-align: center;
+    .no-data-dom {
+      width: 4rem;
+      height: 2.7rem;
+      margin: 0 auto;
+      background: url("#{$imgUrl}nodata.png") no-repeat center;
+      background-size: cover;
+      display: block;
+    }
+    p {
+      font-size: 13px;
+      color: #999999;
+      text-align: center;
+    }
+  }
+  .no-data{
+    height: 40px;
+    line-height: 40px;
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 4rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .dola-automatic .dola-automatic-wrap .detail-input-wrapper .inveset-form .input .inveset-money {
+    width: 55%;
+  }
+}
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(500px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}

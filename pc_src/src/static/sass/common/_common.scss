@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.clearfix {
+    @include clr();
+}
+
+.dl__container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.dn {
+    display: none;
+}
+
+.empty {
+    height: 300px !important;
+    text-align: center;
+    background: url("../images/icon/empty.png") center no-repeat;
+    > td {
+        border: none !important;
+        text-align: center !important;
+        padding-top: 120px !important;
+    }
+    &.empty-div {
+        padding-top: 200px;
+    }
+}

@@ -1,0 +1,409 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dola-report {
+  width: 100%;
+  background: #fff;
+  margin-top: 44px;
+  .dola-report-box {
+    width: 100%;
+    .dola-report-wrap {
+      width: 100%;
+      overflow: hidden;
+      .dola-report-showdata {
+        margin: 15px auto 0;
+        width: 9.33rem;
+        height: 5.81rem;
+        border-radius: 0.186rem;
+        background: url("#{$imgUrl}red.png") no-repeat center center;
+        background-size: contain;
+        display: table;
+        padding: 0 0.533rem;
+        .dola-report-showdata-wrap {
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          .t1 {
+            width: 6.493rem;
+            height: 0.573rem;
+            margin: 0 auto 0.906rem;
+            background: url("#{$imgUrl}color-1.png") no-repeat center center;
+            background-size: contain;
+            display: block;
+          }
+          .t2 {
+            font-size: 34px;
+            color: #ffffff;
+          }
+        }
+      }
+      .dola-report-showdata-a {
+        background: url("#{$imgUrl}blue.png") no-repeat center center;
+        background-size: contain;
+        .t1 {
+          background: url("#{$imgUrl}color-2.png") no-repeat center center !important;
+          background-size: contain !important;
+        }
+      }
+      .dola-report-list {
+        width: 100%;
+        padding: 0 0.533rem;
+        margin-top: 0.266rem;
+        li {
+          width: 49.9%;
+          float: left;
+          padding: 0.8rem 0 0.8rem 0.666rem;
+          border-bottom: 1px solid #e0e0e0;
+          .t1 {
+            font-size: 12px;
+            color: #999999;
+            margin-bottom: 0.266rem;
+          }
+          .t2 {
+            font-size: 18px;
+            color: #ff6600;
+
+          }
+          .t3 {
+            font-size: 18px;
+            line-height: 21px;
+            color: #299fff;
+          }
+        }
+        li:nth-of-type(2n+1) {
+          border-right: 1px solid #e0e0e0;
+        }
+        li.a, li.b {
+          border-bottom: none;
+        }
+      }
+      .dola-report-invest {
+        .dola-report-invest-tit {
+          margin: 0.4rem 0.533rem;
+          border: solid 1px #f9912b;
+          border-radius: 20px;
+          @include dispFlex();
+          li {
+            @include boxFlex();
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-size: 15px;
+            transition: all 0.2s ease;
+            border-right: solid 1px #f9912b;
+            a {
+              font-size: 13px;
+              color: #999999;
+            }
+          }
+          li.curr {
+            background: #f9912b;
+            a {
+              color: #ffffff;
+            }
+          }
+          li:first-child {
+            border-radius: 19px 0 0 19px;
+          }
+          li:last-child {
+            border-right: none;
+            border-radius: 0 19px 19px 0;
+          }
+        }
+        .dola-report-invest-list {
+          width: 100%;
+          dt {
+            border-bottom: solid 1px #e4e4e4;
+            border-top: solid 1px #e4e4e4;
+            height: 33px;
+            line-height: 33px;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            text-align: center;
+            background: #f7f7f7;
+            span {
+              -webkit-box-flex: 1;
+              display: block;
+            }
+          }
+          dd {
+            height: 45px;
+            line-height: 45px;
+            border-bottom: solid 1px #e4e4e4;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            text-align: center;
+            span {
+              width: 50px;
+              -webkit-box-flex: 1;
+              display: block;
+            }
+          }
+          dd:last-child {
+            border-bottom: none;
+          }
+          span.t1 {
+            font-size: 12px;
+            color: #666666;
+          }
+          span.t2 {
+            em {
+              width: 17px;
+              height: 17px;
+              line-height: 17px;
+              text-align: center;
+              background-color: #e4e4e4;
+              font-size: 12px;
+              color: #666666;
+              border-radius: 50%;
+              margin: 0 auto;
+            }
+          }
+          span.t2-a {
+            em {
+              width: 17px;
+              height: 17px;
+              line-height: 17px;
+              text-align: center;
+              background-color: #e8161f;
+              font-size: 12px;
+              border-radius: 50%;
+              color: #ffffff;
+              margin: 0 auto;
+            }
+          }
+          span.t2-b {
+            em {
+              width: 17px;
+              height: 17px;
+              line-height: 17px;
+              text-align: center;
+              background-color: #ff8400;
+              font-size: 12px;
+              border-radius: 50%;
+              color: #ffffff;
+              margin: 0 auto;
+            }
+          }
+          span.t2-c {
+            em {
+              width: 17px;
+              height: 17px;
+              line-height: 17px;
+              text-align: center;
+              background-color: #ffb400;
+              border-radius: 50%;
+              color: #ffffff;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+    .mint-swipe-indicators {
+      position: fixed;
+      bottom: 0;
+      z-index: 99999;
+      .mint-swipe-indicator {
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #eeeeee !important;
+        margin: 0 5px;
+        transition: all 0.2s ease;
+        opacity: 1;
+      }
+      .mint-swipe-indicator.is-active {
+        width: 20px;
+        height: 7px;
+        background-color: #ff6600 !important;
+        border-radius: 3px;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.dola-report-mt {
+  margin-top: 0;
+}
+
+.dola-reports {
+  .head-tab{
+    padding: 20px 0;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    text-align: center;
+    a{
+      width:87px;
+      height:24px;
+      background:rgba(255,255,255,1);
+      line-height: 24px;
+      font-size: 13px;
+      color: #141414;
+      &.curr{
+        color: #ffffff;
+        background:rgba(22,155,213,1);
+        box-shadow:0px 0px 30px rgba(17,104,255,0.06);
+      }
+    }
+  }
+  .head {
+    height: 60px;
+    padding: 0 0.4rem;
+    background-color: #f5f5f5;
+    @include dispFlex();
+    align-items: center;
+    justify-content: space-between;
+    .l {
+      span {
+        width: 2px;
+        height: 16px;
+        background-color: #247dfd;
+      }
+      em {
+        font-size: 17px;
+        color: #141414;
+        font-weight: bold;
+        margin-left: 0.1rem;
+      }
+    }
+    .r {
+      white-space: nowrap;
+      select {
+        width: 80px;
+        height: 28px;
+        border-radius: 5px;
+        border: solid 1px #b3b3b3;
+        font-size: 14px;
+        color: #3d638b;
+        padding-left: 6px;
+        margin-right: 5px;
+        appearance: none;
+        -webkit-appearance: none;
+        background: url("#{$imgUrl}arrb.png") no-repeat 59px center;
+      }
+    }
+  }
+  .content {
+    padding: 0 0.4rem;
+    .re-data {
+      margin-top: 0.533rem;
+      height: 150px;
+      background-image: linear-gradient(0deg, #247dfd 0%, #63a1fa 100%);
+      border-radius: 5px;
+      @include dispFlex();
+      align-items: center;
+      justify-content: center;
+      .re-data-wrap {
+        text-align: center;
+        padding: 0 0.667rem;
+        @include boxFlex();
+        .t1 {
+          font-size: 30px;
+          color: #ffffff;
+        }
+        .t2 {
+          font-size: 12px;
+          color: #ffffff;
+          line-height: 34px;
+          border-bottom: 1px solid #569bfd;
+        }
+        .t3 {
+          margin-top: 0.2rem;
+          font-size: 12px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .list {
+    background: #fff;
+    padding: 0 0.4rem;
+    li {
+      padding: 0.56rem 0;
+      @include dispFlex();
+      border-bottom: 1px solid #e5e5e5;
+      &:last-child {
+        border-bottom: none;
+      }
+      .bb {
+        @include boxFlex();
+        &.bor {
+          border-left: 1px solid #e5e5e5;
+          padding-left: 0.24rem;
+        }
+        .t1 {
+          color: #141414;
+          font-size: 12px;
+          margin-bottom: 0.29rem;
+          i{
+            width: 12px;
+            height: 12px;
+            background: url("#{$imgUrl}gj.png") no-repeat center;
+            background-size: contain;
+            display: inline-block;
+          }
+        }
+        .t2 {
+          font-size: 15px;
+          color: #3d638b;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .footer-text {
+    height: 58px;
+    @include dispFlex();
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+    p {
+      font-size: 12px;
+      color: #999999;
+      text-align: center;
+    }
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .dola-report .dola-report-list {
+    li {
+      .t2 {
+        font-size: 14px !important;
+      }
+      .t3 {
+        font-size: 14px !important;
+      }
+    }
+  }
+}
+
+@media (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .dola-report .dola-report-list {
+    li {
+      .t2 {
+        font-size: 14px !important;
+      }
+      .t3 {
+        font-size: 14px !important;
+      }
+    }
+  }
+}

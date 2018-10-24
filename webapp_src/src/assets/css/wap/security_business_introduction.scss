@@ -1,0 +1,233 @@
+.dola-about-security_business_introduction {
+  background-color: #fff;
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  .dola-security-banner {
+    padding-top: 0.933rem;
+    height: 3.333rem;
+    text-align: center;
+    color: #ffd299;
+    background: #0f81f3 url("#{$imgUrl}top-bg01.png") center no-repeat;
+    background-size: 100% 3.333rem;
+    box-sizing: border-box;
+
+    .dola-security-title {
+      margin-bottom: 0.373rem;
+      font-size: 24px;
+    }
+
+    .desc {
+      position: relative;
+      display: inline-block;
+      font-size: 12px;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1.2rem;
+        height: 1px;
+        background-color: #ffd299;
+      }
+
+      &:before {
+        left: -1.28rem;
+      }
+
+      &:after {
+        right: -1.28rem;
+      }
+    }
+  }
+
+  .dola-security-content {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+
+    .dola-security-cont-title {
+      position: relative;
+      width: 4rem;
+      margin: 0 auto;
+      padding-bottom: 0.32rem;
+      text-align: center;
+      font-size: 18px;
+      color: #000;
+      border-bottom: 1px solid #ececec;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20px;
+        height: 2px;
+        background-color: #ba9f84;
+      }
+    }
+  }
+
+  .dola-security-content1 {
+    background-color: #fafafa;
+
+    .text {
+      padding: 0 0.426rem;
+      font-size: 14px;
+      line-height: 24px;
+      color: #666;
+    }
+    .text-mt {
+      margin-top: 0.533rem;
+    }
+  }
+
+  .dola-security-content2 {
+    .liuchengtu {
+      display: block;
+      width: 8.72rem;
+      height: 11.386rem;
+      margin: 0.48rem auto 0;
+    }
+  }
+
+  .dola-security-content3 {
+    background-color: #fafafa;
+
+    .property-lists {
+      margin-top: 0.533rem;
+      padding: 0 0.4rem;
+
+      .list {
+        float: left;
+        width: 4.426rem;
+        height: 6.64rem;
+        margin-right: 0.34rem;
+        margin-bottom: 0.533rem;
+        box-sizing: border-box;
+        background: #fff url("#{$imgUrl}c-bg.png") top center no-repeat;
+        background-size: 100% 1.28rem;
+        box-shadow: 1px 2px 4px 0 rgba(4, 0, 0, 0.16);
+        border-radius: 3px;
+
+        &:nth-of-type(2n) {
+          margin-right: 0;
+        }
+
+        .icon {
+          display: block;
+          margin-left: 0.4rem;
+          margin-top: 0.4rem;
+          width: 1.28rem;
+          height: 1.04rem;
+        }
+
+        dl dt {
+          margin-left: 0.48rem;
+          margin-bottom: 0.333rem;
+          font-size: 16px;
+          color: #000;
+        }
+
+        dl dd {
+          padding: 0 0.453rem;
+          font-size: 14px;
+          line-height: 24px;
+          color: #777;
+        }
+
+        &.list1 {
+          .icon {
+            background: url("#{$imgUrl}c-bg01.png") center no-repeat no-repeat;
+            background-size: 1.28rem 1.04rem;
+          }
+        }
+        &.list2 {
+          .icon {
+            background: url("#{$imgUrl}c-bg02.png") center no-repeat no-repeat;
+            background-size: 1.28rem 1.04rem;
+          }
+        }
+
+        &.list3 {
+          margin-bottom: 0;
+          .icon {
+            background: url("#{$imgUrl}c-bg03.png") center no-repeat no-repeat;
+            background-size: 1.28rem 1.04rem;
+          }
+        }
+
+        &.list4 {
+          margin-bottom: 0;
+          .icon {
+            margin-left: 0.4rem;
+            margin-top: 0.4rem;
+            width: 1.28rem;
+            height: 1.04rem;
+            background: url("#{$imgUrl}c-bg04.png") center no-repeat no-repeat;
+            background-size: 1.28rem 1.04rem;
+          }
+        }
+      }
+    }
+  }
+
+  .dola-security-content4 {
+    .dola-security-cont-title {
+      font-size: 15px;
+    }
+    .dola-security-area {
+      margin-top: 0.533rem;
+      padding: 0 0.4rem;
+      .dola-security-area-img {
+        width: 100%;
+      }
+      .t1 {
+        font-size: 16px;
+        color: #3dc7f4;
+        padding-left: 25px;
+      }
+      .dola-security-area-list {
+        width: 100%;
+        margin-top: 15px;
+        dl {
+          width: 50%;
+          dd {
+            margin-bottom: 10px;
+            white-space: nowrap;
+            .t1 {
+              width: 30px;
+              text-align: right;
+              font-size: 14px;
+              color: #777777;
+            }
+            .t2 {
+              width: 60px;
+            }
+            .t3 {
+              width: 50px;
+              height: 5px;
+              em {
+                width: 100%;
+                height: 5px;
+                background: #3ec7f5;
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

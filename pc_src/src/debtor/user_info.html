@@ -1,0 +1,82 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 我的账户 -->
+<div class="user__center debtor-center">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "info"})
+        <div class="user__content">
+            <div class="user-info">
+                <span class="user-names">你好，<strong id="userMobile">--</strong></span>
+                <span class="user-icon user-icon-tel user-icon-tel-s"></span>
+                <span class="user-icon user-icon-card" id="isBindCard"></span>
+                <span class="user-icon user-icon-bank" id="isBankUser"></span>
+            </div>
+            <div class="user-detail clearfix">
+                <div class="detail-left fl">
+                    <dl class="user-money">
+                    	<dt class="money-tit">可用余额</dt>
+                    	<dd class="money-text"><b id="availableMoney">--</b>元</dd>
+                    </dl>
+                    <div class="trade-wrapper">
+                        <a class="trade-btn trande-in-btn" href="@@webRoot/debtor/user_trade_in.html" id="tradeInBtn">充值</a>
+                        <a class="trade-btn trande-out-btn" href="@@webRoot/debtor/user_trade_out.html" id="tradeOutBtn">提现</a>
+                    </div>
+                </div>
+                <div class="detail-right fl">
+                    <div class="detail-top">
+                        <dl class="user-money">
+                            <dt class="money-tit">待还总额</dt>
+                            <dd class="money-text"><b id="paymentAmount">--</b>元</dd>
+                        </dl>
+                    </div>
+                    <div class="detail-bottom clearfix">
+                        <dl class="wating-benji fl">
+                        	<dt>待还本金</dt>
+                        	<dd><b id="principalAmount">--</b>元</dd>
+                        </dl>
+                        <dl class="wating-lixi fl">
+                            <dt>待还利息</dt>
+                            <dd><b id="interestAmount">--</b>元</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="wating-detail">
+                <div class="wating-total clearfix">
+                    <span class="now-back">今日待还总额：<strong id="todayPaymentAmount">--</strong>元</span>
+                </div>
+                <div id="notRepayList">
+                    <!--<dl class="order-wrapper">
+                        <dt class="order-tit">借款订单<span>2018091716445901</span><b class="status">待还款</b></dt>
+                        <dd class="order-cont">
+                            <ul class="order-detail clearfix">
+                                <li class="order-item order-item01 fl">
+                                    <span class="tit">当期应还</span><br />
+                                    <span class="cont">1024.34元</span>
+                                </li>
+                                <li class="order-item order-item02 fl">
+                                    <span class="tit">当期还款日</span><br />
+                                    <span class="cont">2018-09-20（1/12期）</span>
+                                </li>
+                                <li class="order-item order-item03 fl">
+                                    <span class="tit">应还本息</span><br />
+                                    <span class="cont">1024.34元</span>
+                                </li>
+                                <li class="order-item order-item04 fl">
+                                    <span class="tit">逾期罚息</span><br />
+                                    <span class="cont">0.00元</span>
+                                </li>
+                                <li class="order-item order-item05 fl">
+                                    <a href="javascript:;">立即还款</a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </dl>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

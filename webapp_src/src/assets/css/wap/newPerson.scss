@@ -1,0 +1,444 @@
+.dola-about-new-person {
+  background-color: #fafafa;
+  padding-bottom: 3rem;
+  height: auto;
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  .top-content {
+    padding: 4.133rem 0.64rem 1.066rem;
+    background: url("#{$imgUrl}dola_guarantee_41.png") no-repeat center top;
+    background-size: 100% 100%;
+
+    .cont {
+      background-color: #fff;
+      box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.15);
+      border-radius: 6px;
+
+      &.cont1 {
+        margin-bottom: 0.4rem;
+        padding-top: 0.533rem;
+        padding-bottom: 0.48rem;
+        text-align: center;
+
+        h4 {
+          margin-bottom: 0.533rem;
+          text-align: center;
+          font-size: 18px;
+          color: #fd6572;
+          background: url("#{$imgUrl}dola_guarantee_bg14.png") center no-repeat;
+          background-size: 7.92rem 1px;
+        }
+
+        .new-lists {
+
+          .list {
+            float: left;
+            width: 33%;
+            text-align: center;
+
+            .h5 {
+              font-size: 12px;
+              color: #a9a9a9;
+            }
+
+            .text {
+              font-size: 12px;
+              color: #000;
+
+              b {
+                font-size: 30px;
+              }
+            }
+
+            &.list1 {
+              .text {
+                color: #ff6700;
+              }
+            }
+          }
+        }
+
+        .desc {
+          padding-left: 0.426rem;
+          font-size: 12px;
+          color: #b7b7b7;
+          text-align: left;
+        }
+
+        .new-invset-btn {
+          display: inline-block;
+          min-width: 4rem;
+          height: 0.986rem;
+          margin: 0.373rem auto 0;
+          text-align: center;
+          line-height: 0.986rem;
+          font-size: 16px;
+          color: #fff;
+          background-image: linear-gradient(89deg,#fc6076,#ff9a44);
+          box-shadow: 3px 5px 8px 0 rgba(0,0,0,.16);
+          border-radius: 12px;
+          padding: 0 7px;
+        }
+        .new-invset-btn-end{
+          display: inline-block;
+          min-width: 4rem;
+          height: 0.986rem;
+          margin: 0.373rem auto 0;
+          text-align: center;
+          line-height: 0.986rem;
+          font-size: 16px;
+          color: #fff;
+          background-color: #bdbdbd;
+          border-radius: 12px;
+          padding: 0 7px;
+        }
+      }
+      &.cont2 {
+        padding-top: 0.586rem;
+        padding-bottom: 0.266rem;
+
+        .liwu {
+          padding: 0 0.933rem;
+          .left {
+            float: left;
+            text-align: center;
+            width: 3.546rem;
+            height: 3.68rem;
+            padding-top: 0.4rem;
+            color: #ff6;
+            background: url("#{$imgUrl}dola_guarantee_42.png") center no-repeat;
+            background-size: 3.546rem 3.68rem;
+
+            .h5 {
+              font-size: 12px;
+            }
+
+            .text1 {
+              font-size: 8px;
+
+              b {
+                font-size: 35px;
+              }
+            }
+
+            .text2 {
+              font-size: 12px;
+            }
+          }
+
+          .right {
+            float: right;
+            width: 2.986rem;
+            height: 3.68rem;
+            padding-top: 0.4rem;
+            text-align: center;
+            background: url("#{$imgUrl}dola_guarantee_43.png") center no-repeat;
+            background-size: 2.986rem 3.68rem;
+
+            .text {
+              font-size: 12px;
+              line-height: 21px;
+              color: #ff9846;
+            }
+
+            img {
+              width: 2.026rem;
+              height: 2.053rem;
+            }
+          }
+        }
+
+        .new-check-btn-wrapper {
+          text-align: center;
+
+          .new-check-btn {
+            display: inline-block;
+            padding: 0 1.6rem;
+            font-size: 14px;
+            line-height: 35px;
+            color: #ff6700;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  .content {
+    .new-person-title {
+      position: relative;
+      font-size: 18px;
+      line-height: 35px;
+      text-align: center;
+      color: #039;
+      padding-bottom: 0.266rem;
+
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+      }
+
+      &:before {
+        width: 150px;
+        height: 1px;
+        background-color: #ececec;
+      }
+
+      &:after {
+        width: 20px;
+        height: 2px;
+        background-color: #039;
+      }
+    }
+
+    &.content1 {
+      padding-top: 0.4rem;
+      padding-bottom: 0.933rem;
+      .text {
+        padding: 0.466rem 0.506rem 0;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: justify;
+        color: #777;
+      }
+    }
+
+    &.content2 {
+      background-color: #fafafa;
+      padding-top: 1.066rem;
+      padding-bottom: 0.933rem;
+
+      img {
+        display: block;
+        width: 8.72rem;
+        height: 11.12rem;
+        margin: 0.533rem auto 0;
+      }
+    }
+
+    &.content3 {
+      .choose-lists {
+        margin-top: 0.773rem;
+        padding: 0 0.4rem;
+        .list {
+          float: left;
+          width: 48%;
+          box-sizing: border-box;
+          margin-right: 4%;
+          margin-bottom: 0.533rem;
+          height: 7.413rem;
+          background-color: #fff;
+          background-position: top center;
+          background-repeat: no-repeat;
+          box-shadow: 0 0 12px 0 rgba(0, 153, 255, 0.12);
+          border-radius: 6px;
+
+          dl {
+            dt {
+              padding-top: 0.773rem;
+              padding-left: 0.3rem;
+              margin-bottom: 0.373rem;
+              height: 2.4rem;
+              box-sizing: border-box;
+              font-size: 18px;
+              color: #fff;
+            }
+
+            dd {
+              padding-left: 0.293rem;
+              font-size: 12px;
+              line-height: 24px;
+              color: #666;
+              white-space: nowrap;
+            }
+          }
+
+          &:nth-of-type(2n) {
+            margin-right: 0;
+          }
+          &.list1 {
+            background-image: url("#{$imgUrl}dola_guarantee_46.png");
+            background-size: 100% 2.4rem;
+          }
+
+          &.list2 {
+            background-image: url("#{$imgUrl}dola_guarantee_47.png");
+            background-size: 100% 2.4rem;
+          }
+
+          &.list3 {
+            background-image: url("#{$imgUrl}dola_guarantee_48.png");
+            background-size: 100% 2.4rem;
+          }
+
+          &.list4 {
+            background-image: url("#{$imgUrl}dola_guarantee_49.png");
+            background-size: 100% 2.4rem;
+          }
+        }
+
+      }
+    }
+
+    &.content4 {
+      padding-top: 2.053rem;
+      padding-bottom: 1.173rem;
+      margin-top: -1.6rem;
+      background: url("#{$imgUrl}dola_guarantee_50.png");
+      background-size: 0.12rem 0.106rem;
+
+      .new-person-title {
+        color: #fff;
+
+        &:before, &:after {
+          background-color: #fff;
+        }
+      }
+
+      .register-lists {
+        margin-top: 0.746rem;
+        padding: 0 0.4rem;
+
+        .list {
+          height: 1.066rem;
+          line-height: 1.066rem;
+          margin-bottom: 0.4rem;
+          padding-left: 1.28rem;
+          font-size: 14px;
+          color: #307ffd;
+          background-color: #fff;
+          box-shadow: 0 0 14px 0 rgba(10, 2, 5, 0.15);
+          border-radius: 5px;
+
+          span:first-of-type {
+            font-weight: bold;
+          }
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+
+    &.content5 {
+      background-color: #fafafa;
+      padding: 1.066rem 0.64rem;
+
+      .cont {
+        .left {
+          float: left;
+          width: 2.8rem;
+          height: 2.8rem;
+          text-align: center;
+          background-color: #fff;
+          box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+          border-radius: 5px;
+
+          img {
+            margin-top: 0.213rem;
+            width: 2.36rem;
+          }
+        }
+
+        .right {
+          float: left;
+          margin-left: 0.453rem;
+
+          dl {
+            dt {
+              font-size: 18px;
+              color: #000;
+            }
+
+            .desc {
+              margin: 0.266rem 0;
+              font-size: 12px;
+              line-height: 17px;
+              color: #777;
+            }
+
+            .download-btn-wrapper {
+              a {
+                display: block;
+                width: 5.066rem;
+                height: 1.2rem;
+                text-align: center;
+                line-height: 1.2rem;
+                font-size: 18px;
+                color: #fff;
+                background-image: linear-gradient(89deg, #fc6076 0%, #ff9a44 100%);
+                box-shadow: 3px 5px 8px 0 rgba(0, 0, 0, 0.16);
+                border-radius: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .new-person-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0.266rem 0.426rem;
+    border-top: 1px solid #cdcdcd;
+    background-color: #fff;
+
+    .new-person-btn {
+      height: 1.2rem;
+      font-size: 18px;
+      color: #fff;
+      text-align: center;
+      line-height: 1.2rem;
+      background-image: linear-gradient(89deg, #fc6076 0%, #ff9a44 100%);
+      box-shadow: 3px 5px 8px 0px rgba(0, 0, 0, 0.16);
+      border-radius: 12px;
+
+      &.register-btn {
+        float: left;
+        width: 5.066rem;
+
+      }
+
+      &.link-btn {
+        float: right;
+        width: 3.653rem;
+
+        .icon {
+          display: inline-block;
+          width: 0.48rem;
+          height: 0.48rem;
+          margin-right: 2px;
+          background: url("#{$imgUrl}dola_guarantee_52.png") center no-repeat;
+          background-size: 0.48rem 0.48rem;
+          vertical-align: middle;
+        }
+      }
+    }
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .dola-about-new-person .content.content3 .choose-lists .list {
+    height: 9.413rem;
+  }
+}

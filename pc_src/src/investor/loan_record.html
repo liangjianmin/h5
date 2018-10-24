@@ -1,0 +1,65 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 出借记录 -->
+<div class="invest__center loan-record">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "loan"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">出借记录</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content-wrapper">
+                <div class="select-wrapper">
+                    <dl class="clearfix" id="pro_type">
+                        <dt>项目类型</dt>
+                        <dd data-protype="0" class="all select">全部</dd>
+                        <dd data-protype="1" class="item">散标列表</dd>
+                        <dd data-protype="2" class="item">转让专区</dd>
+                    </dl>
+                    <dl class="clearfix" id="pro_status">
+                        <dt>状态</dt>
+                        <dd data-prostatus="0" class="all select">全部</dd>
+                        <dd data-prostatus="1" class="item">募集中</dd>
+                        <dd data-prostatus="2" class="item">收益中</dd>
+                        <dd data-prostatus="3" class="item">已退出</dd>
+                        <dd data-prostatus="4" class="item">提前结清</dd>
+                        <dd data-prostatus="5" class="item">提前还款</dd>
+                    </dl>
+                    <dl class="clearfix" id="pro_date">
+                        <dt>期限</dt>
+                        <dd data-prodate="0" class="all select">全部</dd>
+                        <dd data-prodate="1" class="item">0-3个月</dd>
+                        <dd data-prodate="2" class="item">3-6个月</dd>
+                        <dd data-prodate="3" class="item">6-12个月</dd>
+                        <dd data-prodate="4" class="item">12-24个月</dd>
+                        <dd data-prodate="5" class="item">24个月以上</dd>
+                    </dl>
+                </div>
+                <div class="loan-table">
+                    <table class="layui-table invest-table" lay-skin="line">
+                        <thead>
+                            <tr>
+                                <th>投资记录 </th>
+                                <th>投资期限</th>
+                                <th>投资本金</th>
+                                <th>往期年化收益率</th>
+                                <th>往期参考收益</th>
+                                <th>已回本息</th>
+                                <th>到期时间</th>
+                                <th>查看</th>
+                                <th>操作</th>
+                            </tr>
+                        </thead>
+                        <tbody id="loanTable"></tbody>
+                    </table>
+                    <div class="dl__page" id="loanPage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

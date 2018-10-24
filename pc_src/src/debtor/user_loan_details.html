@@ -1,0 +1,186 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 借款详情 -->
+<div class="user__center loan-details">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "repayment"})
+        <div class="user__content">
+            <div class="cont-tit-wrapper">
+                <h3 class="cont-tit">借款订单详情</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="details-cont">
+                    <h4 class="details-tit clearfix">
+                        <span class="tit">订单号：<b id="loanOrder">--</b></span>
+                        <span class="status" id="statusTxt">--</span>
+                        <span class="date fr">借款申请时间  <em id="orderTime">--</em></span>
+                    </h4>
+                    <div class="details-info">
+                        <ul class="info-lists clearfix">
+                            <li class="list-item list-item01">
+                                <div class="list-tit">借款金额(元)</div>
+                                <div class="list-text" id="loanAmount">--</div>
+                            </li>
+                            <li class="list-item list-item02">
+                                <div class="list-tit">借款期限(月)</div>
+                                <div class="list-text" id="loanPeriod">--</div>
+                            </li>
+                            <li class="list-item list-item03">
+                                <div class="list-tit">借款年化利率</div>
+                                <div class="list-text" id="loanRate">--%</div>
+                            </li>
+                            <li class="list-item list-item04">
+                                <div class="list-tit">还款方式</div>
+                                <div class="list-text" id="loanType">--</div>
+                            </li>
+                        </ul>
+                        <ul class="info-lists-02 clearfix">
+                            <li class="list-item clearfix">
+                                <div class="list-tit fl">待还本息</div>
+                                <div class="list-text fr" id="waitPayment">--元</div>
+                            </li>
+                            <li class="list-item add clearfix">
+                                <div class="list-tit fl">借款到账时间</div>
+                                <div class="list-text fr" id="interestDate">--</div>
+                            </li>
+                            <li class="list-item clearfix">
+                                <div class="list-tit fl">已还本息</div>
+                                <div class="list-text fr" id="havedPayment">--元</div>
+                            </li>
+                            <li class="list-item add clearfix">
+                                <div class="list-tit fl">借款结束时间</div>
+                                <div class="list-text fr" id="endTime">--</div>
+                            </li>
+                            <li class="list-item bbn clearfix">
+                                <div class="list-tit fl">累计罚息</div>
+                                <div class="list-text fr" id="totalDefaultInterest">--元</div>
+                            </li>
+                            <li class="list-item bbn add clearfix">
+                                <div class="list-text fr">
+                                    <a class="btn-protocol" href="javascript:;" id="protocolLayer">《借款协议》</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="details-cont">
+                    <h4 class="details-tit clearfix">
+                        <span class="tit">当前待还订单</span>
+                    </h4>
+                    <div id="waitRepayListWrapper">
+                        <!--<div class="details-info wating-back-info">
+                            <ul class="wating-back-lists clearfix">
+                                <li class="list-item list-item01">
+                                    <div class="list-tit">当期应还</div>
+                                    <div class="list-text">1024.34元</div>
+                                </li>
+                                <li class="list-item list-item02">
+                                    <div class="list-tit">当期还款日</div>
+                                    <div class="list-text">2018-09-20（1/12期）</div>
+                                </li>
+                                <li class="list-item list-item03">
+                                    <div class="list-tit">应还本息</div>
+                                    <div class="list-text">1024.34元</div>
+                                </li>
+                                <li class="list-item list-item04">
+                                    <div class="list-tit">逾期罚息</div>
+                                    <div class="list-text">0.00元</div>
+                                </li>
+                                <li class="list-item list-item05">
+                                    <a class="btn-back btn-back-default" href="javascript:;">立即还款</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="details-info wating-back-info">
+                            <ul class="wating-back-lists clearfix">
+                                <li class="list-item list-item01">
+                                    <div class="list-tit">当期应还</div>
+                                    <div class="list-text">1024.34元</div>
+                                </li>
+                                <li class="list-item list-item02">
+                                    <div class="list-tit">当期还款日</div>
+                                    <div class="list-text">2018-09-20（1/12期）</div>
+                                </li>
+                                <li class="list-item list-item03">
+                                    <div class="list-tit">应还本息</div>
+                                    <div class="list-text">1024.34元</div>
+                                </li>
+                                <li class="list-item list-item04">
+                                    <div class="list-tit">逾期罚息</div>
+                                    <div class="list-text">0.00元</div>
+                                </li>
+                                <li class="list-item list-item05">
+                                    <a class="btn-back" href="javascript:;">立即还款</a>
+                                </li>
+                            </ul>
+                        </div>-->
+                    </div>
+                </div>
+                <div class="details-cont">
+                    <h4 class="details-tit clearfix">
+                        <span class="tit">还款计划</span>
+                    </h4>
+                    <table class="layui-table debtor-table" lay-skin="line">
+                        <thead>
+                            <tr>
+                                <th>还款期数</th>
+                                <th>还款日期</th>
+                                <th>还款本息</th>
+                                <th>还款本金</th>
+                                <th>还款利息</th>
+                                <!--<th>综合借款费用</th>-->
+                                <th>状态</th>
+                            </tr>
+                        </thead>
+                        <tbody id="scheduleTable">
+                            <!--<tr class="back-success">
+                                <td>1/6期</td>
+                                <td>2018-09-10</td>
+                                <td>1024.34元</td>
+                                <td>1000.00元</td>
+                                <td>24.34元</td>
+                                <td>34.34元</td>
+                                <td>已还款</td>
+                            </tr>
+                            <tr>
+                                <td>1/6期</td>
+                                <td>2018-09-10</td>
+                                <td>1024.34元</td>
+                                <td>1000.00元</td>
+                                <td>24.34元</td>
+                                <td>34.34元</td>
+                                <td>已还款</td>
+                            </tr>
+                            <tr>
+                                <td>1/6期</td>
+                                <td>2018-09-10</td>
+                                <td>1024.34元</td>
+                                <td>1000.00元</td>
+                                <td>24.34元</td>
+                                <td>34.34元</td>
+                                <td>待还款</td>
+                            </tr>
+                            <tr>
+                                <td>1/6期</td>
+                                <td>2018-09-10</td>
+                                <td>1024.34元</td>
+                                <td>1000.00元</td>
+                                <td>24.34元</td>
+                                <td>34.34元</td>
+                                <td>未到期</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                    <div class="plan-total">
+                        <div class="lilv fl">综合资金成本年化利率： <b id="yearRate">--%</b><span class="icon"><i class="tip-text">综合资金成本年化利率=借款利率+其他借款服务费率</i></span></div>
+                        <a class="btn-pay fr" href="javscript:;">提前还款</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

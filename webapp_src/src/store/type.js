@@ -1,0 +1,7 @@
+export const HEAD_SHOW_SUCCESS = 'HEAD_SHOW_SUCCESS';
+export const HEAD_SHOW_FAIL = 'HEAD_SHOW_FAIL';
+
+export const USER_TOKEN = 'USER_TOKEN'
+export const USER_TOKEN_EXIT = 'USER_TOKEN_EXIT'
+
+

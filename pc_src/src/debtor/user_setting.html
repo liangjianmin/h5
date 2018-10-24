@@ -1,0 +1,69 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 设置中心 -->
+<div class="user__center user-setting">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "setting"})
+        <div class="user__content">
+            <div class="cont-tit-wrapper">
+                <h3 class="cont-tit">账户设置</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <ul class="setting-lists">
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-bank" id="bankIcon"></i>
+                        <span class="setting-name">银行存管账户</span>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="javascript:;" id="bankBtn">立即开通</a>
+                        </div>
+                        <span class="setting-info fr" id="bankCardNo"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-sign" id="bankSignIcon"></i>
+                        <span class="setting-name">授权签约</span>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link is-open" href="@@webRoot/debtor/user_sign.html" id="checkSignBtn">查看</a>
+                        </div>
+                        <span class="setting-info fr"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-card" id="cardIcon"></i>
+                        <span class="setting-name">银行卡管理</span>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="javascript:;" id="bankCardBtn">立即绑卡</a>
+                        </div>
+                        <span class="setting-info fr" id="bankCard"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-tel-s"></i>
+                        <span class="setting-name">注册手机号</span>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="@@webRoot/debtor/user_tel_authentication.html">修改</a>
+                        </div>
+                        <span class="setting-info fr" id="userTel"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-pass-s"></i>
+                        <span class="setting-name">登录密码</span>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="@@webRoot/debtor/user_pass_change.html">修改</a>
+                        </div>
+                        <span class="setting-info fr"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-pass02" id="userPass02"></i>
+                        <span class="setting-name">交易密码</span>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="javascript:;" id="resetPassBtn">重置</a>
+                        </div>
+                        <span class="setting-info fr"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

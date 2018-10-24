@@ -1,0 +1,45 @@
+
+<!-- 网站头部 -->
+@@include("../include/header.html")
+<!-- 投资人注册 -->
+<div class="dl__login register--invest">
+    <div class="dl__container clearfix">
+        <div class="login-form-wrapper">
+            <div class="dl__form form-invest-register layui-form">
+                <div class="tit-row clearfix">
+                    <h3 class="form-tit fl">账号注册</h3>
+                    <a class="btn-user fr" href="@@webRoot/form/debtor_register.html">切换为借款人注册</a>
+                </div>
+                <div class="input-row">
+                    <input class="form-input" id="userMobile" type="text" name="user_tel" placeholder="请输入手机号码" autocomplete="off" lay-verify="required|phone|number" lay-verType="tips" />
+                </div>
+                <div class="input-row">
+                    <input class="form-input" id="imgCode" type="text" name="img_code" placeholder="图形验证码" autocomplete="off" lay-verify="required" lay-verType="tips" />
+                    <input id="imgCodeName" type="hidden" name="img_code_name" value="001" />
+                    <div class="img-code" id="imgCodeSrc"></div>
+                </div>
+                <div class="input-row">
+                    <input class="form-input" type="text" name="msg_code" placeholder="短信验证码" autocomplete="off" lay-verify="required|number" lay-verType="tips" />
+                    <button class="btn-code" id="getCode">获取验证码</button>
+                </div>
+                <div class="input-row">
+                    <input class="form-input" type="password" name="user_pass" placeholder="设置登录密码" autocomplete="off" lay-verify="required" lay-verType="tips" />
+                </div>
+                <div class="input-row">
+                    <p class="input-explain invet-friend" id="invetFriend">推荐人手机号码(选填)</p>
+                    <input class="form-input dn" id="invetFriendInput" type="text" name="invet_tel" placeholder="请输入推荐人手机号码" autocomplete="off" lay-verify="required" lay-verType="tips" />
+                </div>
+                <div class="tips-text register dn" id="formTip">请填写手机号</div>
+                <div class="input-row">
+                    <input class="form-submit" type="submit" value="注册" lay-submit lay-filter="registerForm" />
+                </div>
+                <div class="form-subinfo" id="ptotocol">
+                    <input type="checkbox" name="proprotol" lay-skin="primary">同意<a href="javascript:;">《多啦聚财注册服务协议》</a> <a href="javascript:;">《多啦聚财咨询服务协议》</a> <a href="javascript:;">《风险提示书》</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include("../include/footer.html")

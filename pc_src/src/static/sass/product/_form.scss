@@ -1,0 +1,323 @@
+@charset "utf-8";
+
+.dl__login {
+    padding: 100px 0 120px;
+    background-color: #f5f5f5;
+    .login-form-wrapper {
+        float: right;
+    }
+    .dl__form {
+        padding: 40px;
+        border-radius: 3px;
+        width: 346px;
+        height: 380px;
+        background-color: #fff;
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+        .tit-row {
+            margin-bottom: 32px;
+            .form-tit {
+                border-left: 4px solid #f98342;
+                padding-left: 12px;
+                line-height: 22px;
+                font-size: 18px;
+                color: #555;
+            }
+            .btn-user {
+                line-height: 22px;
+                font-size: 14px;
+                color: #f60;
+            }
+        }
+        .input-row {
+            margin-bottom: 24px;
+            .input-explain {
+                display: inline-block;
+                margin-bottom: 14px;
+                font-size: 14px;
+                color: #777;
+                background: url("#{$formUrl}icon01.png") left center no-repeat;
+                padding-left: 10px;
+            }
+            .form-input {
+                padding-left: 14px;
+                border-radius: 3px;
+                height: 50px;
+                line-height: 50px;
+                border: 1px solid #e5e5e5;
+                font-size: 14px;
+            }
+            .form-submit {
+                border-radius: 3px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                font-size: 16px;
+                color: #fff;
+                background-color: #f60;
+                cursor: pointer;
+            }
+        }
+    }
+    .tips-text {
+        margin-left: 125px;
+        padding-left: 26px;
+        line-height: 16px;
+        color: #f60;
+        background: url("#{$formUrl}tip_icon.png") left center no-repeat;
+        &.register {
+            margin: 0 0 10px;
+        }
+    }
+    &.login--debtor {
+        background: url("#{$formUrl}login_bg.jpg") center no-repeat;
+        .form-subinfo {
+            margin-top: 36px;
+            .link-text {
+                line-height: 14px;
+                font-size: 12px;
+                &.link-getpass {
+                    color: #888;
+                }
+                &.link-register {
+                    color: #d48529;
+                }
+            }
+        }
+    }
+    &.login--invest {
+        background: url("#{$formUrl}login_bg.jpg") center no-repeat;
+        .form-subinfo {
+            margin-top: 36px;
+            .link-text {
+                line-height: 14px;
+                font-size: 12px;
+                &.link-getpass {
+                    color: #888;
+                }
+                &.link-register {
+                    color: #d48529;
+                }
+            }
+        }
+    }
+    &.register--invest {
+        .invet-friend {
+            cursor: pointer;
+        }
+    }
+    &.register--debtor, &.register--invest {
+        height: 600px;
+        padding: 45px 0 0;
+        background: url("#{$formUrl}register_bg.jpg") center no-repeat;
+        .dl__form {
+            padding-top: 32px;
+            height: auto;
+            .tit-row {
+                margin-bottom: 20px;
+            }
+        }
+        .input-row {
+            position: relative;
+            margin-bottom: 14px;
+            .form-input {
+                height: 44px;
+                line-height: 44px;
+            }
+            .img-code {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 140px;
+                text-align: center;
+                height: 44px;
+                line-height: 44px;
+                border-radius: 2px;
+                background-color: #e5e5e5;
+            }
+            .btn-code {
+                position: absolute;
+                top: 0;
+                right: 0;
+                border: 1px solid #e5e5e5;
+                border-radius: 2px;
+                width: 124px;
+                height: 44px;
+                line-height: 44px;
+                text-align: center;
+                color: #ff6700;
+                background-color: #f5f5f5;
+                cursor: pointer;
+                &.is-disabled {
+                    color: #c4c4c4;
+                }
+            }
+        }
+        .form-subinfo {
+            line-height: 16px;
+            font-size: 12px;
+            a {
+                color: #fe7f3a;
+            }
+            .layui-form-checkbox[lay-skin=primary] {
+                margin-right: 8px;
+            }
+        }
+    }
+    &.forgetpass--debtor {
+        padding: 40px 0;
+        .dl__container {
+            background-color: #fff;
+            padding: 35px 60px 108px;
+            .form-title {
+                border-bottom: 1px solid #c4c4c4;
+                line-height: 62px;
+                font-size: 18px;
+                color: #0F0F0F;
+            }
+            .forgetpass-form {
+                margin: 0 auto;
+                padding-top: 56px;
+                width: 450px;
+                .layui-form-item {
+                    margin-bottom: 20px;
+                }
+                .layui-form-label {
+                    padding: 0;
+                    width: 125px;
+                    height: 44px;
+                    line-height: 44px;
+                    text-align: left;
+                    color: #0F0F0F;
+                }
+                .layui-input-block {
+                    position: relative;
+                    margin-left: 125px;
+                    height: 44px;
+                    line-height: 44px;
+                    width: 325px;
+                    .layui-input, .layui-textarea {
+                        height: 44px;
+                        line-height: 44px;
+                        background-color: #fdfcfd;
+                        border-color: #e5e5e5;
+                    }
+                    .code-img {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        width: 140px;
+                        height: 44px;
+                        line-height: 44px;
+                        cursor: pointer;
+                    }
+                    .get-code {
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        display: inline-block;
+                        padding: 0 26px;
+                        border: 1px solid #e5e5e5;
+                        width: auto;
+                        height: 44px;
+                        line-height: 44px;
+                        color: #f60;
+                        background-color: #fff;
+                        cursor: pointer;
+                        &.is-disabled {
+                            color: #c4c4c4;
+                        }
+                    }
+                }
+                .forget-pass-btn {
+                    margin-top: 10px;
+                    width: 204px;
+                    height: 48px;
+                    line-height: 48px;
+                    font-size: 16px;
+                    background-color: #ff6700;
+                }
+            }
+        }
+    }
+}
+
+.open-bank {
+    padding-bottom: 40px;
+    min-height: 500px;
+    background: #f5f5f5 url("#{$formUrl}open_bank_banner.png") no-repeat center top;
+    .open-bank-title {
+        padding: 46px 0;
+        height: 180px;
+        text-align: center;
+        font-size: 32px;
+        line-height: 42px;
+        color: #fff;
+    }
+    .open-bank-form {
+        padding: 60px 0 60px 295px;
+        border-radius: 3px;
+        background-color: #fff;
+    }
+    .input-block {
+        margin-bottom: 10px;
+        .input-tit {
+            float: left;
+            width: 132px;
+            padding-right: 20px;
+            line-height: 50px;
+            text-align: right;
+            font-size: 14px;
+            color: #777;
+        }
+        .input-cont {
+            float: left;
+            border: 1px solid #e5e5e5;
+            width: 346px;
+            height: 50px;
+            line-height: 50px;
+            .input {
+                padding-left: 20px;
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                color: #333;
+                @include placeholder(#ccc);
+            }
+        }
+        .bank-limit {
+            float: left;
+            margin-left: 20px;
+            .bank-limit-btn {
+                line-height: 50px;
+                font-size: 12px;
+                color: #99f;
+                cursor: pointer;
+            }
+        }
+    }
+    .layui-unselect {
+        border: 0;
+        height: 48px;
+        line-height: 48px;
+        color: #333;
+        padding-left: 10px;
+    }
+    .open-bank-btn-wrapper {
+        margin-left: 132px;
+        margin-top: 42px;
+        .open-bank-btn {
+            border-radius: 3px;
+            width: 164px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #ff6700;
+            cursor: pointer;
+            &.disabled {
+                background-color: #dcdcdc;
+                cursor: not-allowed;
+            }
+        }
+    }
+}

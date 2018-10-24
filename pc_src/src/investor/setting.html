@@ -1,0 +1,106 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 账户设置 -->
+<div class="invest__center setting">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "setting"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">账户设置</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <ul class="setting-lists">
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-bank fl" id="bankIcon"></i>
+                        <div class="setiing-tit fl">
+                            <h4 class="setting-name">银行存管账户</h4>
+                            <p class="sub-tit">开通专属银行存管电子账户，独立管理您的账户资金</p>
+                        </div>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="javascript:;" id="bankBtn">立即开通</a>
+                        </div>
+                        <span class="setting-info fr" id="bankCardNo"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-card fl" id="cardIcon"></i>
+                        <div class="setiing-tit fl">
+                            <h4 class="setting-name">银行卡管理</h4>
+                            <p class="sub-tit">充值、提现必须使用此银行卡</p>
+                        </div>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="javascript:;" id="bankCardBtn">立即绑卡</a>
+                        </div>
+                        <span class="setting-info fr" id="bankCard"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-sign fl" id="bankSignIcon"></i>
+                        <div class="setiing-tit fl">
+                            <h4 class="setting-name">授权签约</h4>
+                            <p class="sub-tit">开启投资授权，快捷投标</p>
+                        </div>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link is-open" href="@@webRoot/investor/user_sign.html" id="checkSignBtn">查看</a>
+                        </div>
+                        <span class="setting-info fr"></span>
+                    </li>
+
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-tel-s fl"></i>
+                        <div class="setiing-tit fl">
+                            <h4 class="setting-name">注册手机号</h4>
+                            <p class="sub-tit">登录账号，接收重要信息修改</p>
+                        </div>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="@@webRoot/investor/tel_authentication.html">修改</a>
+                        </div>
+                        <span class="setting-info fr" id="userTel"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-pass-s fl"></i>
+                        <div class="setiing-tit fl">
+                            <h4 class="setting-name">登录密码</h4>
+                            <p class="sub-tit">账户登录密码，请妥善保管</p>
+                        </div>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="@@webRoot/investor/pass_change.html">修改</a>
+                        </div>
+                        <span class="setting-info fr"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-pass02 fl" id="userPass02"></i>
+                        <div class="setiing-tit fl">
+                            <h4 class="setting-name">交易密码</h4>
+                            <p class="sub-tit">存管账户密码，充值、提现、签约等操作时需验证</p>
+                        </div>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="javascript:;" id="resetPassBtn">重置</a>
+                        </div>
+                        <span class="setting-info fr"></span>
+                    </li>
+                    <li class="setting-item clearfix">
+                        <i class="setting-icon icon-risk fl" id="userRisk"></i>
+                        <div class="setiing-tit fl">
+                            <h4 class="setting-name">风险评测</h4>
+                            <p class="sub-tit">了解风险承受能力，减少投资损失</p>
+                        </div>
+                        <div class="link-wrapper fr">
+                            <a class="setting-link fr" href="javascript:;" id="riskBtn">立即评测</a>
+                        </div>
+                        <div class="setting-info risk-cont fr">
+                            <span id="riskType"></span>
+                            <div class="risk-desc">
+                                <h4 class="risk-desc-tit">您的风险评测为:<span id="riskType02">--</span></h4>
+                                <p class="risk-desc-text" id="riskDesc"></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

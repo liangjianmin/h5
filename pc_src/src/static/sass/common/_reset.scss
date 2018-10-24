@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+body {
+    line-height: 1;
+    font-family: "微软雅黑";
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+strong,
+b {
+    font-weight: normal;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+input,
+button {
+    display: block;
+    width: 100%;
+    border: none;
+    background: none;
+}
+
+.layui-form-checked[lay-skin=primary] i {
+    background-color: #fff;
+    color: #ff6700;
+    border-color: #ff6700;
+}
+.layui-form-checkbox[lay-skin=primary]:hover i {
+    border-color: #ff6700;
+    color: #ff6700;
+}

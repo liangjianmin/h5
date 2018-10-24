@@ -1,0 +1,500 @@
+.dola-about-nav {
+  position: relative;
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 2;
+  a {
+    text-align: center;
+    padding: 0.4rem 0;
+    font-size: 15px;
+    color: #666666;
+    width: 25%;
+  }
+  a.curr {
+    color: #FF6600;
+    border-bottom: 0.053rem solid #FF6600;
+  }
+}
+
+.dola-about-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.dola-about-navs {
+  overflow-x: hidden;
+}
+
+.dola-about-nav-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  z-index: 100;
+}
+
+.dola-about-bank {
+  width: 100%;
+  background: #ffffff;
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  .dola-about-bank-banner {
+    width: 100%;
+    height: 4.8rem;
+    display: table;
+    background: url("#{$imgUrl}bank_bg.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+    .wrap {
+      display: table-cell;
+      vertical-align: middle;
+      .ico1 {
+      }
+      .t1 {
+        font-size: 29px;
+        color: #fff;
+        margin-bottom: 0.346rem;
+      }
+      .t2 {
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 0.533rem;
+      }
+      .t3 {
+        width: 3.986rem;
+        height: 0.546rem;
+        border-radius: 0.266rem;
+        line-height: 0.546rem;
+        border: 1px solid #FFE6C1;
+        font-size: 12px;
+        color: #FFE6C1;
+        margin: 0 auto;
+      }
+    }
+  }
+  .dola-about-bank-cen {
+    padding: 0.973rem 0.426rem 0.986rem 0.426rem;
+    text-align: center;
+    .tit {
+      position: relative;
+      text-align: center;
+      padding: 0.426rem 0;
+      border-bottom: 1px solid #ECECEC;
+      span {
+        font-size: 18px;
+        color: #BA9F84;
+      }
+      i {
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        right: 0;
+        width: 40px;
+        height: 2px;
+        background: #BA9F84;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .text {
+      margin-top: 0.773rem;
+      font-size: 14px;
+      color: #777;
+      text-align: justify;
+      line-height: 24px;
+    }
+    .dola-about-bank-cen-advan {
+      margin-top: 0.8rem;
+      li {
+        float: right;
+        position: relative;
+        width: 8.146rem;
+        padding: 0.666rem 0 0.8rem 0;
+        background: #ffffff;
+        margin-bottom: 0.533rem;
+        text-align: left;
+        padding-left: 1.013rem;
+        box-shadow: 0 0 27px rgba(75, 133, 254, 0.08);
+        .t1 {
+          font-size: 16px;
+          color: #000;
+          margin-bottom: 0.24rem;
+          line-height: 15px;
+          font-weight: bold;
+        }
+        .t2 {
+          width: 6.72rem;
+          font-size: 14px;
+          color: #777;
+          line-height: 24px;
+        }
+        .ico1 {
+          position: absolute;
+          top: 50%;
+          left: -0.7rem;
+          width: 1.146rem;
+          height: 1.146rem;
+          margin-top: -0.573rem;
+          display: block;
+          background: url("#{$imgUrl}14.png") no-repeat;
+          background-size: cover;
+          border: 8px solid #fff;
+          border-radius: 50%;
+        }
+        .ico2 {
+          position: absolute;
+          top: 50%;
+          left: -0.7rem;
+          width: 1.146rem;
+          height: 1.146rem;
+          margin-top: -0.573rem;
+          display: block;
+          background: url("#{$imgUrl}13.png") no-repeat;
+          background-size: cover;
+          border: 8px solid #fff;
+          border-radius: 50%;
+        }
+        .ico3 {
+          position: absolute;
+          top: 50%;
+          left: -0.7rem;
+          width: 1.146rem;
+          height: 1.146rem;
+          margin-top: -0.573rem;
+          display: block;
+          background: url("#{$imgUrl}07.png") no-repeat;
+          background-size: cover;
+          border: 8px solid #fff;
+          border-radius: 50%;
+        }
+      }
+    }
+    .dola-about-bank-cen-shanghai {
+      margin-top: 0.76rem;
+      li {
+        position: relative;
+        float: left;
+        height: 1.466rem;
+        background: #fff;
+        width: 47%;
+        margin-right: 6%;
+        margin-bottom: 0.533rem;
+        box-shadow: 0 0 27px rgba(75, 133, 254, 0.16);
+        text-align: right;
+        border-radius: 50px 0 0 50px;
+        .t1 {
+          font-size: 12px;
+          line-height: 18px;
+          margin-right: 0.746rem;
+          color: #000;
+          text-align: left;
+        }
+        .ico1 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1.466rem;
+          height: 1.466rem;
+          display: block;
+          background: url("#{$imgUrl}03.png") no-repeat;
+          background-size: cover;
+        }
+        .ico2 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1.466rem;
+          height: 1.466rem;
+          display: block;
+          background: url("#{$imgUrl}04.png") no-repeat;
+          background-size: cover;
+        }
+        .ico3 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1.466rem;
+          height: 1.466rem;
+          display: block;
+          background: url("#{$imgUrl}05.png") no-repeat;
+          background-size: cover;
+        }
+        .ico4 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1.466rem;
+          height: 1.466rem;
+          display: block;
+          background: url("#{$imgUrl}06.png") no-repeat;
+          background-size: cover;
+        }
+        .ico5 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1.466rem;
+          height: 1.466rem;
+          display: block;
+          background: url("#{$imgUrl}01.png") no-repeat;
+          background-size: cover;
+        }
+        .ico6 {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 1.466rem;
+          height: 1.466rem;
+          display: block;
+          background: url("#{$imgUrl}02.png") no-repeat;
+          background-size: cover;
+        }
+      }
+      li.d {
+        .t1 {
+          margin-right: 0;
+        }
+      }
+      li:nth-of-type(2n) {
+        margin-right: 0;
+      }
+    }
+    .ico-company {
+      width: 100%;
+      height: 3.253rem;
+      display: block;
+      margin: 0.6rem 0;
+      background: url("#{$imgUrl}09.png") no-repeat;
+      background-size: cover;
+    }
+    .ico-company-logo {
+      width: 1.653rem;
+      height: 0.64rem;
+      display: block;
+      margin-top: 0.32rem;
+      background: url("#{$imgUrl}10.png") no-repeat;
+      background-size: cover;
+    }
+    .in-banner {
+      margin: 0.786rem auto 0;
+      height: 378px;
+    }
+    .in-banner-nav a {
+      background: #666;
+    }
+    .in-banner-nav a.on {
+      background: #000;
+    }
+  }
+  .dola-about-bank-cen-bg {
+    background: #fafafa;
+  }
+  .mint-swipe-indicator {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #eeeeee !important;
+    margin: 0 5px;
+    transition: all 0.2s ease;
+    opacity: 1;
+  }
+  .mint-swipe-indicator.is-active {
+    background-color: #ff6600 !important;
+    opacity: 1;
+  }
+}
+
+.dola-about-risk {
+  width: 100%;
+  background: #ffffff;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 3rem;
+  background: url("#{$imgUrl}bg.jpg") no-repeat;
+  background-size: cover;
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  .dola-about-risk-cen {
+    padding: 0 0.426rem;
+    .t1 {
+      padding: 1.08rem 0 0.453rem 0;
+      font-size: 24px;
+      color: #69f;
+      background: -webkit-linear-gradient(left, #4facfe, #00f2fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-align: center;
+      margin-bottom: 0.453rem;
+    }
+    .ico1 {
+      width: 6.933rem;
+      height: 0.506rem;
+      background: url("#{$imgUrl}tip00.png") no-repeat;
+      background-size: cover;
+      display: block;
+      margin: 0 auto 0.533rem;
+    }
+    .ico2 {
+      width: 4.373rem;
+      height: 0.88rem;
+      background: url("#{$imgUrl}tip01.png") no-repeat;
+      background-size: cover;
+      display: block;
+      margin: 0 auto 0.786rem;
+    }
+    .t2 {
+      font-size: 14px;
+      color: #cad2dd;
+      line-height: 24px;
+      text-align: justify;
+    }
+    .dola-about-risk-cen-list {
+      margin-top: 0.6rem;
+      li {
+        position: relative;
+        width: 9.146rem;
+        height: 4.426rem;
+        margin: 0 auto;
+        background: url("#{$imgUrl}bg-01.png") no-repeat;
+        background-size: cover;
+        margin-bottom: 0.813rem;
+        .dola-about-risk-t1 {
+          position: absolute;
+          left: 0;
+          top: 0.8rem;
+          right: 0;
+          width: 4.533rem;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          background: url("#{$imgUrl}tip02.png") no-repeat center center;
+          background-size: contain;
+          display: block;
+          margin: 0 auto;
+          color: #0f1e2b;
+          font-size: 14px;
+        }
+        .dola-about-risk-txt-a {
+          position: absolute;
+          left: 0;
+          top: 2.2rem;
+          right: 0;
+          width: 6.64rem;
+          color: #cad2dd;
+          font-size: 14px;
+          line-height: 24px;
+          margin: 0 auto;
+        }
+        .dola-about-risk-txt-b {
+          position: absolute;
+          left: 0;
+          top: 1.933rem;
+          right: 0;
+          width: 7.253rem;
+          color: #cad2dd;
+          font-size: 14px;
+          line-height: 24px;
+          margin: 0 auto;
+        }
+        .dola-about-risk-txt-c {
+          position: absolute;
+          left: 0;
+          top: 1.933rem;
+          right: 0;
+          width: 7.653rem;
+          color: #cad2dd;
+          font-size: 14px;
+          line-height: 24px;
+          margin: 0 auto;
+        }
+        .dola-about-risk-txt-d {
+          position: absolute;
+          left: 0;
+          top: 1.933rem;
+          right: 0;
+          width: 7.906rem;
+          color: #cad2dd;
+          font-size: 14px;
+          line-height: 24px;
+          margin: 0 auto;
+        }
+        .dola-about-risk-txt-e {
+          position: absolute;
+          left: 0;
+          top: 1.933rem;
+          right: 0;
+          width: 6.666rem;
+          color: #cad2dd;
+          font-size: 14px;
+          line-height: 24px;
+          margin: 0 auto;
+        }
+      }
+      li:nth-of-type(2n) {
+        background: url("#{$imgUrl}bg-02.png") no-repeat;
+        background-size: cover;
+      }
+    }
+    .t3 {
+      font-size: 14px;
+      color: #cad2dd;
+      line-height: 24px;
+      text-align: justify;
+      margin-bottom: 1.12rem;
+    }
+    .t4 {
+      font-size: 14px;
+      color: #cad2dd;
+      line-height: 24px;
+      text-align: justify;
+    }
+  }
+}
+
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .dola-about-risk-cen-list {
+    li {
+      .dola-about-risk-txt-a, .dola-about-risk-txt-b, .dola-about-risk-txt-c, .dola-about-risk-txt-d, .dola-about-risk-txt-e {
+        font-size: 12px !important;
+      }
+    }
+  }
+}
+
+@media (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .dola-about-risk-cen-list {
+    li {
+      .dola-about-risk-txt-a, .dola-about-risk-txt-b, .dola-about-risk-txt-c, .dola-about-risk-txt-d, .dola-about-risk-txt-e {
+        font-size: 12px !important;
+      }
+    }
+  }
+}

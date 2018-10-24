@@ -1,0 +1,22 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 手机修改 -->
+<div class="invest__center tel-authentication">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "setting"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">手机认证</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="h3-text">您已通过手机认证！</div>
+                <div class="cont-text">手机号码：<b class="tel" id="userTel"></b> <a href="@@webRoot/investor/tel_change.html" class="change-tel-btn">修改</a></div>
+                <div class="tip-text">您在进行充值、投资、提现等重要操作时将会收到短信提醒，以确保账户安全！</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+$imgUrl: '../images/';
+$iconUrl: '../images/icon/';
+$formUrl: '../images/form/';
+$userUrl: '../images/user/';
+
+@import "./common";
+@import "./popup";
+@import "./form";
+@import "./debtor_center";
+@import "./investor_center";
+@import "./result";

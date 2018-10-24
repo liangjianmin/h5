@@ -1,0 +1,404 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dola-about-company {
+  width: 100%;
+  background-color: #fff;
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  .dola-about-company-content {
+    margin-top: 50px;
+    .content {
+      .title-wrapper {
+        text-align: center;
+        .title {
+          position: relative;
+          display: inline-block;
+          font-size: 18px;
+          line-height: 24px;
+          padding-bottom: 0.213rem;
+          color: #000;
+
+          &:after {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            content: '';
+            width: 35px;
+            height: 1px;
+            background-color: #ffd299;
+          }
+        }
+      }
+      .text-wraps{
+        height: 8.5rem;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling : touch;
+        .text {
+          font-size: 14px;
+          line-height: 24px;
+          text-align: justify;
+          color: #000;
+          text-indent: 2em;
+        }
+      }
+      &.content1 {
+        padding: 1.253rem 0.426rem 1.146rem;
+        box-sizing: border-box;
+        background: url("#{$imgUrl}dola_guarantee_10.png") center no-repeat;
+        background-size: 100% 100%;
+        .part1 {
+          padding: 0.8rem 0.466rem 0.8rem 0.72rem;
+          background-color: #fff;
+          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.12);
+          opacity: 0.95;
+
+          .text {
+            margin-top: 0.453rem;
+          }
+
+          .gs-js {
+            margin-top: 0.4rem;
+            dl {
+              font-size: 0;
+              color: #000;
+              border-bottom: 1px solid #e5e5e5;
+              white-space: nowrap;
+              dt {
+                display: inline-block;
+                margin-right: 8px;
+                font-size: 12px;
+                line-height: 30px;
+                font-weight: bold;
+              }
+
+              dd {
+                display: inline-block;
+                width: 6.453rem;
+                font-size: 12px;
+                white-space: normal;
+              }
+
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+      &.content2 {
+        padding-top: 1.146rem;
+        padding-bottom: 1.066rem;
+
+        .team-user {
+          padding: 0 0.826rem;
+          .img {
+            margin-top: 0.4rem;
+            img {
+              display: block;
+              width: 2.826rem;
+              margin: 0 auto;
+            }
+          }
+          .name {
+            text-align: center;
+            font-size: 16px;
+            color: #000;
+          }
+          .job {
+            margin-top: 0.266rem;
+            margin-bottom: 0.4rem;
+            text-align: center;
+            font-size: 12px;
+            color: #000;
+          }
+          .desc {
+            font-size: 14px;
+            line-height: 24px;
+            color: #666;
+          }
+        }
+
+      }
+      &.content3 {
+        padding-top: 1.146rem;
+        height: 8.4rem;
+        box-sizing: border-box;
+        background: url("#{$imgUrl}dola_guarantee_bg10.png") center no-repeat;
+        background-size: 100% 7.866rem;
+        .title-wrapper {
+          .title:after {
+            background-color: #eee;
+          }
+        }
+        .zuzhi-lists {
+          width: 92%;
+          margin: 0.533rem auto 0;
+          .list {
+            float: left;
+            margin-right: 0.586rem;
+            margin-bottom: 0.533rem;
+            width: 29%;
+            height: 41px;
+            line-height: 41px;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            color: #000;
+            background-color: #fff;
+            border-radius: 2px;
+            &:nth-of-type(3n) {
+              margin-right: 0;
+            }
+            &.list9{
+             p{
+               width: 71px;
+               line-height: 15px;
+               margin: 0 auto;
+               padding: 5px 0;
+             }
+            }
+          }
+        }
+
+      }
+      &.content4 {
+        position: relative;
+        height: 6.186rem;
+        background-color: #f7f7f7;
+        .cont {
+          position: absolute;
+          top: -1.066rem;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 92%;
+          padding-top: 1.2rem;
+          background-color: #fff;
+
+          .img-cont {
+            margin-top: 0.32rem;
+            margin-bottom: 0.8rem;
+
+            .list {
+              float: left;
+              width: 50%;
+              text-align: center;
+            }
+          }
+        }
+      }
+      &.content-bg {
+        height: 12rem;
+        background-color: #000;
+        box-shadow: 0 0 5px 0 rgba(10, 2, 5, 0.15);
+        .title-wrapper{
+          padding-top: 91px;
+          h5{
+            color: #d7b183;
+          }
+        }
+        .img-cont{
+          margin-top: 0.8rem;
+        }
+      }
+      &.content5 {
+        height: 23.786rem;
+        background: url("#{$imgUrl}dola_guarantee_bg11.png") center;
+        background-size: 0.426rem 0.106rem;
+
+        .content5-main {
+          padding-top: 1.066rem;
+        }
+
+        .cont {
+          width: 92%;
+          padding-top: 1.2rem;
+          margin: 0 auto 0.533rem;
+          background-color: #fff;
+          box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.06);
+
+          &.cont1 {
+            height: 6.746rem;
+            margin-top: -2.133rem;
+          }
+
+          &.cont2 {
+            .friends-lists {
+              margin-top: 0.533rem;
+              padding: 0 0.32rem 0.8rem;
+              .list {
+                float: left;
+                width: 33%;
+                height: 1.333rem;
+                line-height: 1.333rem;
+                text-align: center;
+                a {
+                  display: block;
+                  img {
+                    width: 2.8rem;
+                    height: 1.333rem;
+                    vertical-align: middle;
+                  }
+                  .im1{
+                    width: 25px;
+                    height: 4px;
+                  }
+                  .im2{
+                    width: 62px;
+                    height: 21px;
+                  }
+                  .im3{
+                    width: 82px;
+                    height: 22px;
+                  }
+                }
+
+              }
+            }
+          }
+
+          &.cont3 {
+            padding-bottom: 1.12rem;
+            img {
+              display: block;
+              width: 3.2rem;
+              margin: 0.533rem auto 0.426rem;
+            }
+
+            h1 {
+              margin-bottom: 0.32rem;
+              font-size: 16px;
+              color: #161616;
+              text-align: center;
+              font-weight: bold;
+            }
+
+            .desc {
+              padding-left: 0.693rem;
+              font-size: 12px;
+              line-height: 18px;
+              color: #757575;
+            }
+          }
+        }
+      }
+      &.content-new{
+        background: #f6f6f5;
+        padding: 1.253rem 0 1.3rem 0;
+        .gudong{
+          padding: 0 0.426rem;
+          white-space: nowrap;
+          margin-bottom: 1.04rem;
+          dl{
+            color: #000;
+            border-bottom: 1px solid #e5e5e5;
+            dt{
+              display: inline-block;
+              margin-right: 16px;
+              font-size: 12px;
+              line-height: 30px;
+              font-weight: 700;
+            }
+            dd{
+              display: inline-block;
+              width: 6.453rem;
+              font-size: 12px
+            }
+          }
+        }
+        .gudong:last-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .wrap-pics{
+    img{
+      width: 100%;
+    }
+  }
+
+  .layer-picture {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 100;
+    .layer-picture-wrap {
+      padding: 20px 80px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .mint-swipe-indicator {
+    width: 7px;
+    height: 7px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #eeeeee !important;
+    margin: 0 5px;
+    transition: all 0.2s ease;
+    opacity: 1;
+  }
+
+  .mint-swipe-indicator.is-active {
+    width: 7px;
+    height: 7px;
+    background-color: #ff6600 !important;
+    opacity: 1;
+  }
+}
+
+.dola-about-nav-more{
+  a{
+    width: 22%;
+  }
+}
+
+.dola-about-company::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 320px) {
+
+  .dola-about-company .dola-about-company-content .content.content1 .part1 .gs-js dl dt {
+    margin-right: 0.133rem;
+  }
+
+  .dola-about-company .dola-about-company-content .content.content1 .part1 .gs-js dl dd {
+    width: 5.999rem;
+
+    &.addr {
+      vertical-align: top;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 384px) {
+  .dola-about-company .dola-about-company-content .content.content1 .part1 .gs-js dl:last-child dd {
+    vertical-align: top;
+  }
+}

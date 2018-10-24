@@ -1,0 +1,82 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dola-advance-exit {
+  margin-top: 44px;
+  padding: 30px 1.07rem 0 1.07rem;
+  .ico {
+    width: 46px;
+    height: 46px;
+    background: url("#{$imgUrl}/info_fill.png") no-repeat center;
+    background-size: contain;
+    display: block;
+    margin: 0 auto;
+  }
+  .t1 {
+    width: 4.68rem;
+    font-size: 15px;
+    color: #333333;
+    margin: 0.55rem auto 0.65rem;
+    text-align: center;
+    line-height: 21px;
+    span {
+      color: #ff6600;
+    }
+  }
+  .text {
+    margin-bottom: 0.83rem;
+    .text-t1 {
+      font-size: 12px;
+      color: #333333;
+      line-height: 20px;
+    }
+    .text-t2 {
+      font-size: 12px;
+      color: #909090;
+      line-height: 20px;
+    }
+  }
+  .advance-input {
+    .advance-input-txt {
+      margin-bottom: 0.25rem;
+      width: 100%;
+      > input {
+        width: 100%;
+        height: 49px;
+        line-height: 49px;
+        border: 1px solid #E5E5E5;
+        font-size: 14px;
+        text-align: center;
+      }
+      > input::-webkit-input-placeholder {
+        color: #c5c5c5;
+      }
+    }
+    .r {
+      font-size: 12px;
+      color: #666666;
+    }
+  }
+  .advance-btn {
+    width: 100%;
+    margin: 0.56rem auto 0;
+    .btn {
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      background: rgba(255, 102, 0, 1);
+      border-radius: 3px;
+      color: #FFFFFF;
+      font-size: 15px;
+      box-shadow: 0 0 18px rgba(51, 51, 51, 0.1);
+      transition: all 0.2s ease;
+    }
+    .btn-end{
+      background:rgba(213,213,213,1);
+    }
+  }
+}

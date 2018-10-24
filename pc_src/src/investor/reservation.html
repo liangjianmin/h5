@@ -1,0 +1,128 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 预约投标 -->
+<div class="invest__center reservation">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "reservation"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">预约投标</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content-wrapper">
+                <div class="layui-tab layui-tab-brief invest-tab" lay-filter="reservationTab">
+                    <ul class="layui-tab-title">
+                        <li class="item01 layui-this" lay-id="1">等待中<em class="waiting-num" id="waitingNum"></em></li>
+                        <li class="item02" lay-id="2">已完成</li>
+                        <li class="item03" lay-id="3">已取消</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show">
+                            <table class="layui-table invest-table" lay-skin="line">
+                                <thead>
+                                    <tr>
+                                        <th>预约时间</th>
+                                        <th>预约期限</th>
+                                        <th>往期参考利率</th>
+                                        <th>预约金额</th>
+                                        <th>操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="waitingTable">
+                                    <!--<tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                    </tr>-->
+                                </tbody>
+                            </table>
+                            <div class="dl__page" id="watingPage"></div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <table class="layui-table invest-table" lay-skin="line">
+                                <thead>
+                                    <tr>
+                                        <th>预约时间</th>
+                                        <th>预约期限</th>
+                                        <th>往期参考利率</th>
+                                        <th>预约金额</th>
+                                        <th>投资成功金额</th>
+                                        <th>垫息金额</th>
+                                        <th>完成时间</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="doneTable">
+                                    <!--<tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                        <td>借款用途：消费</td>
+                                        <td>借款用途：消费</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                        <td>借款用途：消费</td>
+                                        <td>借款用途：消费</td>
+                                    </tr>-->
+                                </tbody>
+                            </table>
+                            <div class="dl__page" id="donePage"></div>
+                        </div>
+                        <div class="layui-tab-item">
+                            <table class="layui-table invest-table" lay-skin="line">
+                                <thead>
+                                    <tr>
+                                        <th>预约时间</th>
+                                        <th>预约期限</th>
+                                        <th>往期参考利率</th>
+                                        <th>预约金额</th>
+                                        <th>取消时间</th>
+                                        <th>备注</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cancelTable">
+                                    <!--<tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                        <td>借款用途：消费</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018-08-20 13:38:45</td>
+                                        <td>借款</td>
+                                        <td>充值</td>
+                                        <td>+1000.00</td>
+                                        <td>3000.00元</td>
+                                        <td>借款用途：消费</td>
+                                    </tr>-->
+                                </tbody>
+                            </table>
+                            <div class="dl__page" id="cancelPage"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

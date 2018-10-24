@@ -1,0 +1,80 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+
+<!-- 余额自动复投 -->
+<div class="invest__center balance-return">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "balance"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit tit-theme">余额自动复投</h3>
+                <a class="cont-tit-sub" id="balanceRule" href="javascript:;">规则说明</a>
+            </div>
+            <div class="content-wrapper">
+                <dl class="balance-total">
+                    <dt class="balance-total-tit">已为您累计自动复投</dt>
+                    <dd class="balance-total-money"><strong id="balanceSuccessMoney">0</strong>元</dd>
+                </dl>
+                <form class="layui-form">
+                    <div class="balance-switch clr">
+                        <span class="tit">余额自动复投</span>
+                        <div class="switch">
+                            <input id="switchBanlace" type="checkbox" name="switch" lay-skin="switch" lay-text="开启|关闭" lay-filter="open_form" value="1">
+                            <div class="layui-unselect layui-form-switch" lay-skin="_switch">
+                                <em>OFF</em>
+                                <i></i>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <dl class="balance-no" id="balanceTips" style="display: block;">
+                    <dt class="tip-tit">功能说明</dt>
+                    <dd class="tip-text">1、该功能旨在满足用户的投标条件时自动投标，节约用户投资时间；</dd>
+                    <dd class="tip-text">2、用户自定义投资期限区间、往期年化收益率和账户保留金额等，平台将按照设置的条件自动投标；</dd>
+                    <dd class="tip-text">3、开启该功能能有效避免资金闲置，提高资金利用率。</dd>
+                </dl>
+                <form class="layui-form balace-set-from" id="setBalaceForm" style="display: none;">
+                    <ul class="balace-form-lists" id="balanceForm">
+                        <li class="balace-item balace-item-input">
+                            <span class="tit">帐户保留金额</span>
+                            <input class="save-money" id="holdMoney" type="text" name="save_money" autocomplete="off" placeholder="0" />
+                            <span class="company">元</span>
+                        </li>
+                        <li class="balace-item balace-item-input">
+                            <span class="tit">投资期限区间</span>
+                            <select id="minPeriod" name="start_date" lay-filter="leftSelect">
+                                <!--<option value="6个月">6个月</option>-->
+                            </select>
+                            <span class="line"></span>
+                            <select id="maxPeriod" name="end_date" lay-filter="rightSelect">
+                                <!--<option value="6个月">6个月</option>-->
+                            </select>
+                        </li>
+                        <li class="balace-item">
+                            <span class="tit">往期年化收益率</span>
+                            <span class="cont"><span id="minRate">--</span>%~<span id="maxRate">--</span>%</span>
+                        </li>
+                        <li class="balace-item">
+                            <span class="tit">回款方式</span>
+                            <span class="cont">等额本息</span>
+                        </li>
+                    </ul>
+                    <div class="protocol" id="balanceProtocol"><i class="select-icon" id="selectProtocol"></i>同意并签署<a href="javascript:;" id="invest_protocol">《投资授权协议》</a></div>
+                    <div class="balace-btn-wrapper">
+                        <button class="balace-btn" id="balanceBtn" lay-submit lay-filter="saveSet">保存设置</button>
+                        <button class="balace-btn" id="closeBtn" style="display: none;" lay-submit lay-filter="closeSet">保存设置</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 隐藏变量 -->
+<input type="hidden" value="0" id="isOpenBalance" />
+<input type="hidden" value="0" id="userHoleMoney" />
+<input type="hidden" value="0" id="userMinDate" />
+<input type="hidden" value="0" id="userMaxDate" />
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

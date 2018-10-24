@@ -1,0 +1,197 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 我要借款 -->
+<div class="user__center debtor-application">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "record"})
+        <div class="user__content">
+            <div class="cont-tit-wrapper">
+                <h3 class="cont-tit">我要借款</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="application-status">
+                    <ul class="status-lists clearfix">
+                        <li class="status-item status-item-success">
+                            <div class="img-status"></div>
+                            <div class="text-status">借款申请</div>
+                        </li>
+                        <li class="status-item">
+                            <div class="img-status">2</div>
+                            <div class="text-status">资质审核</div>
+                        </li>
+                        <li class="status-item status-item-last">
+                            <div class="img-status">3</div>
+                            <div class="text-status">借款成功</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="layui-form">
+                    <div class="application-form">
+                        <h3 class="application-tit">借款信息</h3>
+                        <div class="application-cont clearfix">
+                            <dl class="input-wrappers fl clearfix">
+                            	<dt class="input-tit fl">借款金额：</dt>
+                            	<dd class="input-wrapper fl">
+                            	    <input class="input" type="text" name="debtor_money" placeholder="请输入借款金额" />
+                            	    <span class="company">元</span>
+                            	</dd>
+                            </dl>
+                            <dl class="input-wrappers add fl clearfix">
+                                <dt class="input-tit fl">投资期限：</dt>
+                                <dd class="input-wrapper fl">
+                                    <select id="selectDate" name="debtor_date" lay-verify="required">
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="input-wrappers fl clearfix">
+                                <dt class="input-tit fl">借款用途：</dt>
+                                <dd class="input-wrapper fl">
+                                    <input class="input" type="text" name="debtor_use" placeholder="请输入借款用途" />
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="application-form">
+                        <h3 class="application-tit">基本信息</h3>
+                        <div class="application-cont clearfix">
+                            <dl class="input-wrappers fl clearfix">
+                                <dt class="input-tit fl">姓名：</dt>
+                                <dd class="input-wrapper fl">
+                                    <input class="input" type="text" name="debtor_name" placeholder="请输入您的姓名" />
+                                </dd>
+                            </dl>
+                            <dl class="input-wrappers add fl clearfix">
+                                <dt class="input-tit fl">性别：</dt>
+                                <dd class="input-wrapper fl">
+                                    <select name="debtor_sex" lay-verify="required">
+                                        <option value="">请选择</option>
+                                        <option value="男">男</option>
+                                        <option value="女">女</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="input-wrappers fl clearfix">
+                                <dt class="input-tit fl">身份证号：</dt>
+                                <dd class="input-wrapper fl">
+                                    <input class="input" type="text" name="debtor_id" placeholder="请输入身份证号" />
+                                </dd>
+                            </dl>
+                            <dl class="input-wrappers add fl clearfix">
+                                <dt class="input-tit fl">银行卡开户行：</dt>
+                                <dd class="input-wrapper fl">
+                                    <select id="selectBank" name="debtor_bank" lay-verify="required">
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="input-wrappers fl clearfix">
+                                <dt class="input-tit fl">银行卡号：</dt>
+                                <dd class="input-wrapper fl">
+                                    <input class="input" type="text" name="debtor_bank_no" placeholder="请输入银行卡号" />
+                                </dd>
+                            </dl>
+                            <dl class="input-wrappers add fl clearfix">
+                                <dt class="input-tit fl">联系手机号：</dt>
+                                <dd class="input-wrapper fl">
+                                    <input class="input" type="text" name="debtor_tel" placeholder="请输入手机号" />
+                                    <!--<button class="send-code">发送验证码</button>-->
+                                </dd>
+                            </dl>
+                            <!--<dl class="input-wrappers add fl clearfix">
+                                <dt class="input-tit fl">手机验证码：</dt>
+                                <dd class="input-wrapper fl">
+                                    <input class="input" type="text" name="debtor_tel_code" placeholder="请输入手机验证码" />
+                                </dd>
+                            </dl>-->
+                        </div>
+                    </div>
+                    <div class="application-form">
+                        <h3 class="application-tit">社会信息</h3>
+                        <div class="application-cont clearfix">
+                            <dl class="input-wrappers clearfix">
+                                <dt class="input-tit fl">教育程度：</dt>
+                                <dd class="input-wrapper fl">
+                                    <select name="debtor_school" lay-verify="required">
+                                        <option value="">请选择</option>
+                                        <option value="高中及以下">高中及以下</option>
+                                        <option value="大学专科">大学专科</option>
+                                        <option value="大学本科">大学本科</option>
+                                        <option value="研究生及以上">研究生及以上</option>
+                                    </select>
+                                </dd>
+                            </dl>
+                            <dl class="input-wrappers add clearfix">
+                                <dt class="input-tit fl">户籍地址：</dt>
+                                <dd class="adress-selects fl clearfix">
+                                    <form class="layui-form fl">
+                                        <div class="layui-form-item">
+                                            <div class="layui-input-inline select-input" id="selectProvid">
+                                                <select name="provid" id="provid" lay-filter="provid">
+                                                    <option value="">请选择省</option>
+                                                </select>
+                                            </div>
+                                            <span class="fl">省/直辖市</span>
+                                            <div class="layui-input-inline select-input" id="selectCityid">
+                                                <select name="cityid" id="cityid" lay-filter="cityid">
+                                                    <option value="">请选择市</option>
+                                                </select>
+                                            </div>
+                                            <span class="fl">市</span>
+                                            <div class="layui-input-inline select-input" id="selectAreaid">
+                                                <select name="areaid" id="areaid" lay-filter="areaid">
+                                                    <option value="">请选择县/区</option>
+                                                </select>
+                                            </div>
+                                            <span class="fl">区/县</span>
+                                        </div>
+                                    </form>
+                                </dd>
+                                <dd class="input-wrapper ad-info fl">
+                                    <input class="input" type="text" name="debtor_address" placeholder="请输入具体住宅信息" />
+                                </dd>
+                            </dl>
+                            <dl class="input-wrappers add clearfix">
+                                <dt class="input-tit fl">现居住地址：</dt>
+                                <dd class="adress-selects fl clearfix">
+                                    <form class="layui-form fl">
+                                        <div class="layui-form-item">
+                                            <div class="layui-input-inline select-input" id="selectProvids">
+                                                <select name="provids" id="provids" lay-filter="provids">
+                                                    <option value="">请选择省</option>
+                                                </select>
+                                            </div>
+                                            <span class="fl">省/直辖市</span>
+                                            <div class="layui-input-inline select-input" id="selectCityids">
+                                                <select name="cityids" id="cityids" lay-filter="cityids">
+                                                    <option value="">请选择市</option>
+                                                </select>
+                                            </div>
+                                            <span class="fl">市</span>
+                                            <div class="layui-input-inline select-input" id="selectAreaids">
+                                                <select name="areaids" id="areaids" lay-filter="areaids">
+                                                    <option value="">请选择县/区</option>
+                                                </select>
+                                            </div>
+                                            <span class="fl">区/县</span>
+                                        </div>
+                                    </form>
+                                </dd>
+                                <dd class="input-wrapper ad-info fl">
+                                    <input class="input" type="text" name="debtor_address02" placeholder="请输入具体住宅信息" />
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="sub-btn-wrapper">
+                        <input class="sub-btn" type="submit" value="提交" lay-submit lay-filter="applicationForm" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="@@webRoot/static/libs/data.js" ></script>
+<script src="@@webRoot/static/libs/province.js" ></script>
+<!-- 网站底部 -->
+@@include('../include/footer.html')

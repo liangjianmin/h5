@@ -1,0 +1,106 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dola-assets-details {
+  .dola-assets-details-view{
+    position: relative;
+    padding: 0 0.413rem;
+    .chat-text{
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      text-align: center;
+      margin-top: -27px;
+      .chat-text-t1{
+        font-size: 14px;
+        color:#999999;
+      }
+      .chat-text-t2{
+        font-size: 26px;
+        color: #141414;
+      }
+      .chat-text-t2-more{
+        font-size: 21px;
+      }
+      &.chat-texts{
+        margin-top: -1px;
+      }
+    }
+    .dola-assets-record{
+      margin: 0.5rem 0 0.68rem 0;
+      .b{
+        width: 48%;
+        height: 2.267rem;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 32px 0px rgba(14, 14, 18, 0.08);
+        border-radius: 3px;
+        padding-left: 0.6rem;
+        display: table;
+        .wrap{
+          display: table-cell;
+          vertical-align: middle;
+        }
+        .t1{
+          font-size: 14px;
+          color: #666666;
+          margin-bottom: 0.4rem;
+        }
+        .t2{
+          font-size: 15px;
+          color: #141414;
+        }
+      }
+
+    }
+    .txt{
+      font-size: 13px;
+      color: #999999;
+      a{
+        color: #6497ff;
+      }
+    }
+    .dola-assets-details-menu{
+      background: #fff;
+      padding: 0.5rem 0 0.867rem 0;
+      li{
+        a{
+          white-space: nowrap;
+          display: block;
+          .color{
+            width: 5%;
+            em{
+              width: 6px;
+              height: 12px;
+              border-radius: 3px;
+              display: block;
+            }
+            .color-1{
+              background-color: #ceb57d;
+            }
+            .color-2{
+              background-color: #ffb540;
+            }
+          }
+          .view{
+            width: 95%;
+            border-bottom: 1px solid rgba(229, 229, 229, 0.6);
+            padding: 0.52rem 0.2rem 0.52rem 0;
+            .t1{
+              font-size: 14px;
+              color: #666666;
+            }
+            .t2{
+              font-size: 15px;
+              color: #333333;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

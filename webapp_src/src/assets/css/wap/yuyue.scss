@@ -1,0 +1,555 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.reserve {
+  background: #F5F5F5;
+  padding-top: 46px;
+  .dola-title {
+    .tip {
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: 44px;
+      padding-right: 0.293rem;
+      i {
+        width: 12px;
+        height: 12px;
+        background: url("#{$imgUrl}guize.png") center center no-repeat;
+        background-size: contain;
+        margin-right: 0.1rem;
+      }
+      em {
+        font-size: 12px;
+        color: #fffdfd;
+      }
+    }
+  }
+  .dola-reserve-list {
+    background: #fff;
+    dd {
+      height: 42px;
+      line-height: 42px;
+      padding: 0 0.56rem;
+      a {
+        display: block;
+      }
+      .l {
+        .t1 {
+          font-size: 12px;
+          color: #757575;
+          em {
+            color: rgb(242, 132, 58);
+          }
+        }
+        span {
+          font-size: 12px;
+          color: #ff6700;
+        }
+      }
+      .r {
+        position: relative;
+        .t1 {
+          font-size: 12px;
+          color: #222222;
+        }
+        .t2 {
+          font-size: 12px;
+          color: #757575;
+        }
+        select {
+          vertical-align: middle;
+          font-size: 12px;
+          color: #222;
+          direction: rtl;
+          background: none !important;
+          &.seldef {
+            color: #ff6700;
+          }
+          option {
+            direction: ltr;
+            color: #222;
+          }
+        }
+        .ico-1 {
+          width: 7.5px;
+          height: 13px;
+          background: url("#{$imgUrl}right.png") no-repeat center;
+          background-size: contain;
+          margin-left: 0.3rem;
+        }
+      }
+      &.bor {
+        border-bottom: 1px solid #f0f0f0;
+      }
+    }
+  }
+  .inveset-form {
+    padding: 20px 0 10px 0;
+    background: #fff;
+    .input {
+      margin: 0 0.533rem 10px;
+      height: 44px;
+      line-height: 44px;
+      border: 1px solid #d2d2d2;
+      border-radius: 3px;
+      .desc {
+        display: inline-block;
+        padding: 0 .613rem 0 .533rem;
+        line-height: .96rem;
+        border-right: 1px solid rgba(36, 36, 36, .2);
+        font-size: 16px;
+        color: #444;
+      }
+      .inveset-money {
+        display: inline-block;
+        font-size: 14px;
+        text-align: center;
+        width: 59%;
+      }
+      .all-inveset {
+        display: inline-block;
+        font-size: 12px;
+        color: #f2843a;
+      }
+    }
+  }
+  .join-btn {
+    display: block;
+    text-align: center;
+    width: 90%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    margin: 0.1rem auto 0;
+    font-size: 17px;
+    color: #fff;
+    background-color: #ff6600;
+    box-shadow: 0rem 0.2rem 0.7rem 0rem rgba(253, 123, 95, 0.5);
+    border-radius: 3px;
+  }
+  .reserve-text {
+    padding: 0.27rem 0.56rem 0.89rem 0.56rem;
+    .text {
+      p {
+        font-size: 11px;
+        color: #666666;
+        line-height: 22px;
+      }
+    }
+    .agree-yx {
+      margin: 0.8rem 0 0 0 !important;
+      font-size: 11px;
+      line-height: 0.426rem;
+      color: #666;
+      white-space: nowrap;
+      .is-checked {
+        display: inline-block;
+        width: 0.426rem;
+        height: 0.426rem;
+        margin-right: 0.16rem;
+        background: url("#{$imgUrl}checkbox1.png") center no-repeat;
+        background-size: contain;
+        vertical-align: top;
+        &.checked-right {
+          background: url("#{$imgUrl}checkbox_right.png") center no-repeat;
+          background-size: contain;
+        }
+      }
+      .agree-yx-text {
+        width: 90%;
+        white-space: normal;
+        vertical-align: top;
+        span {
+          color: #666666;
+        }
+      }
+      a {
+        font-size: 11px;
+        color: #666666;
+      }
+    }
+  }
+  .invest-affirm {
+    .invest-affirm-wrapper {
+      .affrim-join-pro-from {
+        .form-lists {
+          .list {
+            border-bottom: none;
+            .content {
+              font-size: 12px;
+              color: #ff6600;
+            }
+          }
+        }
+        .code {
+          @include dispFlex();
+          align-items: center;
+          border-radius: 4px;
+          border: 1px solid #E5E5E5;
+          dd {
+            @include boxFlex();
+            height: 44px;
+            line-height: 44px;
+            text-align: center;
+            font-size: 19px;
+            color: #000000;
+            border-right: 1px solid #E5E5E5;
+            > input {
+              width: 100%;
+              text-align: center;
+            }
+            &:last-child {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.type-time {
+  dl {
+    padding: 0 0.56rem;
+    height: 218px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    dd {
+      height: 42px;
+      line-height: 42px;
+      border-bottom: 1px solid #E7E7E7;
+      .l {
+        font-size: 15px;
+        color: #FF6600;
+      }
+      .r {
+        width: 30px;
+        height: 30px;
+        background: url("#{$imgUrl}yuyue/ico_right.png") center no-repeat;
+        background-size: cover;
+        display: none;
+      }
+      &.curr {
+        .r {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+.dola-user-yuyue {
+  background: #F9F9F9;
+  height: 100%;
+  .dola-title {
+    .tip {
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: 44px;
+      padding-right: 0.293rem;
+      i {
+        width: 12px;
+        height: 12px;
+        background: url("#{$imgUrl}guize.png") center center no-repeat;
+        background-size: contain;
+        margin-right: 0.1rem;
+      }
+      em {
+        font-size: 12px;
+        color: #fffdfd;
+      }
+    }
+  }
+  .dola-user-yuyue-tit {
+    background: #fff;
+    padding-top: 44px;
+    margin-bottom: 0.27rem;
+    @include dispFlex();
+    height: 49px;
+    align-items: center;
+    li {
+      position: relative;
+      @include boxFlex();
+      text-align: center;
+      transition: all 0.2s ease;
+      i {
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        background: #f03a3f;
+        font-size: 10px;
+        color: #ffffff;
+        text-align: center;
+        display: block;
+        line-height: 14px;
+        border-radius: 50%;
+        margin-left: 20px;
+        min-width: 14px;
+        min-height: 14px;
+        padding: 3px;
+      }
+      span {
+        color: #141414;
+      }
+      &.curr {
+        span:after {
+          position: absolute;
+          bottom: -16px;
+          left: 0;
+          right: 0;
+          width: 34px;
+          height: 2px;
+          content: '';
+          background: rgba(255, 103, 0, 1);
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .dola-user-yuyue-list {
+    background: #fff;
+    height: 100%;
+    .dola-user-yuyue-list-content-a {
+      dl {
+        dd {
+          border-bottom: 0.27rem solid #F5F5F5;
+          padding: 0.59rem 0 0 0;
+          .tit {
+            padding: 0 0.47rem;
+            margin-bottom: 0.7rem;
+            .l {
+              .t1{
+                width:52px;
+                height:16px;
+                background:rgba(244,94,94,1);
+                border-radius:1.5px;
+                font-size: 11px;
+                color: #ffffff;
+                text-align: center;
+                line-height: 16px;
+              }
+              .t2{
+                font-size: 12px;
+                color: #000;
+                line-height: 20px;
+              }
+            }
+            .r {
+              width: 60px;
+              height: 20px;
+              line-height: 20px;
+              text-align: center;
+              display: block;
+              border-radius: 3px;
+              border: 1px solid #999999;
+              font-size: 10px;
+              color: #454545;
+              &.no{
+                border: 1px solid #E4E4E4;
+                color: #bbbbbb;
+              }
+            }
+          }
+          ul {
+            @include dispFlex();
+            padding:0 0.47rem 0.27rem 0.47rem;
+            li {
+              @include boxFlex();
+              .t1 {
+                font-size: 17px;
+                color: #141414;
+              }
+              .t2 {
+                margin-top: 0.29rem;
+                font-size: 12px;
+                color: #a3a3a3;
+              }
+              .t3 {
+                font-size: 17px;
+                color: #ff6600;
+              }
+            }
+          }
+          .novice{
+            padding: 0 0.44rem;
+            height: 34px;
+            line-height: 34px;
+            background: #fffeee;
+            font-size: 12px;
+            color: #5e5252;
+            border-top: 1px solid #f4f4f4;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .dola-user-yuyue-list-content-b {
+      dl {
+        border-bottom: 0.25rem solid #F9F9F9;
+        dt{
+          .novice{
+            margin: 0.63rem 0 0 0;
+            padding: 0 0.44rem;
+            height: 34px;
+            line-height: 34px;
+            background: #fffeee;
+            font-size: 12px;
+            color: #5e5252;
+            border-top: 1px solid #F2EEBF;
+            border-bottom: 1px solid #F2EEBF;
+          }
+        }
+        dd {
+          margin-left: 0.4rem;
+          padding-right: 0.45rem;
+          border-bottom: 1px solid #E0E0E0;
+          height: 50px;
+          line-height: 50px;
+          .l {
+            font-size: 15px;
+            color: #000000;
+          }
+          .r {
+            font-size: 15px;
+            color: #999999;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .dola-user-yuyue-list-content-c {
+      dl {
+        border-bottom: 0.25rem solid #F9F9F9;
+        dd {
+          margin-left: 0.4rem;
+          padding-right: 0.45rem;
+          border-bottom: 1px solid #E0E0E0;
+          height: 50px;
+          line-height: 50px;
+          .l {
+            font-size: 15px;
+            color: #000000;
+          }
+          .r {
+            font-size: 15px;
+            color: #999999;
+          }
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+    .no-data-text {
+      color: #a3a3a3;
+      height: 33px;
+      line-height: 33px;
+      text-align: center;
+    }
+    .no-data-box {
+      .no-data {
+        width: 4rem;
+        height: 2.7rem;
+        margin: 0 auto;
+        background: url("#{$imgUrl}nodata.png") no-repeat center;
+        background-size: cover;
+        display: block;
+      }
+      p {
+        font-size: 13px;
+        color: #999999;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.yuyue-mt {
+  padding-bottom: 2rem;
+}
+
+.dola-mine-yuyue {
+  padding-top: 44px;
+  .top {
+    padding: 0.44rem 0.49rem 0.55rem 0.49rem;
+    margin-top: 0.25rem;
+    background: #fff;
+    .l {
+      .t1 {
+        font-size: 12px;
+        color: #a3a3a3;
+        margin-bottom: 0.5rem;
+      }
+      .t2 {
+        font-size: 30px;
+        color: #ff6600;
+        em {
+          font-size: 18px;
+          color: #ff6600;
+        }
+      }
+    }
+    .r {
+      .t1 {
+        font-size: 12px;
+        color: #a3a3a3;
+        margin-bottom: 0.5rem;
+      }
+      .t2 {
+        font-size: 30px;
+        color: #454545;
+        em {
+          font-size: 18px;
+          color: #454545;
+        }
+      }
+    }
+  }
+  .tex {
+    background: #fff;
+    margin-top: 0.25rem;
+    padding: 0.47rem 0.49rem;
+    display: block;
+    .l {
+      font-size: 16px;
+      color: #000000;
+    }
+    .r {
+      span {
+        font-size: 16px;
+        color: #999999;
+      }
+      i {
+        width: 7.5px;
+        height: 13px;
+        background: url("#{$imgUrl}right.png") no-repeat center;
+        background-size: contain;
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(500px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .invest-affirm .invest-affirm-wrapper .affrim-join-pro-from .list .desc {
+    font-size: 13px;
+  }
+}

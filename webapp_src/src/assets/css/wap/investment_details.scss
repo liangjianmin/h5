@@ -1,0 +1,336 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.dola-investment-details {
+  .dola-investment-details-sebox{
+    position: fixed;
+    top: 44px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 480px;
+    overflow: hidden;
+    z-index: 100;
+    margin: 0 auto;
+    .search-condition {
+      background: #fff;
+      border-bottom: 1px solid #E9E9E9;
+      border-top: 1px solid #E9E9E9;
+      @include dispFlex();
+      height: 44px;
+      align-items: center;
+      li {
+        @include boxFlex();
+        text-align: center;
+        span {
+          font-size: 14px;
+          color: #bebebe;
+          vertical-align: middle;
+        }
+        .t1 {
+          color: #666666;
+        }
+        i {
+          width: 10px;
+          height: 6px;
+          background: url("#{$imgUrl}sanbiao/arrow.png") no-repeat center;
+          background-size: contain;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 0.3rem;
+          transition: all 0.2s ease;
+        }
+        &.curr {
+          i {
+            transform: rotateX(180deg);
+          }
+        }
+      }
+    }
+  }
+  .dola-investment-details-con{
+    padding: 124px 0 0 0;
+    .head-t1{
+      font-size: 14px;
+      color: #757575;
+      padding: 0 0.413rem;
+      margin-bottom: 0.12rem;
+    }
+    .head-t2{
+      font-size: 30px;
+      color: #333333;
+      padding: 0 0.413rem;
+      margin-bottom: 0.72rem;
+    }
+    .txt{
+      padding: 0 0.413rem 29px 0.413rem;
+      .b{
+        width: 48%;
+        height: 85px;
+        border-radius: 3px;
+        display: table;
+        padding-left:0.467rem;
+        .wrap{
+          display: table-cell;
+          vertical-align: middle;
+          .txt-t1{
+            font-size: 14px;
+            color: #ffffff;
+            margin-bottom: 0.36rem;
+          }
+          .txt-t2{
+            font-size: 15px;
+            color: #ffffff;
+          }
+        }
+      }
+      .l{
+        position: relative;
+        background-color: #7575FA;
+        box-shadow: 0px 0px 32px 0px rgba(206, 181, 125, 0.4);
+        i{
+          position: absolute;
+          right: 12px;
+          top: 50%;
+          margin-top: -7px;
+          width: 8px;
+          height: 14px;
+          background: url("#{$imgUrl}person/arrow.png") no-repeat center;
+          background-size: contain;
+          display: inline-block;
+        }
+      }
+      .l-color{
+        background-color: #ceb57d;
+        box-shadow: 0 0 32px 0 hsla(41,45%,65%,0.4);
+      }
+      .r{
+        background-color: #ffb540;
+        box-shadow: 0px 0px 32px 0px rgba(255, 181, 64, 0.4);
+      }
+    }
+    .tab{
+      width: 80%;
+      @include dispFlex;
+      margin: 0.8rem auto 0;
+      li{
+        @include boxFlex;
+        text-align: center;
+        span{
+          font-size: 16px;
+          color: #141414;
+          padding: 19px 0;
+        }
+        &.curr{
+          span{
+            border-bottom: 2px solid #ff6600;
+          }
+        }
+      }
+    }
+    .dola-investment-details-view{
+      background-color: #f5f5f5;
+      padding: 0.253rem 0 0 0;
+      li{
+        padding: 0.6rem 0 0 0;
+        background: #fff;
+        margin-bottom: 0.253rem;
+        >a{
+          padding: 0 0.413rem;
+          display: block;
+        }
+        .top{
+          .view-t1{
+            font-size: 14px;
+            color: #000000;
+            width: 6.4rem;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+          }
+          .r{
+            position: relative;
+            width: 85px;
+            height: 20px;
+            border-radius: 10px;
+            border: 1px solid #d2d2d2;
+            text-align: center;
+            line-height: 20px;
+            overflow: hidden;
+            span{
+              position: absolute;
+              left: 0;
+              top: 0;
+              height: 20px;
+              border-radius: 10px 0 0 10px;
+              background-color: #E1B876;
+            }
+            em{
+              position: relative;
+              color: #333333;
+              font-size: 12px;
+              z-index:2;
+            }
+          }
+        }
+        .view-money{
+          @include dispFlex;
+          padding: 0.52rem 0;
+          border-bottom: 1px solid #f4f4f4;;
+          dl{
+            @include boxFlex;
+            dt{
+              font-size: 15px;
+              color: #333333;
+              margin-bottom: 0.227rem;
+            }
+            dd{
+              font-size: 12px;
+              color: #999999;
+              white-space: nowrap;
+            }
+          }
+        }
+        .status-text{
+          padding: 0.44rem 0.413rem;
+          text-align: center;
+          display: block;
+          white-space: nowrap;
+          .ico{
+            width: 22px;
+            height: 16px;
+            background: url("#{$imgUrl}person/invest.png") no-repeat center;
+            background-size: contain;
+            margin-right: 0.013rem;
+          }
+          .t1{
+            font-size: 15px;
+            color: #ff6600;
+          }
+          .t2{
+            font-size: 15px;
+            color: #333333;
+          }
+          .t3{
+            font-size: 15px;
+            color: #999999;
+          }
+          .btn{
+            width: 50%;
+            text-align: center;
+            font-size: 15px;
+            color: #333333;
+          }
+          .btn-end{
+            color: #999;
+          }
+        }
+        .novice{
+          padding: 0 0.44rem;
+          height: 34px;
+          line-height: 34px;
+          background: #fffeee;
+          font-size: 12px;
+          color: #5e5252;
+          border-top: 1px solid #f4f4f4;
+        }
+      }
+    }
+  }
+  .dola-investment-details-search-bar{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:4px;
+    width: 100%;
+    text-align: center;
+    max-width: 100px;
+    margin: 0 auto;
+    p{
+      font-size: 17px;
+      color: #fff;
+    }
+    .ico{
+      width: 9px;
+      height: 6px;
+      background: url("#{$imgUrl}person/invest-1.png") no-repeat center;
+      background-size: contain;
+      display: block;
+      margin: 0.173rem auto 0;
+    }
+  }
+  .dola-investment-details-search{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:44px;
+    max-width: 480px;
+    margin: 0 auto;
+    z-index:11;
+    ul{
+      padding: 0.22rem 0.413rem;
+      background: #fff;
+      li{
+        width: 30%;
+        height: 36px;
+        background-color: #ffffff;
+        border-radius: 3px;
+        border:1px solid  #e2e2e2;
+        font-size: 13px;
+        color: #333333;
+        line-height: 36px;
+        text-align: center;
+        margin-right: 3%;
+        margin-bottom: 0.267rem;
+
+        float: left;
+        &.curr{
+          background-color: #ff6700;
+          color: #ffffff;
+        }
+        &:nth-of-type(3n){
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .dola-investment-details-search-fade{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+  }
+}
+
+.no-data-box{
+  .no-data{
+    width: 4rem;
+    height: 2.7rem;
+    margin: 0 auto;
+    background: url("#{$imgUrl}nodata.png") no-repeat center;
+    background-size: cover;
+    display: block;
+  }
+  p{
+    font-size: 13px;
+    color: #999999;
+    text-align: center;
+  }
+}
+
+.investmentdetails-load-text{
+  height: 50px;
+  line-height: 50px;
+  padding-bottom: 100px;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+}

@@ -1,0 +1,118 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 邀请好友 -->
+<div class="invest__center invite-frineds">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "invite"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit tit-theme">邀请好友</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content-wrapper">
+                <div class="invite-banner">
+                    <a class="invite-link" id="inviteLink" href="javascript:;" target="_blank">
+                        <img class="invite-img" id="inviteImg" src="/" alt="" />
+                    </a>
+                </div>
+                <ul class="invite-total clearfix">
+                   <li class="invite-item">
+                       <span class="invite-tit">已邀请 </span>
+                       <span class="invite-cont"><strong class="cont" id="inviteNum">--</strong>人</span>
+                   </li>
+                   <li class="invite-item">
+                       <span class="invite-tit">已返佣金额</span>
+                       <span class="invite-cont"><strong class="cont" id="hasCashBackTotal">--</strong>元</span>
+                   </li>
+                   <li class="invite-item invite-item-last">
+                       <span class="invite-tit">待返佣金额</span>
+                       <span class="invite-cont"><strong class="cont" id="waitCashBackTotal">--</strong>元</span>
+                   </li>
+                </ul>
+                <div class="share-wrapper">
+                    <ul class="share-lists bdsharebuttonbox clearfix" data-tag="share_platform">
+                        <li class="share-item">
+                            <a class="share-link share-link01 js-share-btn" href="javascript:;" data-cmd="tsina" title="分享到新浪微博"></a>
+                            <em class="share-text">分享到新浪微博</em>
+                        </li>
+                        <li class="share-item">
+                            <a class="share-link share-link02 js-share-btn" href="javascript:;" data-cmd="weixin" title="分享到微信"></a>
+                            <em class="share-text">分享到微信</em>
+                        </li>
+                        <li class="share-item">
+                            <a class="share-link share-link03 js-share-btn" href="javascript:;" data-cmd="sqq" title="分享到QQ"></a>
+                            <em class="share-text">分享到QQ</em>
+                        </li>
+                        <li class="share-item">
+                            <a class="share-link share-link04 js-share-btn" href="javascript:;" data-cmd="qzone" title="分享到QQ空间"></a>
+                            <em class="share-text">分享到QQ空间</em>
+                        </li>
+                        <li class="share-item" style="display: none;">
+                            <a class="share-link share-link05" href="javascript:;" id="msgShareBtn"></a>
+                            <em class="share-text">短信</em>
+                        </li>
+                    </ul>
+                    <div class="copy-wrapper">
+                        <input class="cont" id="inviteShareLink" value="--" readonly>
+                        <a class="copy-btn" id="copyInviteShareLink" data-clipboard-target="#inviteShareLink">复制</a>
+                    </div>
+                </div>
+                <div class="invite-list-wrapper">
+                    <div class="layui-tab invite-tab" lay-filter="inviteTab">
+                        <h4 class="invite-list-tit">邀请记录</h4>
+                        <ul class="layui-tab-title invite-tab-title">
+                            <li class="invite-tab-item layui-this">全部</li>
+                            <li class="invite-tab-item">已投资</li>
+                        </ul>
+                        <div class="layui-tab-content">
+                            <div class="layui-tab-item layui-show">
+                                <table class="layui-table invite-table" lay-skin="line">
+                                    <thead>
+                                        <tr>
+                                            <th>手机号</th>
+                                            <th>好友姓名</th>
+                                            <th>注册时间</th>
+                                            <th>首次投资时间</th>
+                                            <th>备注</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="inviteAllTable">
+                                    </tbody>
+                                </table>
+                                <div class="dl__page" id="inviteAllPage"></div>
+                            </div>
+                            <div class="layui-tab-item">
+                                <table class="layui-table invite-table" lay-skin="line">
+                                    <thead>
+                                        <tr>
+                                            <th>手机号</th>
+                                            <th>好友姓名</th>
+                                            <th>注册时间</th>
+                                            <th>首次投资时间</th>
+                                            <th>备注</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="inviteInvestTable">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="msg-share-wrapper dn" id="msgShareWrapper">
+    <h4 class="send-tit">给好友发送短信</h4>
+    <p class="send-cont">【多啦聚财】亲，我是XX,我在多啦聚财投资，邀请你一起加入，让财富稳健增长，注册有惊喜哦！</p>
+    <div class="layui-form send-msg-form">
+        <input type="text" class="send-input" name="friend_tel" placeholder="请输入手机号码" lay-verify="required|phone|number" lay-verType="tips" />
+        <input type="submit" value="免费发送短信" class="send-btn" lay-submit lay-filter="sendMsgForm" />
+    </div>
+    <p class="send-tips">*实名认证用户才可免费发送短信，每天最多发送5条,多个号码直接用“,”分隔。</p>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

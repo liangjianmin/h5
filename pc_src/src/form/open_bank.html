@@ -1,0 +1,53 @@
+
+<!-- 网站头部 -->
+@@include("../include/header.html")
+<!-- 银行存管开户  -->
+<div class="open-bank">
+    <div class="dl__container">
+        <h3 class="open-bank-title">多啦聚财已接入银行资金存管系统<br />全程保障您的资金安全</h3>
+        <div class="layui-form open-bank-form">
+            <dl class="input-block clearfix">
+            	<dt class="input-tit">姓名：</dt>
+            	<dd class="input-cont">
+            	    <input class="input" id="userName" type="text" name="user_name" placeholder="请输入真实姓名" autocomplete="off" lay-verify="required" lay-verType="tips" />
+            	</dd>
+            </dl>
+            <dl class="input-block clearfix">
+                <dt class="input-tit">身份证号：</dt>
+                <dd class="input-cont">
+                    <input class="input" id="userID" type="text" name="user_id" placeholder="请输入身份证号" autocomplete="off" lay-verify="required" lay-verType="tips" />
+                </dd>
+            </dl>
+            <dl class="input-block clearfix">
+                <dt class="input-tit">开户银行：</dt>
+                <dd class="input-cont">
+                    <select class="input" name="bank_name" lay-verify="required"  id="selectBank" lay-filter="bankSelect">
+                        <option value="请选择开户银行">请选择开户银行</option>
+                    </select>
+                </dd>
+                <dd class="bank-limit">
+                    <button class="bank-limit-btn" id="checkBankLimit">查看充值限额</button>
+                </dd>
+            </dl>
+            <div class="tip-info bank-limit-info dn" id="bankLimitInfo">快捷支付限额：单笔5万，单日5万</div>
+            <dl class="input-block clearfix">
+                <dt class="input-tit">银行卡号：</dt>
+                <dd class="input-cont">
+                    <input class="input" id="userCardNo" type="text" name="user_bank_card_no" placeholder="请输入银行卡号" autocomplete="off" lay-verify="required" lay-verType="tips" />
+                </dd>
+            </dl>
+            <dl class="input-block clearfix">
+                <dt class="input-tit">银行预留手机号：</dt>
+                <dd class="input-cont">
+                    <input class="input" id="userBankTel" type="text" name="user_bank_tel" placeholder="请输入银行卡预留手机号" autocomplete="off" lay-verify="required|phone|number" lay-verType="tips" />
+                </dd>
+            </dl>
+            <div class="tip-info error-tip dn" id="formTip">请输入真实姓名</div>
+            <div class="open-bank-btn-wrapper">
+                <input class="open-bank-btn disabled" id="openBankBtn" type="submit" value="下一步" disabled lay-submit lay-filter="openBnak" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 网站底部 -->
+@@include("../include/footer.html")

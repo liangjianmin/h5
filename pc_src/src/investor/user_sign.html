@@ -1,0 +1,57 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 用户签约 -->
+<div class="invest__center user-sign">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "setting"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">授权签约</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="sign-tit">我的授权签约</div>
+                <ul class="sign-lists">
+                    <li class="sign-item clearfix">
+                        <span class="sign-title">自动投标签约</span>
+                        <span class="sign-status" id="signSutoBid">立即签约</span>
+                        <span class="sign-status is-sign" id="isSignSutoBid" style="display: none;">已签约</span>
+                    </li>
+                    <li class="sign-item clearfix">
+                        <span class="sign-title">自动购买转让标签约</span>
+                        <span class="sign-status" id="signCreditTransfer">立即签约</span>
+                        <span class="sign-status is-sign" id="isSignCreditTransfer" style="display: none;">已签约</span>
+                    </li>
+                    <li class="sign-item clearfix">
+                        <span class="sign-title">债权转让手续费签约</span>
+                        <span class="sign-status" id="signTransfere">立即签约</span>
+                        <span class="sign-status is-sign" id="isSignTransfere" style="display: none;">已签约</span>
+                    </li>
+                </ul>
+                <div class="sign-tit mt15">平台协议</div>
+                <ul class="sign-lists">
+                    <li class="sign-item clearfix">
+                        <span class="sign-title">《投资授权协议》</span>
+                        <span class="sign-status" id="investProtocolBtn">查看</span>
+                        <span class="sign-status is-sign is-protocol fr" id="isInvestProtocol" style="display: none;">已签署</span>
+                    </li>
+                    <li class="sign-item clearfix">
+                        <span class="sign-title">《多啦聚财咨询服务协议》</span>
+                        <span class="sign-status" id="serverProtocolBtn">查看</span>
+                    </li>
+                    <li class="sign-item clearfix">
+                        <span class="sign-title">《多啦聚财注册服务协议》</span>
+                        <span class="sign-status" id="registerProtocolBtn">查看</span>
+                    </li>
+                    <li class="sign-item clearfix">
+                        <span class="sign-title">《风险提示书》</span>
+                        <span class="sign-status" id="riskBnt">查看</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

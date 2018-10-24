@@ -1,0 +1,1411 @@
+@charset "utf-8";
+@import "base";
+
+$imgUrlDev: '../img/';
+$imgUrl: '../../images/app/';
+
+.white {
+  background: #fff;
+}
+
+.bank-guide {
+  padding: 2rem 0 0 0;
+  .ico-1 {
+    width: 47px;
+    height: 47px;
+    background: url("#{$imgUrl}bank/success.png") no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+    display: block;
+  }
+  .t1 {
+    margin: 0.76rem 0 0 0;
+    font-size: 19px;
+    color: #333333;
+    text-align: center;
+  }
+  .t2 {
+    margin: 0.333rem 0 0 0;
+    font-size: 13px;
+    color: #666666;
+    text-align: center;
+  }
+  .btn {
+    margin: 0.867rem 0 1.773rem 0;
+    .btn-t1 {
+      width: 219px;
+      height: 44px;
+      background-color: #ff6700;
+      box-shadow: 0px 0px 18px 0px rgba(51, 51, 51, 0.1);
+      border-radius: 3px;
+      font-size: 16px;
+      color: #ffffff;
+      margin: 0 auto;
+      line-height: 44px;
+      text-align: center;
+      display: block;
+    }
+    .btn-t2 {
+      font-size: 14px;
+      color: #757575;
+      text-align: center;
+      display: block;
+      margin: 0.64rem 0 0 0;
+    }
+    .btn-t3 {
+      font-size: 16px;
+    }
+  }
+  .down {
+    width: 100%;
+    text-align: center;
+    height: 44px;
+    background-color: #f5f5f5;
+    display: block;
+    .ico-2 {
+      width: 11px;
+      height: 16px;
+      background: url("#{$imgUrl}bank/mobile.png") no-repeat center;
+      background-size: contain;
+      margin-right: 0.013rem;
+    }
+    .down-t1 {
+      font-size: 16px;
+      color: #ff6700;
+    }
+    .down-t2 {
+      font-size: 16px;
+      color: #333333;
+    }
+  }
+  .text {
+    margin: 0.747rem 0 0 0;
+    padding: 0 0.84rem 0 0.84rem;
+    .text-t1 {
+      font-size: 13px;
+      color: #333333;
+    }
+    .text-t2 {
+      margin: 0.5rem 0 0 0;
+      font-size: 12px;
+      color: #999999;
+      line-height: 22px;
+      text-align: justify;
+    }
+  }
+}
+
+.bank-open-account {
+  .head {
+    padding: 0.787rem 0 0.533rem 0;
+    text-align: center;
+    background: #fff;
+    .head-wrap {
+      margin: 0 0 0.613rem 0;
+      .ico-1 {
+        width: 135px;
+        height: 38px;
+        background: url("#{$imgUrl}bank/logo.png") no-repeat center;
+        background-size: contain;
+      }
+      .ico-2 {
+        width: 115px;
+        height: 24px;
+        background: url("#{$imgUrl}bank/SRBN.png") no-repeat center;
+        background-size: contain;
+      }
+      span {
+        font-size: 21px;
+        color: #141414;
+        margin: 0 0.427rem;
+      }
+    }
+    .text {
+      width: 6.307rem;
+      font-size: 14px;
+      color: #333333;
+      margin: 0 auto;
+      line-height: 23px;
+    }
+  }
+  .head-tip {
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff7ea;
+    font-size: 13px;
+    color: #333333;
+    padding-left: 0.44rem;
+  }
+  .bank-form {
+    background: #f5f5f5;
+    padding: 0.4rem 0 0 0;
+    dl {
+      dd {
+        position: relative;
+        background-color: #ffffff;
+        padding-left: 0.44rem;
+        white-space: nowrap;
+        transition: all 0.2s ease;
+        label {
+          position: absolute;
+          font-size: 15px;
+          color: #020202;
+          line-height: 44px;
+        }
+        .inp {
+          padding-left: 2.2rem;
+          .input-text {
+            width: 100%;
+            display: block;
+            line-height: 22px;
+            padding: 10px 0;
+            font-size: 15px;
+            color: #141414;
+            background: none;
+            &::-webkit-input-placeholder {
+              color: #d1d1d1;
+            }
+          }
+          .codebox {
+            width: 59%;
+            display: inline-block;
+          }
+          .code-text {
+            font-size: 14px;
+            color: #0a85d3;
+            background: none;
+            &.code-curr {
+              color: #a2a2a2;
+            }
+          }
+        }
+        &.bor {
+          .inp {
+            border-bottom: 1px solid #e5e5e5;
+          }
+        }
+        &.form-hr {
+          border-bottom: 0.4rem solid #f5f5f5;
+        }
+        .select-box {
+          width: 45%;
+          padding-left: 2.2rem;
+          select {
+            width: 100%;
+            display: block;
+            line-height: 44px;
+            appearance: none;
+            -webkit-appearance: none;
+            font-size: 15px;
+            color: #d1d1d1;
+            background: url("#{$imgUrl}bank/arrow-1.png") no-repeat scroll right center transparent;
+            option {
+              height: 35px;
+              line-height: 35px;
+              color: #333333;
+              font-size: 15px;
+              -webkit-appearance: none;
+              padding-left: 0.333rem;
+              &:hover {
+                background-color: #f5f5f5;
+              }
+            }
+            &.select-box-class {
+              color: #141414;
+            }
+          }
+        }
+        .text {
+          font-size: 14px;
+          color: #0a85d3;
+          margin-left: 0.467rem;
+        }
+      }
+      dt {
+        &.dt-tip {
+          padding-left: 0.44rem;
+          height: 44px;
+          background: #f5f5f5;
+          i {
+            width: 12px;
+            height: 12px;
+            background: url("#{$imgUrl}bank/tip.png") no-repeat center;
+            background-size: contain;
+          }
+          span {
+            font-size: 12px;
+            color: #a9a9a9;
+            margin-left: 0.1rem;
+          }
+        }
+      }
+    }
+    .bank-btn-box {
+      padding: 0.627rem 0.44rem 3.64rem 0.44rem;
+      background: #f5f5f5 !important;
+      .btn {
+        width: 100%;
+        display: block;
+        height: 44px;
+        background: #ff6700;
+        box-shadow: 0px 0px 18px 0px rgba(51, 51, 51, 0.1);
+        border-radius: 3px;
+        font-size: 14px;
+        color: #ffffff;
+        line-height: 44px;
+        text-align: center;
+      }
+      .btn-end {
+        background: #d5d5d5 !important;
+      }
+    }
+  }
+}
+
+.bank-withdraw-success {
+  padding: 2rem 0 0 0;
+  .icn-1 {
+    width: 47px;
+    height: 47px;
+    background: url("#{$imgUrl}bank/success.png") no-repeat center;
+    background-size: contain;
+    margin: 0 auto;
+    display: block;
+  }
+  .t1 {
+    margin: 0.76rem 0 0 0;
+    font-size: 19px;
+    color: #333333;
+    text-align: center;
+  }
+  .t2 {
+    margin: 0.333rem 0 0 0;
+    font-size: 13px;
+    color: #666666;
+    text-align: center;
+  }
+  .back {
+    width: 219px;
+    height: 44px;
+    background-color: #ff6700;
+    box-shadow: 0px 0px 18px 0px rgba(51, 51, 51, 0.1);
+    border-radius: 3px;
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0.867rem auto 1.773rem;
+    line-height: 44px;
+    text-align: center;
+    display: block;
+  }
+  .text {
+    padding: 0 0.547rem;
+    .text-t1 {
+      font-size: 13px;
+      color: #333333;
+      line-height: 21px;
+      margin-bottom: 0.32rem;
+    }
+    .text-t2 {
+      font-size: 12px;
+      color: #999999;
+      line-height: 18px;
+      margin-top: 0.347rem;
+    }
+    .table-txt {
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      border: solid 1px #e5e5e5;
+      > tbody {
+        tr {
+          th {
+            font-size: 12px;
+            color: #999999;
+            padding: 0.173rem 0;
+            border: 1px solid #e5e5e5;
+            font-weight: normal;
+          }
+          td {
+            font-size: 12px;
+            color: #333333;
+            padding: 0.36rem 0;
+            border: 1px solid #e5e5e5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bank-operate {
+  padding-top: 44px;
+  .withdraw-tip{
+    padding:0 0.52rem 0 0.52rem;
+    height: 40px;
+    background: #FFF9E5;
+    @include dispFlex();
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.2853rem solid #f5f5f5;
+    .l{
+      i{
+        width: 16px;
+        height: 16px;
+        background: url("#{$imgUrl}bank/ss.png") no-repeat center;
+        background-size: cover;
+      }
+      span{
+        color: #673333;
+        font-size: 12px;
+      }
+    }
+    .r{
+      display: block;
+      height:24px;
+      font-size: 12px;
+      color: #ff6600;
+      line-height: 24px;
+      text-align: center;
+    }
+  }
+  .bank-operate-head-tab {
+    height: 49px;
+    @include dispFlex();
+    align-items: center;
+    background: #fff;
+    border-bottom: 0.27rem solid #F5F5F5;
+    li {
+      position: relative;
+      height: 49px;
+      line-height: 49px;
+      @include boxFlex();
+      text-align: center;
+      font-size: 15px;
+      color: #333333;
+      transition: all 0.3s ease;
+      &.curr {
+        color: #ff6600;
+      }
+      &.curr:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0px;
+        width: 34%;
+        height: 2px;
+        background-color: #FC6701;
+        margin: 0 auto;
+      }
+    }
+    &.bank-operate-head-tab-color {
+      background-color: #fff;
+    }
+  }
+  .bank-operate-head {
+    background: #fff;
+    padding: 0.413rem 0.52rem;
+    @include dispFlex();
+    align-items: center;
+    border-bottom: 0.27rem solid #F5F5F5;
+    .bank-operate-head-l {
+      width: 3.5rem;
+      flex: 0 0 3.5rem;
+      .im {
+        margin-right: 0.44rem;
+      }
+      .text {
+        .text-t1 {
+          font-size: 15px;
+          color: #333333;
+        }
+        .text-t2 {
+          font-size: 12px;
+          color: #a9a9a9;
+        }
+      }
+    }
+    .bank-operate-head-r {
+      @include boxFlex();
+      text-align: right;
+      .text-t1 {
+        font-size: 12px;
+        color: #a9a9a9;
+        text-align: justify;
+      }
+    }
+    &.bank-operate-head-bor {
+      border-bottom: 0.2853rem solid #f5f5f5;
+    }
+  }
+  .bank-operat-prompt {
+    padding: 0.307rem 0.52rem 0.573rem 0.52rem;
+    font-size: 12px;
+    color: #999999;
+    background: #f5f5f5;
+  }
+  .bank-operat-prompt-tx {
+    padding: 0.57rem 0.52rem 0.97rem 0.52rem;
+    background: #fff;
+    line-height: 22px;
+    text-align: justify;
+    .t1 {
+      font-size: 13px;
+      color: #333333;
+      margin-bottom: 0.16rem;
+      b {
+        color: #ff6600;
+      }
+    }
+    .t2 {
+      font-size: 13px;
+      color: #999999;
+      text-align: justify;
+      em {
+        color: #578fec;
+      }
+    }
+  }
+  .bank-operate-recharge-show {
+    position: relative;
+    margin: 0 0.52rem 0.52rem 0.52rem;
+    padding: 0.36rem 0.35rem;
+    background: linear-gradient(313deg, rgba(4, 190, 254, 1) 0%, rgba(68, 129, 235, 1) 100%);
+    box-shadow: 0px 6px 24px rgba(104, 144, 218, 0.4);
+    border: 1px solid #E5E5E5;
+    border-radius: 6px;
+    .icn {
+      position: absolute;
+      right: 0.9rem;
+      width: 25px;
+      height: 25px;
+      background: url("#{$imgUrl}bank/icon_in_update.png") no-repeat center;
+      background-size: contain;
+      margin: 0 auto;
+      display: block;
+    }
+    dd {
+      position: relative;
+      line-height: 49px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+      a {
+        position: absolute;
+        right: 0;
+        top: 12px;
+        width: 47px;
+        height: 24px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        border-radius: 3px;
+        font-size: 12px;
+        color: #ffffff;
+        line-height: 24px;
+        text-align: center;
+        display: block;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      .lb {
+        font-size: 12px;
+        color: #FFFFFF;
+      }
+      span.t1 {
+        font-size: 12px;
+        color: #FFFFFF;
+      }
+      span.t2 {
+        font-size: 12px;
+        color: #FFFFFF;
+      }
+    }
+  }
+  .view-btn {
+    height: 49px;
+    line-height: 49px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 6px;
+    padding: 0 0.52rem;
+    border-top: 0.27rem solid #F5F5F5;
+    display: block;
+    .l {
+      font-size: 15px;
+      color: #000000;
+    }
+    .r {
+      width: 7.5px;
+      height: 13px;
+      background: url("#{$imgUrl}right.png") no-repeat center;
+      background-size: contain;
+      display: inline-block;
+      margin-top: 19px;
+    }
+  }
+  .bank-operate-recharge {
+    background: #fff;
+    padding: 0.4rem 0.52rem 0 0.52rem;
+    .t1 {
+      font-size: 14px;
+      color: #333333;
+      margin-bottom: 0.6rem;
+    }
+    .t2 {
+      height: 30px;
+      line-height: 30px;
+      font-size: 12px;
+      color: #a9a9a9;
+    }
+    .input-text {
+      border-bottom: 1px solid #e5e5e5;
+      padding: 0.453rem 0;
+      > input {
+        width: 100%;
+        font-size: 15px;
+        color: #141414;
+        &::-webkit-input-placeholder {
+          color: #d1d1d1;
+        }
+      }
+    }
+  }
+  .bank-operate-withdraw {
+    padding: 0.4rem 0.52rem 0 0.52rem;
+    background: #fff;
+    .bank-operate-withdraw-text {
+      margin-bottom: 0.6rem;
+      .t1 {
+        font-size: 14px;
+        color: #333333;
+        span{
+          color: #333333;
+        }
+        i{
+          width: 16px;
+          height: 16px;
+          background: url("#{$imgUrl}bank/sasas.png") no-repeat center;
+          background-size: cover;
+          margin-left: 7px;
+        }
+      }
+      .t2 {
+        font-size: 12px;
+        color: #666666;
+      }
+    }
+    .bank-operate-withdraw-input {
+      padding-bottom: 0.573rem;
+      .bank-operate-withdraw-input-tx {
+        width: 80%;
+        > input {
+          width: 100%;
+          font-size: 15px;
+          color: #141414;
+          &::-webkit-input-placeholder {
+            color: #d1d1d1;
+          }
+        }
+      }
+      .t2 {
+        font-size: 12px;
+        color: #333333;
+      }
+    }
+  }
+  .bank-operate-withdraw-prompt {
+    background: #fff;
+    padding: 0 0.52rem;
+    border-top: 0.2853rem solid #f5f5f5;
+    height: 44px;
+    line-height: 44px;
+    .t1 {
+      font-size: 14px;
+      color: #333333;
+      em {
+        color: #ff6600;
+      }
+    }
+    .t2 {
+      font-size: 12px;
+      color: #a9a9a9;
+    }
+  }
+  .bank-operate-withdraw-prompt-text {
+    background: #f5f5f5;
+    padding: 0.387rem 0.52rem 0 0.52rem;
+    font-size: 12px;
+    color: #999999;
+  }
+  .bank-operate-form {
+    padding: 0.6rem 0.4rem 0 0.4rem;
+    background: #f5f5f5;
+    .btn {
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      background-color: #d5d5d5;
+      border-radius: 3px;
+      font-size: 19px;
+      color: #fefefe;
+      display: block;
+      transition: all 0.2s ease;
+      &.btn-end {
+        background-color: #ff6700;
+      }
+    }
+  }
+  .forget{
+    padding: 0.4rem 0.4rem 0 0.4rem;
+    text-align: right;
+    font-size: 15px;
+    color: #ff6802;
+    display: block;
+  }
+  .bank-operate-tx {
+    padding: 0.7rem 0.4rem 2rem 0.4rem;
+    &.bank-operate-tx-bg {
+      background: #f5f5f5;
+      padding-bottom: 2.72rem;
+    }
+    .t1 {
+      font-size: 13px;
+      color: #333333;
+      line-height: 21px;
+      margin-bottom: 0.16rem;
+    }
+    .t2 {
+      font-size: 13px;
+      color: #999999;
+      line-height: 21px;
+      text-align: justify;
+      em {
+        color: #ff6600;
+      }
+      a {
+        color: #ff6600;
+      }
+    }
+    .table-txt {
+      margin: .627rem 0 .64rem;
+      background: #fff;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      border: 1px solid #e5e5e5;
+      > tbody {
+        tr {
+          th {
+            font-size: 12px;
+            color: #999999;
+            padding: 0.173rem 0;
+            border: 1px solid #e5e5e5;
+            font-weight: normal;
+          }
+          td {
+            font-size: 12px;
+            color: #333333;
+            padding: 0.36rem 0;
+            border: 1px solid #e5e5e5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bank-operate-directions {
+  padding: 66px 0 0 0;
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  .text {
+    padding: 0 0.44rem;
+    .text-t1 {
+      font-size: 13px;
+      color: #333333;
+      line-height: 26px;
+      margin-bottom: 13px;
+      a {
+        color: #ff6700;
+      }
+    }
+    .text-t2 {
+      font-size: 13px;
+      color: #333333;
+      line-height: 25px;
+    }
+    .table-txt {
+      margin: 0.627rem 0 0.64rem 0;
+      background: #fff;
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+      border: solid 1px #e5e5e5;
+      > tbody {
+        tr {
+          th {
+            font-size: 12px;
+            color: #999999;
+            padding: 0.173rem 0;
+            border: 1px solid #e5e5e5;
+            font-weight: normal;
+          }
+          td {
+            font-size: 12px;
+            color: #333333;
+            padding: 0.36rem 0;
+            border: 1px solid #e5e5e5;
+          }
+        }
+      }
+    }
+  }
+}
+
+.bank-info {
+  padding: 44px 0 0 0;
+  .bank-info-empty {
+    margin: 0.413rem 0.4rem 0 0.4rem;
+    height: 2.667rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+    @include dispFlex();
+    align-items: center;
+    .bank-info-empty-wrap {
+      @include boxFlex();
+    }
+    .ico-1 {
+      width: 21px;
+      height: 21px;
+      background: url("#{$imgUrl}bank/jia.png") no-repeat center;
+      background-size: contain;
+      display: block;
+      margin: 0 auto;
+    }
+    .bank-info-empty-t1 {
+      margin: 0.413rem auto 0;
+      font-size: 12px;
+      color: #909090;
+      line-height: 18px;
+    }
+  }
+  .bank-info-empty-text {
+    margin: 0.813rem 0 0 0;
+    padding: 0 0.4rem;
+    .t1 {
+      font-size: 13px;
+      color: #333333;
+      margin-bottom: 0.48rem;
+    }
+    .t2 {
+      font-size: 12px;
+      color: #999999;
+      line-height: 23px;
+    }
+  }
+  .bank-info-has {
+    padding: 27px 0.4rem 0.653rem 0.4rem;
+    background: #fff;
+    .bank-info-card {
+      position: relative;
+      padding: 0.467rem 0.36rem 0.573rem 0.36rem;
+      background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.1) 0%, #ffffff 100%);
+      background: rgba(12, 126, 75, 0.75);
+      border-radius: 6px;
+      .top {
+        margin-bottom: 1.64rem;
+        .l {
+          white-space: nowrap;
+          .im {
+            vertical-align: middle;
+            background: #fff;
+            border-radius: 50%;
+          }
+          .text {
+            margin-left: 0.25rem;
+            .text-t1 {
+              font-size: 14px;
+              color: #ffffff;
+            }
+            .text-t2 {
+              font-size: 10px;
+              color: #ffffff;
+            }
+          }
+        }
+        .r {
+          display: block;
+          padding: 0 14px;
+          height: 24px;
+          border-radius: 12px;
+          border: 1px solid #ffffff;
+          font-size: 12px;
+          color: #ffffff;
+          text-align: center;
+          line-height: 24px;
+          margin: 0.12rem 0 0 0;
+          min-width: 20px;
+        }
+      }
+      .bottom {
+        font-size: 15px;
+        color: #ffffff;
+      }
+      .audit {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        width: 2.93rem;
+        height: 24px;
+        text-align: center;
+        background-image: linear-gradient(0deg, rgba(3, 0, 0, 0.4) 0%, rgba(66, 66, 66, 0.4) 100%);
+        border-image-source: linear-gradient(0deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%);
+        border-image-slice: 1;
+        border-radius: 12px;
+        margin: -12px auto 0;
+        i {
+          width: 10px;
+          height: 12px;
+          background: url("#{$imgUrl}bank/shou.png") no-repeat center;
+          background-size: contain;
+        }
+        span {
+          margin-left: 0.1rem;
+          font-size: 12px;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .bank-info-has-mobile {
+    padding: 0 0.4rem;
+    height: 52px;
+    line-height: 52px;
+    background-color: #ffffff;
+    border-top: 0.267rem solid #f5f5f5;
+    .l {
+      font-size: 15px;
+      color: #333333;
+    }
+    .r {
+      .t1 {
+        font-size: 12px;
+        color: #333333;
+        margin-right: 0.44rem;
+      }
+      .t2 {
+        font-size: 12px;
+        color: #666666;
+        margin-right: 0.253rem;
+      }
+      .ico-1 {
+        width: 8px;
+        height: 14px;
+        background: url("#{$imgUrl}bank/arrow-2.png") no-repeat center;
+        background-size: contain;
+      }
+    }
+  }
+  .bank-info-has-text {
+    padding: 0.63rem 0.4rem 0 0.4rem;
+    text-align: left;
+    .t1 {
+      font-size: 13px;
+      color: #333333;
+      margin-bottom: 0.48rem;
+    }
+    .t2 {
+      font-size: 12px;
+      color: #999999;
+      line-height: 23px;
+    }
+  }
+}
+
+.unbundling {
+  background: #f5f5f5;
+  .head-tip {
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff7ea;
+    font-size: 13px;
+    color: #333333;
+    text-align: center;
+  }
+  .bank-form {
+    padding: 0;
+  }
+  .unbundling-content {
+    margin: 0.453rem 0.427rem 0.733rem 0.427rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px dashed #e5e5e5;
+    .unbundling-upload {
+      position: relative;
+      height: 5.067rem;
+      @include dispFlex();
+      align-items: center;
+      .unbundling-upload-wrap {
+        @include boxFlex();
+        .circle {
+          position: relative;
+          width: 60px;
+          height: 60px;
+          text-align: center;
+          margin: 0 auto;
+          background-color: rgba(153, 153, 153, 0.75);
+          border-radius: 50%;
+          i {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+            width: 21px;
+            height: 21px;
+            margin: -11px auto 0;
+            background: url("#{$imgUrl}bank/jias.png") no-repeat center;
+            background-size: contain;
+            display: block;
+          }
+        }
+        .t1 {
+          margin-top: 0.853rem;
+          font-size: 16px;
+          color: #141414;
+          text-align: center;
+        }
+      }
+      [name='upimage'] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        z-index: 99999;
+      }
+    }
+    .unbundling-upload-pic {
+      position: relative;
+      height: 190px;
+      background-color: #ffffff;
+      border-radius: 6px;
+      .modify {
+        position: absolute;
+        right: 0.467rem;
+        top: 0.493rem;
+        width: 51px;
+        height: 24px;
+        background-color: rgba(20, 20, 20, 0.4);
+        border-radius: 12px;
+        text-align: center;
+        line-height: 24px;
+        font-size: 12px;
+        color: #ffffff;
+        [name='modify-upload'] {
+          position: absolute;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 9999;
+          opacity: 0;
+        }
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+      }
+    }
+  }
+  .unbundling-text {
+    padding: 0 0.427rem;
+    white-space: nowrap;
+    .l {
+      width: 65%;
+      white-space: normal;
+      padding-right: 0.2rem;
+      .t1 {
+        font-size: 13px;
+        color: #333333;
+        line-height: 21px;
+        margin-bottom: 0.32rem;
+      }
+      .t2 {
+        font-size: 12px;
+        color: #666666;
+        line-height: 20px;
+      }
+    }
+    .r {
+      width: 34%;
+      margin-top: 26px;
+      background-color: #ffffff;
+      border-radius: 3px;
+      border: solid 1px #e5e5e5;
+      img {
+        width: 100%;
+        height: 63px;
+      }
+      p {
+        padding: 0.28rem 0;
+        font-size: 11px;
+        color: #0a85d3;
+        text-align: center;
+      }
+    }
+  }
+  .unbundling-form {
+    padding: 0.6rem 0.4rem 2rem 0.4rem;
+    background: #f5f5f5;
+    .btn {
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      background-color: #d5d5d5;
+      border-radius: 3px;
+      font-size: 19px;
+      color: #fefefe;
+      display: block;
+      &.btn-end {
+        background-color: #ff6700;
+      }
+    }
+  }
+}
+
+.bank-status {
+  padding: 2rem 0 0 0;
+  .bank-status-text {
+    text-align: center;
+    .ico-1 {
+      width: 47px;
+      height: 47px;
+      background: url("#{$imgUrl}bank/success.png") no-repeat center;
+      background-size: contain;
+      margin: 0 auto 0.52rem;
+      display: block;
+    }
+    .ico-2 {
+      width: 46px;
+      height: 46px;
+      background: url("#{$imgUrl}bank/info_fills.png") no-repeat center;
+      background-size: contain;
+      margin: 0 auto 0.52rem;
+      display: block;
+    }
+    .t1 {
+      font-size: 16px;
+      color: #333333;
+      text-align: center;
+      margin-left: 0.2rem;
+    }
+  }
+  .text {
+    font-size: 15px;
+    color: #333333;
+    margin: 1rem auto 1rem;
+    width: 80%;
+    text-align: left;
+    &.tc {
+      text-align: center;
+    }
+  }
+  .btn {
+    width: 85%;
+    margin: 0.613rem auto 0;
+    @include dispFlex();
+    a {
+      @include boxFlex();
+      width: 2.8rem;
+      height: 44px;
+      border-radius: 3px;
+      line-height: 44px;
+      text-align: center;
+      font-size: 14px;
+      &.btn-t1 {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 18px 0px rgba(51, 51, 51, 0.1);
+        color: #141414;
+      }
+      &.btn-t2 {
+        background-color: #ff6700;
+        box-shadow: 0rem 0rem 0.24rem 0rem rgba(51, 51, 51, 0.1);
+        color: #ffffff;
+      }
+    }
+    a.mt {
+      margin-right: 0.5rem;
+    }
+  }
+  .btn-box {
+    width: 85%;
+    margin: 2rem auto 0;
+    @include dispFlex();
+    a {
+      @include boxFlex();
+      width: 2.8rem;
+      height: 44px;
+      border-radius: 3px;
+      line-height: 44px;
+      text-align: center;
+      font-size: 14px;
+      &.btn-t1 {
+        background-color: #ffffff;
+        box-shadow: 0px 0px 18px 0px rgba(51, 51, 51, 0.1);
+        color: #141414;
+      }
+      &.btn-t2 {
+        background-color: #ff6700;
+        box-shadow: 0rem 0rem 0.24rem 0rem rgba(51, 51, 51, 0.1);
+        color: #ffffff;
+      }
+    }
+    a.mt {
+      margin-right: 0.5rem;
+    }
+  }
+  .agreement {
+    color: #909090;
+    font-size: 12px;
+    padding: 0.55rem 0 0 0;
+    text-align: center;
+    a {
+      color: #ff6700;
+      font-size: 12px;
+    }
+  }
+}
+
+.sh-bank-layer {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 48px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  white-space: nowrap;
+  padding: 16px !important;
+  .sh-bank-layer-ico {
+    width: 16px;
+    height: 16px;
+    background: url("#{$imgUrl}bank/info_fill.png") no-repeat center;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .mint-toast-text {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #333333;
+    padding: 0 !important;
+    margin-left: 6px;
+  }
+}
+
+.bank-signing {
+  background: #f5f5f5;
+  .bank-signing-list {
+    width: 100%;
+    background: #fff;
+    padding: 1.2rem 0 0.9rem 0;
+    ul {
+      width: 95%;
+      margin: 0 auto;
+      @include dispFlex();
+      border-radius: 4px;
+      li {
+        position: relative;
+        @include boxFlex();
+        &:after {
+          position: absolute;
+          left: 33px;
+          top: 13px;
+          content: "";
+          display: block;
+          width: 100%;
+          height: 8px;
+          background-color: #efefef;
+          box-shadow: inset 0px 3px 7px 0px rgba(0, 0, 0, 0.06);
+          z-index: 1;
+        }
+        &.last:after {
+          left: -33px;
+          width: 28%;
+        }
+        i {
+          position: relative;
+          z-index: 2;
+          width: 36px;
+          height: 36px;
+          background: url("#{$imgUrl}signing/circle.png") no-repeat center;
+          background-size: cover;
+          display: block;
+          border-radius: 50%;
+          margin: 0 auto;
+          font-size: 14px;
+          color: #454545;
+          text-align: center;
+          line-height: 36px;
+        }
+        i.ico {
+          width: 36px;
+          height: 36px;
+          background: url("#{$imgUrl}signing/circles.png") no-repeat center;
+          background-size: cover;
+          display: block;
+          border-radius: 50%;
+          margin: 0 auto;
+        }
+        &.curr {
+          &:after {
+            background-color: #90cd98;
+            left: 33px;
+          }
+        }
+        p {
+          margin-top: 0.6rem;
+          text-align: center;
+        }
+        .t1 {
+          font-size: 12px;
+          color: #000000;
+        }
+        .t2 {
+          font-size: 12px;
+          color: #999999;
+        }
+      }
+    }
+  }
+  .bank-signing-btn {
+    margin: 1.5rem auto 0;
+    .btn {
+      width: 5.6rem;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      background-color: #ff6700;
+      box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.11);
+      border-radius: 3px;
+      font-size: 16px;
+      color: #ffffff;
+      margin: 0 auto;
+      display: block;
+    }
+    .btn-end {
+      margin: 0.4rem auto 0;
+      width: 5.6rem;
+      height: 44px;
+      line-height: 44px;
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.03);
+      border-radius: 3px;
+      border: solid 1px #f0f0f0;
+      font-size: 16px;
+      color: #757575;
+      display: block;
+    }
+  }
+  .text {
+    padding: 0.56rem 0.453rem 0 0.453rem;
+    .t1 {
+      font-size: 12px;
+      color: #141414;
+      margin-bottom: 0.3rem;
+    }
+    .t2 {
+      font-size: 12px;
+      color: #999999;
+      a {
+        color: #000000;
+      }
+    }
+  }
+}
+
+.bank-operate-guide {
+  padding: 44px 0.52rem 0 0.52rem;
+  dl {
+    dd {
+      margin-bottom: 22px;
+      .t1 {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 10px;
+      }
+      .t2 {
+        font-size: 16px;
+        color: #000000;
+        margin-bottom: 22px;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.bank-layer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  .wrap {
+    @include dispFlex();
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    .tit {
+      font-size: 17px;
+      color: #ffffff;
+      text-align: center;
+      margin-bottom: 0.81rem;
+    }
+    .content {
+      padding: 0 0.43rem;
+      margin-bottom: 1.33rem;
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    }
+    .close {
+      width: 14px;
+      height: 14px;
+      display: block;
+      background: url("#{$imgUrl}bank/close.png") no-repeat center;
+      background-size: cover;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .bank-open-account .bank-form dl dd .select-box {
+    width: 40%;
+  }
+  .bank-open-account .bank-form dl dd .inp {
+    padding-left: 2.4rem;
+  }
+  .bank-open-account .bank-form dl dd .select-box {
+    padding-left: 2.4rem;
+  }
+}

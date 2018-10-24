@@ -1,0 +1,83 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 解绑银行卡步骤 -->
+<div class="user__center unbind-card01">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "setting"})
+        <div class="user__content">
+            <div class="cont-tit-wrapper">
+                <h3 class="cont-tit">解绑银行卡</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="top-tip">亲爱的<b id="userCardName">--</b>，为保障您的资金安全，请在验证身份后进行下一步操作。</div>
+                <form class="layui-form unbind-form" id="inputForm">
+                    <div class="form-row clearfix">
+                        <span class="input-name">真 实 姓 名：</span>
+                        <div class="input-cont">
+                            <input class="input" id="userName" name="user_name" type="text" placeholder="请输入姓名" readonly />
+                        </div>
+                    </div>
+                    <div class="form-row clearfix">
+                        <span class="input-name">身 份 证 号：</span>
+                        <div class="input-cont">
+                            <input class="input" id="userID" type="text" name="user_id" placeholder="请输入身份证号" readonly />
+                        </div>
+                    </div>
+                    <div class="form-row clearfix">
+                        <span class="input-name">手 机 号 码：</span>
+                        <div class="input-cont">
+                            <input class="input" id="userTel" type="text" name="user_tel" placeholder="请输入手机号" readonly />
+                        </div>
+                    </div>
+                    <div class="form-row clearfix">
+                        <span class="input-name">手机验证码：</span>
+                        <div class="input-cont">
+                            <input class="input" id="userCode" type="text" name="user_code" placeholder="请输入手机验证码" lay-verify="required|number" lay-verType="tips" />
+                            <input class="get-code" id="getCode" type="button" value="获取验证码" />
+                        </div>
+                    </div>
+                    <div class="form-row clearfix">
+                        <span class="input-name">原银行卡号：</span>
+                        <div class="input-cont">
+                            <input class="input" id="userCardNo" type="text" name="user_card_no" placeholder="请输入原银行卡号" lay-verify="required|number" lay-verType="tips" />
+                        </div>
+                    </div>
+                    <div class="form-btn-wrapper">
+                        <input class="btn-undind" type="button" value="下一步" lay-submit lay-filter="unbindForm01" />
+                    </div>
+                </form>
+                <form class="layui-form unbind-form02 dn" id="uploadIDForm">
+                    <div class="upload-wrpper clearfix">
+                        <div class="add-wrapper fl">
+                            <div class="add-photo">
+                                <a href="javascript:;" class="a-upload change-upload01">
+                                    <input type="file" capture="camera" class="upload_images" />
+                                </a>
+                                <img src="" alt="" width="262px" height="186px" id="upload_img" style="display: none;" />
+                                <a href="javascript:;" class="a-upload change-upload02">
+                                    <input type="file" capture="camera" class="upload_images" />
+                                </a>
+                            </div>
+                            <p class="photo-desc">请上传手持身份证及银行卡照片<a href="javascript:;">查看示例</a></p>
+                        </div>
+                        <div class="add-info fl">
+                            <dl class="explain">
+                                <dt class="explain-tit">照片要求：</dt>
+                                <dd class="explain-text">请正面手持身份证及银行卡拍照；</dd>
+                                <dd class="explain-text">照片上人脸、身份证头像及号码、银行卡卡号需清晰可见，请勿使用软件涂抹；</dd>
+                                <dd class="explain-text">支持jpg/jpeg/bmp/png格式，最大不超过5M。</dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="upload-btn-wrapper">
+                        <input class="btn-upload" id="uploadImgBtn" type="submit" value="上传照片" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')

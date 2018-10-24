@@ -1,0 +1,371 @@
+.dola-about-signature {
+  min-height: 100%;
+  background-color: #e1f3ff;
+  .dola-title {
+    background: #fff;
+    .backer {
+      color: #000;
+      &:before {
+        border-left: 3px solid #000;
+        border-bottom: 3px solid #000;
+      }
+    }
+    h2 {
+      color: #000;
+    }
+  }
+  .banner-wrapper {
+    height: 4.8rem;
+    overflow: hidden;
+    .banner {
+      height: 4.8rem;
+      background: url("#{$imgUrl}signature/banner.png") center no-repeat;
+      background-size: 100% 4.8rem;
+    }
+  }
+  .content-wrapper {
+    padding: 0 0.4rem;
+    .title-wrapper {
+      text-align: center;
+      .cont-title {
+        display: inline-block;
+        padding: 0 0.533rem;
+        background: url("#{$imgUrl}signature/t-icon01.png") left center no-repeat, url("#{$imgUrl}signature/t-icon02.png") right center no-repeat;
+        background-size: 0.28rem 0.28rem;
+      }
+    }
+    &.content-wrapper01 {
+      padding-top: 0.64rem;
+      .title-wrapper {
+        margin-bottom: 0.48rem;
+        .cont-title {
+          .t1 {
+            width: 0.88rem;
+          }
+        }
+      }
+      .text {
+        margin-bottom: 0.48rem;
+        padding: 0 0.373rem;
+        line-height: 25px;
+        text-indent: 2em;
+        font-size: 13px;
+        color: #043f8c;
+      }
+      .sz-zs {
+        text-align: center;
+        span {
+          display: inline-block;
+          padding-left: 0.613rem;
+          background: url("#{$imgUrl}signature/icon04.png") left center no-repeat;
+          background-size: 0.413rem 0.413rem;
+          font-size: 14px;
+          color: #0084ff;
+        }
+      }
+    }
+    &.content-wrapper02 {
+      padding-top: 1.306rem;
+      .title-wrapper {
+        margin-bottom: 1.253rem;
+        .cont-title {
+          .t1 {
+            width: 5.2rem;
+          }
+        }
+      }
+      .lists {
+        .list {
+          position: relative;
+          height: 4.346rem;
+          margin-bottom: 1.013rem;
+          box-shadow: 1px 2px 16px 0px rgba(16, 106, 232, 0.13);
+          border: 1px solid #5c9ffa;
+          border-radius: 12px;
+          .icon {
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: -0.733rem;
+            width: 1.466rem;
+            height: 1.466rem;
+            transform: translateX(-50%);
+          }
+          dl {
+            padding-top: 1.413rem;
+            dt {
+              margin-bottom: 0.346rem;
+              text-align: center;
+              font-size: 16px;
+              color: #333;
+            }
+            dd {
+              padding: 0 0.32rem;
+              line-height: 21px;
+              font-size: 13px;
+              color: #666;
+            }
+          }
+          &.list1 {
+            background: #fff url("#{$imgUrl}signature/icon-sub01.png") 6.373rem 1.893rem no-repeat;
+            background-size: 2.546rem 2.146rem;
+            .icon {
+              background: url("#{$imgUrl}signature/icon01.png") no-repeat center;
+              background-size: 1.466rem 1.466rem;
+            }
+          }
+          &.list2 {
+            background: #fff url("#{$imgUrl}signature/icon-sub02.png") 6.373rem 1.866rem no-repeat;
+            background-size: 2.493rem 2.08rem;
+            .icon {
+              background: url("#{$imgUrl}signature/icon02.png") no-repeat center;
+              background-size: 1.466rem 1.466rem;
+            }
+          }
+          &.list3 {
+            background: #fff url("#{$imgUrl}signature/icon-sub03.png") 6.533rem 1.546rem no-repeat;
+            background-size: 2.2rem 2.493rem;
+            .icon {
+              background: url("#{$imgUrl}signature/icon03.png") no-repeat center;
+              background-size: 1.466rem 1.466rem;
+            }
+          }
+        }
+      }
+    }
+    &.content-wrapper03 {
+      padding-top: 0.666rem;
+      padding-bottom: 0.986rem;
+      background-color: #fafafa;
+      .f-logo {
+        display: block;
+        margin: 0 auto 0.586rem;
+        width: 1.226rem;
+        height: 0.72rem;
+      }
+      .title-wrapper {
+        margin-bottom: 0.533rem;
+        .cont-title {
+          .t1 {
+            width: 3.84rem;
+          }
+        }
+      }
+      .text {
+        text-indent: 2em;
+        line-height: 24px;
+        font-size: 14px;
+        color: #333;
+      }
+    }
+    &.content-wrapper04 {
+      padding-top: 0.72rem;
+      position: relative;
+      .title-wrapper {
+
+        .cont-title {
+          .t1 {
+            width: 1.773rem;
+          }
+        }
+      }
+      .swiper-wrappers {
+        margin-top: 0.666rem;
+        margin-bottom: 1.146rem;
+        .swiper-slide {
+          padding-top: 0.266rem;
+          width: 5.733rem !important;
+          height: 3.973rem;
+          box-sizing: border-box;
+          background-color: #ffffff;
+          box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.12);
+          border-radius: 4px;
+          img {
+            display: block;
+            width: 4.773rem;
+            margin: 0 auto;
+          }
+
+        }
+      }
+      .swiper-pagination {
+        bottom: -0.56rem;
+        left: 50%;
+        transform: translateX(-50%);
+        .swiper-pagination-bullet {
+
+          width: 0.133rem;
+          height: 0.133rem;
+          margin-right: 0.266rem;
+          background: #a2d9fd;
+          &.swiper-pagination-bullet-active {
+            background: #25a9ff;
+          }
+        }
+      }
+      .swiper-button-prev {
+        left: 0;
+        width: 14px;
+        height: 28px;
+        margin-top: -14px;
+        background-image: url("#{$imgUrl}signature/prev.png");
+        background-size: 14px 28px;
+      }
+      .swiper-button-next {
+        right: 0;
+        width: 14px;
+        height: 28px;
+        margin-top: -14px;
+        background-image: url("#{$imgUrl}signature/next.png");
+        background-size: 14px 28px;
+      }
+    }
+    &.content-wrapper05 {
+      padding-top: 1.066rem;
+      padding-bottom: 1.493rem;
+      background-color: #fafafa;
+      .title-wrapper {
+        margin-bottom: 0.533rem;
+        .cont-title {
+          .t1 {
+            width: 3.826rem;
+          }
+        }
+      }
+      .check {
+        margin-bottom: 0.533rem;
+        text-align: center;
+        a {
+          display: inline-block;
+          padding-left: 0.426rem;
+          font-size: 14px;
+          line-height: 30px;
+          color: #0084ff;
+          background: url("#{$imgUrl}signature/icon05.png") left center no-repeat;
+          background-size: 0.373rem 0.373rem;
+        }
+      }
+      .desc {
+        margin-bottom: 0.613rem;
+        line-height: 24px;
+        font-size: 14px;
+        color: #333;
+      }
+      .more-safe-btn {
+        display: block;
+        height: 1.306rem;
+        line-height: 1.306rem;
+        text-align: center;
+        font-size: 17px;
+        color: #fff;
+        background-image: linear-gradient(87deg, #3db8fd 0%, #42a2fd 100%);
+        border-radius: 10px;
+      }
+    }
+  }
+  .certificate-layer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    .content-wrppaer {
+      position: absolute;
+      top: 3.28rem;
+      left: 50%;
+      padding-top: 0.586rem;
+      width: 7.2rem;
+      transform: translateX(-50%);
+      border-radius: 8px;
+      background-color: #fff;
+      .certificate-title {
+        margin-bottom: 0.4rem;
+        text-align: center;
+        font-size: 17px;
+        color: #000;
+      }
+      .text {
+        padding: 0 0.453rem 0.453rem;
+        line-height: 15px;
+        font-size: 13px;
+        color: #333;
+      }
+      a {
+        display: block;
+        height: 1.173rem;
+        line-height: 1.173rem;
+        text-align: center;
+        font-size: 17px;
+        color: #157efb;
+        border-top: 1px solid #e0e0e0;
+      }
+    }
+  }
+  .step-layer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
+    background-color: rgba(0, 0, 0, 0.4);
+    .content-wrapper {
+      position: relative;
+      width: 100%;
+      padding: 0;
+      .text {
+        font-size: 17px;
+        line-height: 0px;
+        letter-spacing: 0px;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 600;
+        top: 1.36rem;
+      }
+      .swiper-slide {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
+      .swiper-button-prev {
+        width: 14px;
+        height: 28px;
+        margin-top: -14px;
+        background-image: url("#{$imgUrl}signature/prev02.png");
+        background-size: 14px 28px;
+      }
+      .swiper-button-next {
+        width: 14px;
+        height: 28px;
+        margin-top: -14px;
+        background-image: url("#{$imgUrl}signature/next02.png");
+        background-size: 14px 28px;
+      }
+      .swiper-pagination-bullet {
+        width: 0.133rem;
+        height: 0.133rem;
+        background: #fff;
+        opacity: 1;
+        &.swiper-pagination-bullet-active {
+          background: #f60;
+        }
+      }
+      .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+        bottom: 1.466rem;
+      }
+      .close {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 600;
+        width: 16px;
+        height: 16px;
+        background: url("#{$imgUrl}signature/dialog_close2.png") no-repeat center;
+        background-size: 16px 16px;
+      }
+    }
+  }
+}

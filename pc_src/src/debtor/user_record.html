@@ -1,0 +1,65 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 借款记录 -->
+<div class="user__center loan-record">
+    <div class="dl__container debtor-content clearfix">
+        @@include('../include/user_center_nav.html', {"active": "record"})
+        <div class="user__content">
+            <div class="cont-tit-wrapper">
+                <h3 class="cont-tit">借款记录</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="debtor-status clearfix">
+                    <dl class="fl clearfix" id="recordTypeLists">
+                    	<dt class="status-tit status-text">状态：</dt>
+                    	<dd class="status-text js-record-type is-select" data-type="1">审核中(<strong id="auditCount">--</strong>)</dd>
+                    	<dd class="status-text js-record-type" data-type="2">募集中(<strong id="collectCount">--</strong>)</dd>
+                    	<dd class="status-text js-record-type" data-type="3">已放款(<strong id="releasedCount">--</strong>)</dd>
+                    </dl>
+                    <a class="debtor-link fr" href="@@webRoot/debtor/user_application.html">我要借款</a>
+                </div>
+                <div class="record-tables">
+                    <table class="layui-table debtor-table" lay-skin="line">
+                        <thead>
+                            <tr>
+                                <th>借款订单号</th>
+                                <th>借款申请时间</th>
+                                <th>借款金额</th>
+                                <th>借款期限</th>
+                                <th>借款年化利率</th>
+                                <th>还款方式</th>
+                                <th>状态</th>
+                            </tr>
+                        </thead>
+                        <tbody id="recordTable">
+                            <!--<tr>
+                                <td>2018091716445901</td>
+                                <td>2018-08-10 12:14</td>
+                                <td>3000元</td>
+                                <td>3</td>
+                                <td>7%</td>
+                                <td>等额本息</td>
+                                <td>审核中</td>
+                            </tr>
+                            <tr>
+                                <td>2018091716445901</td>
+                                <td>2018-08-10 12:14</td>
+                                <td>3000元</td>
+                                <td>3</td>
+                                <td>7%</td>
+                                <td>等额本息</td>
+                                <td>审核中</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                    <div class="dl__page" id="recordPage"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')
+

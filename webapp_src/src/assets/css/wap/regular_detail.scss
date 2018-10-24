@@ -1,0 +1,1230 @@
+@charset "utf-8";
+
+.clearfix:after {
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+}
+
+.dola-regular {
+  background-color: #f9f9f9;
+}
+
+.dola-app {
+  height: 100%;
+}
+
+.dola-scoll-prevent {
+  overflow: hidden;
+}
+
+.dola-regular-detail {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding-top: 48px;
+  padding-bottom: 70px;
+  .page-infinite-loading {
+    width: 100%;
+    text-align: center;
+    .mint-spinner-fading-circle {
+      margin: 0 auto;
+    }
+  }
+}
+
+.dola-regular-detail-mt {
+  padding-bottom: 0 !important;
+}
+
+// 计划详情导航
+.dola-regular-nav {
+  position: relative;
+  height: 1.2rem;
+  line-height: 1.2rem;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 10px;
+  .nav-list {
+    display: -webkit-flex;
+    display: flex;
+    transition: all 0.2s ease;
+    .item {
+      -webkit-flex: 1;
+      flex: 1;
+      text-align: center;
+      font-size: 14px;
+      color: #2e2e2e;
+
+      &.current {
+        position: relative;
+        color: #ff6700;
+      }
+
+      &.current:after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 1.6rem;
+        height: 2px;
+        background-color: #ff6700;
+      }
+    }
+  }
+}
+
+.dola-regular-nav-fix {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  margin-top: 0;
+}
+
+// 计划介绍
+.dola-product {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 40px;
+}
+
+.dola-project {
+  margin-top: 0.266rem;
+  background-color: #fff;
+
+  .title {
+    width: 100%;
+    height: 1.2rem;
+    line-height: 1.2rem;
+    padding-left: 0.533rem;
+    font-size: 15px;
+    color: #222;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .lists {
+    margin: 0 0.533rem;
+
+    .list {
+      white-space: nowrap;
+      padding: 16px 0;
+      border-bottom: 1px solid #e5e5e5;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      .desc {
+        width: 50%;
+        .desc-title {
+          width: 1.946rem;
+          font-size: 12px;
+          color: #999;
+        }
+
+        .desc-content {
+          margin-left: 0.406rem;
+          width: 6.773rem;
+          font-size: 14px;
+          color: #343434;
+          white-space: normal;
+          text-align: justify;
+        }
+        .desc-content-text {
+          width: 2.2rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+      .l {
+        width: 47%;
+      }
+    }
+  }
+  .lists-ul {
+    margin: 0 0.533rem;
+
+    .lists-li {
+      padding: 16px 0;
+      border-bottom: 1px solid #e5e5e5;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+
+      .desc {
+        white-space: nowrap;
+        .desc-title {
+          width: 1.946rem;
+          font-size: 12px;
+          color: #999;
+        }
+
+        .desc-content {
+          margin-left: 0.406rem;
+          width: 6.773rem;
+          font-size: 14px;
+          color: #343434;
+          white-space: normal;
+        }
+        .desc-content-text {
+          width: 2.2rem;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+      }
+
+    }
+  }
+}
+
+.dola-project-general {
+  .lists {
+    .list {
+      display: -webkit-flex;
+      display: flex;
+      white-space: nowrap;
+      .desc {
+        -webkit-flex: 1;
+        flex: 1;
+
+        .desc-title2 {
+          width: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+.dola-project-explain {
+  .list:last-of-type {
+    height: 3.546rem;
+
+    .desc-title {
+      float: left;
+    }
+    .desc-content {
+      float: right;
+      width: 6.773rem;
+      padding-top: 12px;
+      line-height: 20px;
+
+      p {
+        color: #343434;
+      }
+    }
+  }
+}
+
+.dola-project-tips {
+  .title {
+    font-weight: normal;
+    a {
+      display: block;
+      font-size: 15px;
+      color: #222;
+      background: url("#{$imgUrl}arrows01.png") 8.746rem center no-repeat;
+      background-size: 0.186rem 0.32rem;
+      font-weight: normal;
+    }
+  }
+}
+
+// 借款信息
+.borrow-info {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.borrow-info-wrapper {
+  transition: all 0.3s ease;
+  .description {
+    padding: 0.72rem 0.72rem 0.613rem 0.56rem;
+    font-size: 12px;
+    line-height: 21px;
+    text-align: justify;
+    color: #666;
+    background-color: #f9f9f9;
+  }
+  .dola-info-wrapper {
+    margin-bottom: 0.16rem;
+    background-color: #fff;
+    transition: all 0.3s ease;
+
+    .dola-user-info {
+      height: 1.173rem;
+      line-height: 1.173rem;
+      padding-left: 0.533rem;
+      padding-right: 0.626rem;
+      border-bottom: 1px solid #e5e5e5;
+
+      .name {
+        float: left;
+        font-size: 16px;
+        width: 1.333rem;
+        height: 0.506rem;
+        margin-top: 12px;
+        line-height: 0.506rem;
+        border-right: 1px solid #999;
+      }
+
+      .code {
+        float: left;
+        margin-left: 0.4rem;
+        font-size: 12px;
+        color: #222;
+      }
+
+      .address {
+        float: right;
+        font-size: 10px;
+        color: #757575;
+        width: 72px;
+        white-space: normal;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    .dola-borrow-lists {
+      display: -webkit-flex;
+      display: flex;
+
+      .dola-borrow-list {
+        -webkit-flex: 1;
+        flex: 1;
+        height: 1.68rem;
+        padding-top: 0.4rem;
+        padding-left: 0.533rem;
+
+        .dola-borrow-title {
+          font-size: 10px;
+          line-height: 16px;
+          color: #999;
+        }
+
+        .dola-borrow-text {
+          font-size: 14px;
+          line-height: 20px;
+          color: #343434;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .borrow-info-loading {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    padding-bottom: 100px;
+  }
+}
+
+// 风险提示
+.risk-warning-wrapper {
+  padding: 0.64rem 0.586rem 0.32rem;
+  background-color: #fff;
+
+  .text {
+    margin-bottom: 0.666rem;
+    font-size: 12px;
+    line-height: 22px;
+    color: #757575;
+    text-align: justify;
+  }
+}
+
+// 计划详情
+.dola-product-detail-wrapper {
+  .dola-product-info {
+    margin-bottom: 0.293rem;
+    background-color: #fff;
+    .dola-pro-detail {
+      position: relative;
+      padding: 0.773rem 0.64rem 1.2rem;
+      border-bottom: 1px solid #e5e5e5;
+      .interest-wrapper {
+        position: relative;
+        float: left;
+        .title {
+          position: relative;
+          white-space: nowrap;
+          .t1 {
+            font-size: 12px;
+            color: #999;
+            margin-right: 0.11rem;
+          }
+          .icon {
+            padding: 0 6px;
+            height: 13px;
+            line-height: 13px;
+            min-width: 58px;
+            border: 1px solid #f60;
+            border-radius: 13px 13px 13px 0px;
+            text-align: center;
+            font-size: 11px;
+            color: #f60;
+          }
+        }
+        .interest {
+          font-size: 24px;
+          color: #f60;
+          b {
+            font-size: 40px;
+          }
+          .ico-tip {
+            width: 12px;
+            height: 12px;
+            background: url("#{$imgUrl}icon_info.png") center no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+      .date-wrapper {
+        float: right;
+        .title {
+          text-align: right;
+        }
+        .interest {
+          margin-top: 12px;
+          text-align: right;
+          font-size: 15px;
+          color: #050202;
+          b {
+            font-size: 24px;
+          }
+        }
+      }
+      .title {
+        font-size: 12px;
+        color: #999;
+      }
+      .icon01 {
+        position: absolute;
+        right: 0.4rem;
+        top: 0;
+        width: 52px;
+        height: 23px;
+        text-align: center;
+        line-height: 23px;
+        font-size: 10px;
+        color: #fff;
+        background: url("#{$imgUrl}bg_label4.png") center no-repeat;
+        background-size: cover;
+      }
+      .icon-status-1 {
+        position: absolute;
+        right: 0.4rem;
+        top: 0;
+        width: 52px;
+        height: 23px;
+        text-align: center;
+        line-height: 23px;
+        font-size: 10px;
+        color: #fff;
+        background: url("#{$imgUrl}status-1.png") center no-repeat;
+        background-size: cover;
+      }
+      .icon-status-2 {
+        position: absolute;
+        right: 0.4rem;
+        top: 0;
+        width: 52px;
+        height: 23px;
+        text-align: center;
+        line-height: 23px;
+        font-size: 10px;
+        color: #fff;
+        background: url("#{$imgUrl}status-2.png") center no-repeat;
+        background-size: cover;
+      }
+      .icon-status-3 {
+        position: absolute;
+        right: 0.4rem;
+        top: 0;
+        width: 52px;
+        height: 23px;
+        text-align: center;
+        line-height: 23px;
+        font-size: 10px;
+        color: #fff;
+        background: url("#{$imgUrl}status-3.png") center no-repeat;
+        background-size: cover;
+      }
+      .icon02 {
+        position: absolute;
+        right: 0.4rem;
+        bottom: 0.266rem;
+        min-width: 1.733rem;
+        height: 0.533rem;
+        line-height: 0.533rem;
+        text-align: right;
+        border-radius: 10px;
+        border: solid 1px #eeeeee;
+        box-sizing: border-box;
+        padding: 0 0.2rem;
+        .a {
+          width: 0.32rem;
+          height: 0.293rem;
+          background: url("#{$imgUrl}icon_ticket_blue.png") no-repeat;
+          background-size: cover;
+        }
+        .b {
+          width: 0.293rem;
+          height: 0.32rem;
+          background: url("#{$imgUrl}icon_redbag.png") no-repeat;
+          background-size: cover;
+          margin-left: 4px;
+        }
+        b {
+          font-size: 11px;
+          color: #333;
+          margin-left: 4px;
+        }
+        .fz {
+          font-weight: normal;
+          font-stretch: normal;
+        }
+      }
+    }
+
+    .pro-info-lists {
+      padding: 0.533rem 0;
+      .list {
+        float: left;
+        padding: 0 0.333rem;
+        height: 0.853rem;
+        border-right: 1px solid #e5e5e5;
+        width: 33.3%;
+        box-sizing: border-box;
+        text-align: center;
+        &:last-of-type {
+          border-right: none;
+        }
+
+        .title {
+          margin-bottom: 0.106rem;
+          font-size: 10px;
+          color: #999;
+        }
+
+        .content {
+          font-size: 12px;
+          color: #282828;
+        }
+      }
+    }
+
+  }
+
+  .dola-product-user {
+    margin-bottom: 0.293rem;
+    background-color: #fff;
+    .dola-product-user-lists {
+      padding-top: 0.253rem;
+      padding-left: 0.586rem;
+      padding-right: 0.586rem;
+      .list {
+        position: relative;
+        line-height: 31px;
+        .title {
+          font-size: 12px;
+          color: #757575;
+          margin-right: 9px;
+        }
+        .content {
+          font-size: 12px;
+          color: #999;
+          b {
+            color: #f2843a;
+          }
+          a {
+            color: #f2843a;
+          }
+        }
+        .recharge-btn {
+          position: absolute;
+          right: 0;
+          font-size: 12px;
+          color: #141414;
+          padding-right: 0.586rem;
+          background: url("#{$imgUrl}arrows01.png") right center no-repeat;
+          background-size: 0.186rem 0.32rem;
+        }
+      }
+    }
+
+  }
+
+  .dola-product-join {
+    padding: 0.533rem 0 0.56rem;
+    background-color: #fff;
+
+    .dola-product-from {
+      .list1 {
+        margin: 0 0.533rem 0.293rem;
+        height: 1.173rem;
+        line-height: 1.173rem;
+        border-radius: 3px;
+        border: solid 1px #d2d2d2;
+        .desc {
+          display: inline-block;
+          padding: 0 0.613rem 0 0.533rem;
+          line-height: 0.96rem;
+          border-right: 1px solid rgba(36, 36, 36, 0.2);
+          font-size: 16px;
+          color: #444;
+        }
+        .invest-money {
+          display: inline-block;
+          font-size: 14px;
+          text-align: center;
+          width: 5.066rem;
+        }
+        .max-product-invest-money {
+          display: inline-block;
+          font-size: 12px;
+          color: #f2843a;
+        }
+      }
+
+      .list2, .list3 {
+        height: 1.306rem;
+        line-height: 1.306rem;
+        padding: 0 0.533rem;
+
+        .desc {
+          float: left;
+          font-size: 14px;
+        }
+
+        .content {
+          float: right;
+          font-size: 15px;
+          color: #222;
+          padding-right: 0.533rem;
+          background: url("#{$imgUrl}arrows01.png") right center no-repeat;
+          background-size: 0.186rem 0.32rem;
+
+          b {
+            color: #f36;
+          }
+
+          &.no {
+            color: #999;
+          }
+        }
+      }
+
+      .list2 {
+        border-bottom: 1px solid #f0f0f0;
+
+        .desc {
+          color: #f13136;
+        }
+      }
+
+      .list3 {
+        .desc {
+          color: #757575;
+        }
+      }
+
+      .list4 {
+        padding: 0 0.533rem;
+
+        .join-pro {
+          display: block;
+          width: 100%;
+          text-align: center;
+          line-height: 1.2rem;
+          height: 1.2rem;
+          font-size: 16px;
+          color: #fff;
+          background-image: linear-gradient(to right, orange 0%, #FF503C 100%);
+          box-shadow: 0 7px 25px 0 rgba(253, 123, 95, 0.5);
+          border-radius: 22px;
+        }
+        .join-pro-end {
+          display: block;
+          width: 100%;
+          text-align: center;
+          line-height: 1.2rem;
+          height: 1.2rem;
+          font-size: 16px;
+          color: #fff;
+          background: #D1D1D1;
+          border-radius: 22px;
+        }
+      }
+    }
+  }
+}
+
+// 计划详情2
+.dola-product-detail2-wrapper {
+  .pro-info-lists2 {
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    display: -webkit-flex;
+    display: flex;
+    background: url("#{$imgUrl}line.png") center 1.786rem no-repeat;
+    background-size: 7.133rem 2px;
+
+    .list {
+      -webkit-flex: 1;
+      flex: 1;
+      height: 2.186rem;
+      text-align: center;
+      font-size: 11px;
+      color: #999;
+      box-sizing: border-box;
+
+      .content {
+        padding-top: 1.733rem;
+        padding-bottom: 0.533rem;
+      }
+    }
+
+    .list1 {
+      background: url("#{$imgUrl}icon_number_people.png") center top no-repeat;
+      background-size: 1.333rem;
+    }
+
+    .list2 {
+      background: url("#{$imgUrl}icon_money1.png") center top no-repeat;
+      background-size: 1.333rem;
+    }
+
+    .list3 {
+      background: url("#{$imgUrl}icon_complete.png") center top no-repeat;
+      background-size: 1.333rem;
+
+      .content {
+        background: url("#{$imgUrl}pro-icon.png") center bottom no-repeat;
+        background-size: 3.186rem 1.893rem;
+      }
+    }
+  }
+
+  .check-pro-btn-wrapper {
+    padding: 0 0.613rem;
+    .check-pro-btn {
+      display: block;
+      width: 100%;
+      height: 1.2rem;
+      text-align: center;
+      line-height: 1.2rem;
+      font-size: 18px;
+      color: #fff;
+      background-image: linear-gradient(0deg, #ff9a44 0%, #fc6076 100%);
+      box-shadow: 0 7px 25px 0 rgba(253, 123, 95, 0.5);
+      border-radius: 22px;
+    }
+  }
+}
+
+// 投资确认
+.invest-affirm {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  .invest-affirm-wrapper {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-animation: fadeInUpBig 0.3s linear;
+    -webkit-animation-fill-mode: forwards;
+    .title-wrapper {
+      position: relative;
+      height: 1.066rem;
+      line-height: 1.066rem;
+      border-bottom: 1px solid #dcdcdc;
+
+      .close-wrapper {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1.546rem;
+        height: 1.066rem;
+        line-height: 1.066rem;
+        background: url("#{$imgUrl}close.png") center no-repeat;
+        background-size: 0.32rem;
+      }
+
+      .title {
+        text-align: center;
+        font-size: 14px;
+        color: #000;
+      }
+
+      .forget-pass {
+        position: absolute;
+        right: 0.533rem;
+        top: 0;
+        height: 1.066rem;
+        line-height: 1.066rem;
+        color: #f60;
+      }
+    }
+
+    .invest-money {
+      text-align: center;
+      margin-top: 0.6rem;
+      margin-bottom: 0.333rem;
+
+      .text {
+        position: relative;
+        display: inline-block;
+        margin-left: -0.533rem;
+        font-size: 34px;
+        color: #000;
+
+        .icon {
+          position: absolute;
+          right: -1.6rem;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1.373rem;
+          height: 0.64rem;
+          text-align: center;
+          line-height: 0.64rem;
+          font-size: 14px;
+          color: #000;
+          background: url("#{$imgUrl}bg_label2.png") center no-repeat;
+          background-size: 1.373rem 0.64rem;
+        }
+      }
+    }
+
+    .affrim-join-pro-from {
+      padding: 0 0.533rem 1.333rem;
+
+      .list {
+        height: 1.2rem;
+        line-height: 1.2rem;
+        border-bottom: 1px solid #e5e5e5;
+
+        .desc {
+          float: left;
+          font-size: 14px;
+          color: #757575;
+        }
+
+        .content {
+          float: right;
+          font-size: 15px;
+          color: #141414;
+        }
+
+        &.list3, &.list4 {
+          border-bottom: none;
+        }
+
+        &.list4 {
+          border: 1px solid #d2d2d2;
+          border-radius: 3px;
+
+          .affirm-pass {
+            width: 90%;
+            height: 1.2rem;
+            line-height: 1.2rem;
+            padding-left: 0.346rem;
+            font-size: 17px;
+            color: #141414;
+            &::-webkit-input-placeholder {
+              color: #d1d1d1;
+            }
+          }
+        }
+      }
+
+      .agree-yx {
+        margin-top: 0.4rem;
+        margin-bottom: 0.613rem;
+        font-size: 11px;
+        line-height: 0.426rem;
+        color: #666;
+        white-space: nowrap;
+        .is-checked {
+          display: inline-block;
+          width: 0.426rem;
+          height: 0.426rem;
+          margin-right: 0.16rem;
+          background: url("#{$imgUrl}checkbox1.png") center no-repeat;
+          background-size: 0.426rem;
+          vertical-align: top;
+          &.checked-right {
+            background: url("#{$imgUrl}checkbox_right.png") center no-repeat;
+            background-size: 0.426rem;
+          }
+        }
+        .agree-yx-text {
+          width: 90%;
+          white-space: normal;
+          vertical-align: top;
+        }
+        a {
+          font-size: 11px;
+          color: #4a9df4;
+        }
+      }
+
+      .affirm-btn-wrapper {
+
+        .affirm-btn {
+          width: 100%;
+          height: 1.2rem;
+          font-size: 16px;
+          color: #fff;
+          background: #ff6600;
+          border-radius: 3px;
+        }
+      }
+      .affirm-btn-wrapper-txt {
+        font-size: 12px;
+        color: #C4C4C4;
+        text-align: center;
+        margin: 0.3rem auto 0;
+      }
+    }
+  }
+}
+
+// 收益处理方式
+.earnings-methods {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  .earnings-methods-wrapper {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    opacity: 0;
+    -webkit-animation: fadeInUpBig 0.3s linear;
+    -webkit-animation-fill-mode: forwards;
+    .title-wrapper {
+      position: relative;
+      height: 1.133rem;
+      line-height: 1.133rem;
+      border-bottom: 1px solid #f1f0f0;
+
+      .title {
+        text-align: center;
+        font-size: 16px;
+        color: #2b2b2b;
+      }
+
+      .method-agree {
+        position: absolute;
+        height: 1.133rem;
+        line-height: 1.133rem;
+        width: 2.08rem;
+        right: 0;
+        top: 0;
+        text-align: center;
+        font-size: 14px;
+        color: #f63;
+      }
+    }
+
+    .earnings-methods-lists {
+      .list {
+        height: 1.493rem;
+        line-height: 1.493rem;
+        padding-left: 0.533rem;
+        padding-right: 0.64rem;
+
+        .method {
+          float: left;
+          font-size: 15px;
+          color: #a9a8a8;
+        }
+
+        .content {
+          float: right;
+          padding-right: 0.773rem;
+          font-size: 15px;
+          color: #141414;
+        }
+
+        &.current {
+          background-color: #f8f8f8;
+
+          .method {
+            color: #333;
+          }
+
+          .content {
+            background: url("#{$imgUrl}method-check.png") right center no-repeat;
+            background-size: 0.32rem 0.24rem;
+          }
+        }
+      }
+    }
+
+    .earnings-methods-desc {
+      padding: 0.48rem 0.64rem 0.906rem 0.533rem;
+
+      .text {
+        font-size: 12px;
+        line-height: 18px;
+        color: #999;
+      }
+    }
+  }
+}
+
+//投资记录
+.dola-investment-records {
+  padding-top: 10px;
+  padding-bottom: 100px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    tbody {
+      tr {
+        td {
+          border-top: #e5e5e5 solid 1px;
+          font-size: 12px;
+          text-align: center;
+          background-color: #f9f9f9;
+          line-height: 40px;
+          color: #666;
+        }
+        td:nth-child(1) {
+          padding-left: 10px;
+        }
+        .morelaod {
+          width: 100%;
+          height: 50px;
+          line-height: 50px;
+          color: #999;
+          text-align: center;
+          font-size: 12px;
+          background: #f9f9f9;
+          display: block;
+        }
+        td.dola-investment-records-nodate {
+          padding: 20px !important;
+        }
+      }
+    }
+  }
+}
+
+.dola-invest_success {
+  width: 100%;
+  background-color: #F7F7F7;
+  padding-bottom: 100px;
+  margin-top: 44px;
+  overflow: hidden;
+  height: calc(100% - 44px);
+  .head-tit {
+    width: 100%;
+    padding: 20px 0 30px 0;
+    i {
+      width: 42px;
+      height: 42px;
+      background: url("#{$imgUrl}complete.png") no-repeat;
+      background-size: cover;
+      display: block;
+      margin: 0 auto;
+      border-radius: 50%;
+      color: #fff;
+    }
+    p {
+      font-size: 17px;
+      color: #151515;
+      text-align: center;
+      margin-top: 22px;
+    }
+  }
+  .txt {
+    background-color: #fff;
+    padding: 0 20px;
+    li {
+      height: 43px;
+      background-color: #fff;
+      overflow: hidden;
+      line-height: 43px;
+      border-bottom: 1px solid #E5E5E5;
+      .t1 {
+        font-size: 14px;
+        color: #777777;
+      }
+      .t2 {
+        font-size: 14px;
+        color: #000000;
+        span {
+          font-size: 14px;
+          color: #FC6602;
+        }
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .dola-invest_success-btn {
+    display: flex;
+    display: -webkit-flex;
+    padding: 0 17px;
+    .btn {
+      flex: 1;
+      -webkit-flex: 1;
+      height: 44px;
+      text-align: center;
+      margin-top: 30px;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        line-height: 44px;
+        border-radius: 5px;
+        border: 1px solid #ff6700;
+        background-color: #ff6700;
+        color: #fff;
+        font-size: 14px;
+      }
+    }
+    .btn-left {
+      margin-right: 4%;
+      a {
+        background-color: #fff;
+        box-shadow: 6px 0px 18px rgba(0, 0, 0, 0.06);
+        color: #141414;
+        border: none;
+      }
+    }
+  }
+}
+
+@media (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .dola-product-detail-wrapper {
+    .dola-product-info {
+      .pro-info-lists {
+        .list {
+          padding: 0 .333rem;
+        }
+      }
+    }
+  }
+  .dola-product-detail-wrapper {
+    .dola-product-join {
+      .dola-product-from {
+        .list1 {
+          .invest-money {
+            width: 4.566rem;
+          }
+        }
+      }
+    }
+  }
+  .dola-project {
+    .lists {
+      .list {
+        .desc {
+          .desc-content {
+            margin-left: 0 !important;
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) {
+  .dola-product-detail-wrapper {
+    .dola-product-info {
+      .pro-info-lists {
+        .list {
+          padding: 0 .333rem;
+        }
+      }
+    }
+  }
+  .dola-product-detail-wrapper {
+    .dola-product-join {
+      .dola-product-from {
+        .list1 {
+          .invest-money {
+            width: 4.566rem;
+          }
+        }
+      }
+    }
+  }
+  .dola-project {
+    .lists {
+      .list {
+        .desc {
+          .desc-content {
+            margin-left: 0 !important;
+            font-size: 12px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(500px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+.mint-msgbox-wrapper {
+  .mint-msgbox {
+    .mint-msgbox-content {
+      .mint-msgbox-message {
+        line-height: 22px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+

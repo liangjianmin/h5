@@ -1,0 +1,178 @@
+.dola-about-safety-guarantee {
+  background-color: #fff;
+  .content {
+    padding-top: 1.2rem;
+
+    .safety-guarantee-title {
+      font-size: 18px;
+      text-align: center;
+      padding-bottom: 0.48rem;
+      color: #000;
+
+      background: url("#{$imgUrl}dola_guarantee_29.png") center bottom no-repeat;
+      background-size: 5.2rem 0.213rem;
+    }
+
+    &.content1 {
+      .consumer-finance-lists {
+        padding: 0 0.4rem;
+
+        .list {
+          float: left;
+          width: 50%;
+          height: 7rem;
+          padding: 0.72rem 0.506rem 0;
+          box-sizing: border-box;
+          text-align: center;
+
+          .img {
+            height: 3.413rem;
+            background: url("#{$imgUrl}dola_guarantee_bg12.png") center no-repeat;
+            background-size: 3.533rem 3.413rem;
+
+            .icon {
+              display: block;
+              height: 3.413rem;
+            }
+          }
+
+          .h5 {
+            margin-bottom: 0.133rem;
+            font-size: 16px;
+            color: #000;
+          }
+
+          .desc {
+            font-size: 13px;
+            line-height: 24px;
+            text-align: justify;
+            color: #666;
+          }
+
+          &.list1 {
+            .img {
+              .icon {
+                background: url("#{$imgUrl}dola_guarantee_30.png") center no-repeat;
+                background-size: 0.68rem 0.733rem;
+              }
+            }
+          }
+          &.list2 {
+            .img {
+              .icon {
+                background: url("#{$imgUrl}dola_guarantee_31.png") center no-repeat;
+                background-size: 0.653rem 0.746rem;
+              }
+            }
+          }
+          &.list3 {
+            .img {
+              .icon {
+                background: url("#{$imgUrl}dola_guarantee_32.png") center no-repeat;
+                background-size: 0.493rem 0.626rem;
+              }
+            }
+          }
+          &.list4 {
+            .img {
+              .icon {
+                background: url("#{$imgUrl}dola_guarantee_33.png") center no-repeat;
+                background-size: 0.64rem 0.733rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.content2 {
+      background: #f9f9f9 url("#{$imgUrl}dola_guarantee_bg13.png") 0.72rem center no-repeat;
+      background-size: 0.666rem 100%;
+
+      .cont {
+        padding: 1.2rem 0.586rem 1.12rem 0.4rem;
+        dl {
+          margin-bottom: 0.986rem;
+          padding: 0 0.4rem;
+          dt {
+            padding-left: 0.613rem;
+            margin-bottom: 0.373rem;
+            font-size: 16px;
+            color: #000;
+            background: url("#{$imgUrl}dola_guarantee_34.png") left center no-repeat;
+            background-size: 0.373rem 0.373rem;
+          }
+
+          dd {
+            padding-left: 0.613rem;
+            font-size: 14px;
+            line-height: 24px;
+            color: #666;
+          }
+
+          &:last-of-type {
+            margin-bottom: 0;
+          }
+        }
+
+      }
+    }
+
+    &.content3 {
+      .cont {
+        padding: 1.12rem 0.4rem 1.066rem;
+        dl {
+          padding-left: 1.84rem;
+          margin-bottom: 0.72rem;
+          background-position: 0.48rem top;
+          background-repeat: no-repeat;
+
+          dt.h5 {
+            margin-bottom: 0.213rem;
+            font-size: 16px;
+            color: #000;
+          }
+
+          dd.desc {
+            font-size: 14px;
+            line-height: 24px;
+            padding-right: 0.586rem;
+            color: #666;
+          }
+
+          &:first-of-type {
+            background-image: url("#{$imgUrl}dola_guarantee_35.png");
+            background-size: 0.866rem 0.853rem;
+          }
+
+          &:nth-of-type(2) {
+            background-image: url("#{$imgUrl}dola_guarantee_36.png");
+            background-size: 0.866rem 0.853rem;
+          }
+
+          &:nth-of-type(3) {
+            background-image: url("#{$imgUrl}dola_guarantee_37.png");
+            background-size: 0.866rem 0.853rem;
+          }
+
+          &:nth-of-type(4) {
+            background-image: url("#{$imgUrl}dola_guarantee_38.png");
+            background-size: 0.866rem 0.853rem;
+          }
+
+          &:nth-of-type(5) {
+            background-image: url("#{$imgUrl}dola_guarantee_39.png");
+            background-size: 0.866rem 0.853rem;
+          }
+
+          &:nth-of-type(6) {
+            margin-bottom: 0;
+            background-image: url("#{$imgUrl}dola_guarantee_41s.png");
+            background-size: 0.866rem 0.853rem;
+          }
+        }
+
+      }
+    }
+  }
+}

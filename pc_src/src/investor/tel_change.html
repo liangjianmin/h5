@@ -1,0 +1,44 @@
+<!-- 网站头部 -->
+@@include('../include/header.html')
+<!-- 手机修改 -->
+<div class="invest__center tel-change">
+    <div class="dl__container invest-cont clearfix">
+        @@include('../include/invest_user_center_navs.html', {"active": "setting"})
+        <div class="center-content">
+            <div class="cont-tit-wrapper clearfix">
+                <h3 class="cont-tit">修改手机号</h3>
+                <a class="cont-tit-sub" href="javascript:;"></a>
+            </div>
+            <div class="content">
+                <div class="layui-form change-form">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">手机号：</label>
+                        <div class="layui-input-block">
+                            <input id="userTel" type="text" name="user_tel" required  lay-verify="required|number|phone" placeholder="请输入手机号" autocomplete="off" class="layui-input">
+                            <button class="layui-btn get-code-btn" id="getCode">获取验证码</button>
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">验证码：</label>
+                        <div class="layui-input-block">
+                          <input type="text" name="user_code" required  lay-verify="required" placeholder="请输入验证码" autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="changeTelFrom">确认</button>
+                        </div>
+                    </div>
+                </div>
+                <dl class="explain">
+                	<dt>温馨提示：</dt>
+                	<dd>1、若您长时间未收到验证码，可重新点击获取，最新验证码24小时内有效。</dd>
+                	<dd>2、如果您需要修改充值时使用的手机号，请联系银行修改预留手机号。</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 网站底部 -->
+@@include('../include/footer.html')
